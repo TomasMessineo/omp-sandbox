@@ -1,0 +1,1 @@
+1825507645a:3:{s:6:"domain";N;s:12:"plural-forms";N;s:8:"messages";a:1:{s:0:"";a:2:{s:43:"plugins.reports.monographReport.displayName";s:16:"Monograph Report";s:43:"plugins.reports.monographReport.description";s:64:"This plugin outputs a report with monographs in the .CSV format.";}}}

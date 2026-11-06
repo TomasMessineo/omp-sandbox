@@ -1,0 +1,115 @@
+1825506993a:3:{s:6:"domain";N;s:12:"plural-forms";s:55:"nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;";s:8:"messages";a:1:{s:0:"";a:58:{s:35:"emails.passwordResetConfirm.subject";s:26:"Potvrzení obnovení hesla";s:32:"emails.passwordResetConfirm.body";s:349:"Obdrželi jsme požadavek na obnovu Vašeho hesla pro vstup na stránku {$siteTitle}.<br />
+<br />
+Pokud jste o obnovu nepožádal/a, ignorujte, prosím, tuto zprávu a Vaše heslo se nezmění. Pokud si heslo přejete obnovit, klikněte, prosím, na odkaz níže.<br />
+<br />
+Obnovit mé heslo: {$passwordResetUrl}<br />
+<br />
+ {$siteContactName}";s:27:"emails.userRegister.subject";s:16:"Registrace tisku";s:24:"emails.userRegister.body";s:479:"{$recipientName}<br />
+<br />
+Nyní jste byl zaregistrován jako uživatel v {$contextName}. Do tohoto e-mailu jsme zahrnuli vaše uživatelské jméno a heslo, které jsou potřebné pro veškerou práci s tímto tiskem prostřednictvím jeho webových stránek. Kdykoli můžete požádat o odebrání ze seznamu uživatelů tak, že mě kontaktujete. <br />
+<br />
+Uživatelské jméno: {$recipientUsername} <br />
+Heslo: {$password} <br />
+<br />
+Děkuji, <br />
+{$signature}";s:34:"emails.userValidateContext.subject";s:21:"Ověřte svůj účet";s:31:"emails.userValidateContext.body";s:302:"Vážený/vážená {$recipientName}<br />
+<br />
+Vytvořili jste účet s {$contextName}, ale než jej začnete používat, musíte svůj e-mailový účet ověřit. To provedete jednoduše pomocí níže uvedeného odkazu:<br />
+<br />
+{$activateUrl}<br />
+<br />
+Děkujeme,<br />
+{$contextSignature}";s:31:"emails.userValidateSite.subject";s:21:"Ověřte svůj účet";s:28:"emails.userValidateSite.body";s:298:"Vážený/vážená {$recipientName}<br />
+<br />
+Vytvořili jste si účet {$siteTitle}, ale než jej začnete používat, musíte svůj e-mailový účet ověřit. To provedete jednoduše pomocí níže uvedeného odkazu:<br />
+<br />
+{$activateUrl}<br />
+<br />
+Děkujeme,<br />
+{$siteSignature}";s:31:"emails.reviewerRegister.subject";s:42:"Registrace jako recenzent v {$contextName}";s:28:"emails.reviewerRegister.body";s:925:"Na základě vašich odborných znalostí jsme si dovolili zaregistrovat vaše jméno v databázi recenzentů pro {$contextName}. To z vaší strany neznamená žádnou formu závazku, ale jednoduše nám to umožňuje, abychom vás oslovili s podáním k případné recenzi. Když budete vyzváni k recenzi, budete mít příležitost zobrazit název a abstrakt daného příspěvku a budete vždy v pozici, abyste pozvání přijali nebo odmítli. Můžete také kdykoli požádat o odstranění svého jména z tohoto seznamu recenzentů. <br />
+<br />
+Poskytujeme vám uživatelské jméno a heslo, které se používá při všech interakcích s tiskem prostřednictvím jeho webových stránek. Možná budete chtít například aktualizovat svůj profil, včetně svých recenzních zájmů. <br />
+<br />
+Uživatelské jméno: {$recipientUsername} <br />
+Heslo: {$password} <br />
+<br />
+Děkuji, <br />
+{$signature}";s:27:"emails.editorAssign.subject";s:69:"Byl/a jste přidělen/a jako editor k příspěvku pro {$contextName}";s:24:"emails.editorAssign.body";s:670:"<p>Vážený/vážená {$recipientName},</p><p>Následující příspěvek vám byl přidělen k redakčnímu zpracování.</p><p><a href="{$submissionUrl}">{$submissionTitle}</a><br />{$authors}</p><p><b>Abstrakt</b></p>{$submissionAbstract}<p>Pokud považujete příspěvek za relevantní pro {$contextName}, předejte jej prosím do fáze recenzního řízení výběrem možnosti „Poslat k interní recenzi“ a následně přiřaďte recenzenty kliknutím na „Přidat recenzenta“.</p><p>Pokud si myslíte, že příspěvek není relevantní pro toto nakladatelství, odmítněte ho, prosím.</p><p>Děkujeme předem.</p><p>S pozdravem, </p>{$contextSignature}";s:28:"emails.reviewRequest.subject";s:27:"Žádost o recenzi rukopisu";s:25:"emails.reviewRequest.body";s:1006:"<p>Vážený/á{$recipientName},</p><p>Domnívám se, že byste byl vynikajícím recenzentem pro příspěvek do časopisu {$contextName}. Název a anotace příspěvku jsou uvedeny níže a doufám, že zvážíte, zda se tohoto důležitého úkolu pro nás ujmete.</p><p>Pokud jste schopni posoudit tento příspěvek, vaši recenzi je třeba provést do {$reviewDueDate}. Příspěvek, nahrání recenzních souborů a odeslání recenze si můžete prohlédnout po přihlášení do nakladatelstvi a provedení kroků na níže uvedeném odkazu.</p><p><a href="{$reviewAssignmentUrl}">{$submissionTitle}</a></p><p><b>Abstrakt</b></p>{$submissionAbstract}<p>Prosíme vás <a href="{$reviewAssignmentUrl}">o přijetí či odmítnutí</a> recenze do <b>{$responseDueDate}</b>.</p><p>Můžete se na mě obrátit s jakýmikoliv dotazy ohledně příspěvku nebo recenzního řízení.</p><p>Děkujeme vám za zvážení této žádosti. Vaší pomoci si velmi vážíme.</p><p>S pozdravem,</p>{$signature}";s:38:"emails.reviewRequestSubsequent.subject";s:46:"Požadavek na recenzi upraveného příspěvku";s:35:"emails.reviewRequestSubsequent.body";s:1028:"<p>Vážený/á{$recipientName},</p><p>Děkujeme za vaši recenzi <a href="{$reviewAssignmentUrl}">{$submissionTitle}</a>. Autoři zvážili připomínky recenzentů a nyní předložili revidovanou verzi své práce. Obracím se na vás s prosbou, zda byste provedl/a druhé kolo recenzního řízení této předložené práce. {$contextName}.</p><p>Pokud jste schopen/a zrecenzovat tento příspěvek, vaši recenzi je třeba provést do {$reviewDueDate}. Můžete <a href="{$reviewAssignmentUrl}">postupovat podle kroků recenze</a> k zobrazení příspěvku, nahrání souborů recenze a nahrání vašich komentářů.<p><p><a href="{$reviewAssignmentUrl}">{$submissionTitle}</a></p><p>Abstrakt</p>{$submissionAbstract}<p>Přijměte či odmítněte, prosím, recenzi do{$responseDueDate}.</p><p>V případě jakýchkoli dotazů týkajících se podání nebo procesu hodnocení se na mne, prosím, obraťte.</p><p>Děkuji za zvážení této žádosti. Vaší pomoci si velmi vážíme.</p><p>S pozdravem,</p>{$signature}";s:40:"emails.reviewResponseOverdueAuto.subject";s:27:"Žádost o recenzi rukopisu";s:37:"emails.reviewResponseOverdueAuto.body";s:833:"Vážený {$recipientName},<br />
+Jen jemně připomínáme naši žádost o přezkoumání podání, &quot;{$submissionTitle},&quot; pro {$contextName}. Doufali jsme, že Vaši odpověď obdržíme do {$responseDueDate}, a tento e-mail byl automaticky vygenerován a odeslán s uplynutím tohoto data.
+<br />
+{$messageToReviewer}<br />
+<br />
+Přihlaste se prosím na webové stránky tisku, abyste uvedli, zda se recenze ujmete, či nikoli, a také abyste měli přístup k podání a mohli zaznamenat svůj posudek a doporučení.<br />
+<br />
+Samotný posudek je třeba podat do {$reviewDueDate}.<br />
+<br />
+Adresa URL podání: {$reviewAssignmentUrl}<br />
+<br />
+Uživatelské jméno: {$recipientUsername}<br />
+<br />
+Děkujeme za zvážení této žádosti.<br />
+<br />
+<br />
+S pozdravem,<br />
+{$contextSignature}<br />
+";s:27:"emails.reviewCancel.subject";s:27:"Žádost o recenzi zrušena";s:24:"emails.reviewCancel.body";s:406:"{$recipientName}:<br />
+<br />
+V tuto chvíli jsme se rozhodli zrušit naši žádost o recenzi podání, &quot;{$submissionTitle},&quot; pro {$contextName}. Omlouváme se za nepříjemnosti, které vám to může způsobit, a doufáme, že se na vás budeme moci v budoucnu obrátit s žádostí o pomoc při tomto recenzním procesu.<br />
+<br />
+V případě jakýchkoli dotazů mě prosím kontaktujte.";s:27:"emails.reviewReinstate.body";s:550:"<p>Vážený/á {$recipientName},</p><p>Nedávno jsme zrušili naši žádost o recenzi příspěvku, {$submissionTitle}, pro {$contextName}. Toto rozhodnutí jsme zrušili a doufáme, že jste stále schopen recenzi provést.</p><p>Pokud jste schopen pomoci s recenzním řízením tohoto časopisu, můžete se <a href="{$reviewAssignmentUrl}">přihlásit do vydavatelství</a> a zobrazit si příspěvek, nahrát recenzní soubory a odeslat žádost o recenzi.</p><p>Pokud máte nějaké dotazy, kontaktujte mě.</p><p>S pozdravem,</p>{$signature}";s:28:"emails.reviewDecline.subject";s:26:"Nejsem schopný recenzovat";s:25:"emails.reviewDecline.body";s:231:"Redakce:<br />
+<br />
+Obávám se, že v tuto chvíli nemohu recenzovat podání, &quot;{$submissionTitle},&quot; pro {$contextName}. Děkuji, že na mě myslíte, a příště se na mě klidně obraťte.<br />
+<br />
+{$senderName}";s:27:"emails.reviewRemind.subject";s:34:"Připomenutí recenze příspěvku";s:24:"emails.reviewRemind.body";s:677:"<p>Vážený/vážená {$recipientName},</p><p>Jen jemně připomínáme naši žádost o recenzi příspěvku, "{$submissionTitle}," pro {$contextName}. Očekávali jsme tuto recenzi do {$reviewDueDate} a my bychom ji rádi obdrželi, jakmile ji budete moci připravit.</p><p>Můžete se <a href="{$reviewAssignmentUrl}">přihlásit do vydavatelství</a> a postupovat podle pokynů pro recenze, abyste si mohli prohlédnout předložený dokument, nahrát soubory k recenzi a odeslat své připomínky k recenzi.</p><p>Pokud potřebujete prodloužit lhůtu, kontaktujte mě. Těším se na vaše odpovědi.</p><p>Předem vám děkuji a srdečně vás zdravím,</p>{$signature}";s:28:"emails.reviewRemindAuto.body";s:718:"<p>Vážený/á {$recipientName}:</p><p>Tento e-mail je automatická upomínka od {$contextName} v souvislosti s naší žádostí o recenzi předloženého příspěvku, "{$submissionTitle}."</p><p>Očekávali jsme, že tuto recenzi do {$reviewDueDate} a my bychom ji rádi obdrželi, jakmile ji budete moci připravit..</p><p> <a href="{$reviewAssignmentUrl}">Přihlaste se, prosím, do nakladatelství</a> a postupujte podle pokynů pro recenze, abyste si mohli prohlédnout předložený dokument, nahrát soubory recenze a odeslat své připomínky k recenzi.</p><p>Pokud potřebujete prodloužit lhůtu, kontaktujte mě. Těším se na vaše odpovědi.</p><p>Předem děkuji a s pozdravem,</p>{$contextSignature}";s:35:"emails.editorDecisionAccept.subject";s:48:"Váš příspěvek byl přijat do {$contextName}";s:32:"emails.editorDecisionAccept.body";s:1033:"<p>Vážený/á{$recipientName},</p><p>S potěšením vám oznamuji, že jsme se rozhodli přijmout váš příspěvek bez dalších recenzí. Po pečlivém přezkoumání jsme shledali, že váš příspěvek, {$submissionTitle}, splňuje nebo překračuje naše očekávání. Jsme rádi, že můžeme váš text publikovat v {$contextName}, a děkujeme vám, že jste si jako místo pro svou práci vybrali náš vydavatelský dům.</p><p>Váš příspěvek bude brzy zveřejněn na webu vydavatelství pro {$contextName} a můžete jej zahrnout do seznamu svých publikací. Uvědomujeme si tvrdou práci, která stojí za každým úspěšným příspěvkem, a chceme vám poblahopřát k dosažení této fáze.</p><p>Váš příspěvek nyní projde fázemi copyeditingu a formátování, aby byl připraven k vydání.</p><p>Brzy dostanete další pokyny.</p><p>Pokud máte jekékoliv dotazy, můžete mne kontaktovat ze <a href="{$authorSubmissionUrl}">ovládacího panelu příspěvku</a>.</p><p>S pozdravem,</p>{$signature}";s:43:"emails.editorDecisionSendToInternal.subject";s:51:"Váš příspěvek byl odeslány k interní recenzi";s:40:"emails.editorDecisionSendToInternal.body";s:691:"<p>Vážený/á {$jméno příjemce},</p><p>S potěšením Vám oznamuji, že editor posoudil Váš příspěvek, {$názevPříspěvku}, a rozhodl se jej odeslat k interní recenzi. Ozveme se vám s vyjádřením recenzentů a informacemi o dalším postupu.</p><p>Upozorňujeme, že odeslání příspěvku k interní recenzi nezaručuje jeho zveřejnění. Před rozhodnutím o přijetí podání k publikaci zvážíme doporučení recenzentů. Před konečným rozhodnutím můžete být požádáni o provedení revizí a reakci na připomínky recenzentů.</p><p>Pokud budete mít jakékoli dotazy, kontaktujte mě prosím z panelu pro zasílání příspěvků.</p><p>{$signature}</p>";s:39:"emails.editorDecisionSkipReview.subject";s:46:"Váš příspěvek byl odeslán k copyeditingu";s:36:"emails.editorDecisionSkipReview.body";s:1054:"<p>Vážený/á {$recipientName},</p>
+<p>S potěšením Vám oznamuji, že jsme se rozhodli přijmout Váš příspěvek bez recenzního řízení. Shledali jsme, že Váš příspěvek, {$submissionTitle}, splňuje naše očekávání, a nevyžadujeme, aby práce tohoto typu prošla recenzním řízením. Jsme rádi, že můžeme vaši práci publikovat v {$contextName}, a děkujeme vám, že jste si jako místo pro svou práci vybrali naše vydavatelství.</p>
+<p>Vaše práce bude brzy zveřejněna na stránkách vydavatelství {$contextName} a můžete si ji zařadit do seznamu publikací. Uvědomujeme si tvrdou práci, která stojí za každým úspěšným příspěvkem, a chceme vám poblahopřát k vašemu úsilí.</p>
+<p>Váš příspěvek nyní projde redakční úpravou a formátováním, aby byl připraven k publikaci. </p>
+<p>Brzy obdržíte další pokyny.</p>
+<p>Pokud máte nějaké dotazy, kontaktujte mě prosím ze svého <a href="{$authorSubmissionUrl}" >autorského panelu</a>.</p>
+<p>S pozdravem,</p>
+<p>{$signature}</p>
+";s:28:"emails.layoutRequest.subject";s:81:"Příspěvek {$submissionId} je připraven k produkci na adrese {$contextAcronym}";s:25:"emails.layoutRequest.body";s:770:"<p>Dobrý den {$jméno příjemce}, </p><p>Nový příspěvek je připraven k úpravě rozvržení:</p><p><a href="{$submissionUrl}">{$submissionId} {$submissionTitle}</a><br />{$contextName}</p><ol><li>1. Klikněte na výše uvedenou URL adresu příspěvku.</li><li>2. Stáhněte si soubory pro produkční fázi a použijte je k vytvoření sazebnic podle standardů vydavatelství.</li><li>3. Nahrajte sazebnici do sekce Formáty publikace příspěvku.</li><li>4. Použijte diskusi v produkční fázi k upozornění redaktora, že sazebnice jsou připraveny.</li></ol><p>Pokud tuto práci v tuto chvíli nemůžete provést nebo máte nějaké dotazy, kontaktujte mě. Děkuji vám za váš příspěvek pro naše vydavatelství.</p><p>S pozdravem,</p>{$signature}";s:29:"emails.layoutComplete.subject";s:22:"Sazebnice jsou hotové";s:26:"emails.layoutComplete.body";s:330:"<p>Vážený/á {$jméno příjemce},<p><p>Sazebnice pro následující příspěvek byly vytvořeny a jsou připraveny k finální kontrole.</p><p><a href="{$submissionUrl}">{$submissionTitle}</a><br />{$contextName}</p><p>Pokud máte nějaké dotazy, kontaktujte mě, prosím.</p><p>S pozdravem,</p><p>{$jméno odesílatele}</p>";s:27:"emails.indexRequest.subject";s:21:"Požadavek na idexaci";s:24:"emails.indexRequest.body";s:736:"{$recipientName}:<br />
+<br />
+Příspěvek &quot;{$submissionTitle}&quot; do {$contextName} nyní potřebuje vytvořit indexy podle následujících kroků.<br />
+1. Klikněte na URL příspěvku níže.<br />
+2. Zalogujte se do stránek vydavatelsví a použijte soubor Page Proofs k vytvoření sazebnic podle standardů vydavatelství.<br />
+3. Pošlete redaktorovi informaci o ukončení akce.<br />
+<br />
+{$contextName} URL: {$contextUrl}<br />
+URL příspěvku: {$submissionUrl}<br />
+Uživatelské jméno: {$recipientUsername}<br />
+<br />
+Pokud v tuto chvíli nemůžete tuto práci provést nebo máte nějaké dotazy, obraťte se na mě. Děkuji vám za váš příspěvek do tohoto vydavatelství.<br />
+<br />
+{$signature}";s:28:"emails.indexComplete.subject";s:31:"Indexace sazebnic je dokončena";s:25:"emails.indexComplete.body";s:257:"{$recipientName}:<br />
+<br />
+Pro rukopis byly nyní připraveny indexy, &quot;{$submissionTitle},&quot; pro{$contextName} a jsou připraveny ke korektuře.<br />
+<br />
+V případě jakýchkoli dotazů mě, prosím, kontaktujte.<br />
+<br />
+{$senderName}";s:24:"emails.emailLink.subject";s:24:"Rukopis možného zájmu";s:21:"emails.emailLink.body";s:253:"Je možné, že budete mít zájem vidět následující příspěvek &quot;{$submissionTitle}&quot; jehož autory je/jsou {$authors}, publikovaný ve svazku {$volume}, číslo {$number} ({$year}) publikace {$contextName} v &quot;{$submissionUrl}&quot;.";s:28:"emails.emailLink.description";s:273:"Tato šablona e-mailu poskytuje registrovanému čtenáři možnost zaslat informace o monografii někomu, koho by mohla zajímat. Je k dispozici prostřednictvím nástrojů pro čtení a musí být povolena správcem tisku na stránce Administrace nástrojů pro čtení.";s:31:"emails.notifySubmission.subject";s:28:"Upozornění na příspěvek";s:28:"emails.notifySubmission.body";s:156:"Máte zprávu od {$sender}, která se týká příspěvku &quot;{$submissionTitle}&quot; ({$monographDetailsUrl}):<br />
+<br />
+		{$message}<br />
+<br />
+		";s:35:"emails.notifySubmission.description";s:89:"Oznámení od uživatele odeslané z modálního okna informačního centra pro podání.";s:25:"emails.notifyFile.subject";s:35:"Upozornění na soubor příspěvku";s:22:"emails.notifyFile.body";s:175:"Máte zprávu od {$sender}, týkající se souboru &quot;{$fileName}&quot; v &quot;{$submissionTitle}&quot; ({$monographDetailsUrl}):<br />
+<br />
+		{$message}<br />
+<br />
+		";s:29:"emails.notifyFile.description";s:83:"Oznámení od uživatele odeslané z modálního okna centra informací o souborech";s:43:"emails.statisticsReportNotification.subject";s:41:"Redakční aktivity pro {$month}, {$year}";s:40:"emails.statisticsReportNotification.body";s:795:"
+{$recipientName}, <br />
+<br />
+Vaše zpráva o aktivitách vydavatelského domu za {$month}, {$year} je nyní dostupná. Vaše klíčové statistiky pro tento měsíc jsou níže.<br />
+<ul>
+	<li>Nové příspěvky tento měsíc: {$newSubmissions}</li>
+	<li>Odmítnuté příspěvky tento měsíc: {$declinedSubmissions}</li>
+	<li>Přijaté příspěvky tento měsíc: {$acceptedSubmissions}</li>
+	<li>Celkový počet příspěvků v systému: {$totalSubmissions}</li>
+</ul>
+Zalogujte se do příslušného vydavatelství, abyste viděl/a podrobnější <a href="{$editorialStatsLink}">redakční trendy</a> a <a href="{$publicationStatsLink}">statistiky vydaných knih</a>. Úplná kopie redakčních trendů tohoto měsíce je přiložena.<br />
+<br />
+S pozdravem,<br />
+{$contextSignature}";s:27:"emails.announcement.subject";s:20:"{$announcementTitle}";s:24:"emails.announcement.body";s:180:"<b>{$announcementTitle}</b><br />
+<br />
+{$announcementSummary}<br />
+<br />
+Navštivte naše webové stránky a přečtěte si <a href="{$announcementUrl}">úplné oznámení</a>.";s:30:"emails.editorAssignReview.body";s:500:"<p>Vážený/vážená {$recipientName},</p><p>Následující příspěvek vám byl přidělen, abyste jej provedli fází recenze.</p><p><a href="{$submissionUrl}">{$submissionTitle}</a><br />{$authors}</p><p><b>Abstrakt</b></p>{$submissionAbstract}<p>Přihlaste se, <a href="{$submissionUrl}">k zobrazení příspěvku</a> a přidělte jim kvalifikované recenzenty. Můžete přidělit recenzenta pomocí tlačítka "Přidat recenzenta".</p><p>Děkujeme předem.</p><p>S pozdravem,</p>{$signature}";s:34:"emails.editorAssignProduction.body";s:527:"<p>Vážený/vážená{$recipientName},</p><p>Následující příspěvek vám byl přidělen, abyste jej provedli produkční fází.</p><p><a href="{$submissionUrl}">{$submissionTitle}</a><br />{$authors}</p><p><b>Abstrakt</b></p>{$submissionAbstract}<p>Přihlaste se <a href="{$submissionUrl}"> k zobrazení příspěvku</a>. Jakmile jsou k dispozici soubory připravené do produkční fáze, nahrajte je do sekce <strong>Publikace > Formáty publikací</strong>.</p><p>Děkujeme předem.</p><p>S pozdravem,</p>{$signature}";s:35:"emails.revisedVersionNotify.subject";s:29:"Byla nahrána upravená verze";s:30:"emails.reviewReinstate.subject";s:54:"Můžete ještě něco zrecenzovat pro {$contextName}?";s:32:"emails.revisedVersionNotify.body";s:458:"<p>Vážený/vážená {$recipientName},</p><p>Autor nahrál novou verzi příspěvku, <b>{$authorsShort} — {$submissionTitle}</b>. <p>Jako přiděleného redaktora vás žádáme, abyste se přihlásili a <a href="{$submissionUrl}">zobrazil si novu verzi příspěvku</a> a rozhodnul o přijetí, odmítnutí nebo odeslání příspěvku k dalšímu posouzení.</p><br><br>—<br>Toto je automatická zpráva od <a href="{$contextUrl}">{$contextName}</a>.";}}}

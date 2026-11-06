@@ -26,14 +26,14 @@
 
 ; An application-specific key that is required for the app to run
 ; Internally this is used for any encryption (specifically cookie encryption if enabled)
-app_key =
+app_key = "base64:BGA+ofjjeX0E2Hlcx5j6HQR6K9i8SvM8yyW7ZjA8+5w="
 
 ; Set this to On once the system has been installed
 ; (This is generally done automatically by the installer)
-installed = Off
+installed = On
 
 ; The canonical URL to the OMP installation (excluding the trailing slash)
-base_url = "https://pkp.sfu.ca/omp"
+base_url = "http://localhost:8035"
 
 ; Enable strict mode. This will more aggressively cause errors/warnings when
 ; deprecated behaviour exists in the codebase.
@@ -60,7 +60,7 @@ session_samesite = Lax
 ; time zones.
 ; I.e.: "Europe/Amsterdam"
 ; time_zone="Europe/Amsterdam"
-time_zone = "UTC"
+time_zone = UTC
 
 ; Short and long date formats
 date_format_short = "Y-m-d"
@@ -97,7 +97,7 @@ restful_urls = Off
 ; An empty string indicates that all hosts should be trusted (not recommended!)
 ; Example:
 ; allowed_hosts = '["mypress.tld", "anotherpress.tld", "mylibrary.tld"]'
-allowed_hosts = ''
+allowed_hosts = "[\"localhost\"]"
 
 ; Allow the X_FORWARDED_FOR header to override the REMOTE_ADDR as the source IP
 ; Set this to "On" if you are behind a reverse proxy and you control the
@@ -140,10 +140,10 @@ sandbox = Off
 [database]
 
 driver = mysqli
-host = localhost
+host = db
 username = omp
 password = omp
-name = omp
+name = omp_35
 
 ; Set the non-standard port and/or socket, if used
 ; port = 3306
@@ -194,7 +194,7 @@ web_cache_hours = 1
 [i18n]
 
 ; Default locale
-locale = en
+locale = es
 
 ; Database connection character set
 connection_charset = utf8
@@ -209,7 +209,7 @@ connection_charset = utf8
 ; Complete path to directory to store uploaded files
 ; (This directory should not be directly web-accessible)
 ; Windows users should use forward slashes
-files_dir = files
+files_dir = /var/www/files
 
 ; Path to the directory to store public uploaded files
 ; (This directory should be web-accessible and the specified path
@@ -417,7 +417,7 @@ oai = On
 
 ; OAI Repository identifier. This setting forms part of OAI-PMH record IDs.
 ; Changing this setting may affect existing clients and is not recommended.
-repository_id = omp.pkp.sfu.ca
+repository_id = "omp.localhost:8035"
 
 ; Maximum number of records per request to serve via OAI
 oai_max_records = 100

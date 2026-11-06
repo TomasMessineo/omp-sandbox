@@ -1,0 +1,114 @@
+1825506993a:3:{s:6:"domain";N;s:12:"plural-forms";s:26:"nplurals=2; plural=n != 1;";s:8:"messages";a:1:{s:0:"";a:58:{s:35:"emails.passwordResetConfirm.subject";s:39:"Bestätigung der Passwortzurücksetzung";s:32:"emails.passwordResetConfirm.body";s:404:"Wir haben eine Anfrage erhalten, Ihr Passwort für die Website {$siteTitle} zurückzusetzen. <br />
+<br />
+Wenn die Anfrage nicht von Ihnen stammt, ignorieren Sie bitte diese Email und Ihr Passwort bleibt bestehen. Wenn Sie hingegen Ihr Passwort ändern möchten, klicken Sie bitte auf den untenstehenden Link:<br />
+<br />
+Mein Passwort zurücksetzen: {$passwordResetUrl}<br />
+<br />
+{$siteContactName}";s:27:"emails.userRegister.subject";s:28:"Registrierung bei dem Verlag";s:24:"emails.userRegister.body";s:487:"{$recipientName}<br />
+<br />
+Sie wurden als Benutzer/in für {$contextName} registriert. Mit dieser Email erhalten Sie Ihren Benutzer/innen-Namen und Ihr Passwort, die Sie für sämtliche Verlagsarbeiten innerhalb dieser Website benötigen. Sie haben jederzeit die Möglichkeit, sich als Benutzer/in auszutragen zu lassen. Eine Nachricht an mich genügt. <br />
+<br />
+Benutzer/innen-Name: {$recipientUsername}<br />
+Passwort: {$password}<br />
+<br />
+Mit bestem Dank<br />
+{$signature}";s:34:"emails.userValidateContext.subject";s:18:"Account validieren";s:31:"emails.userValidateContext.body";s:303:"{$recipientName}<br /> 
+<br />
+Sie haben ein Benutzer/innenkonto bei {$contextName} angelegt, aber bevor Sie es benutzen können, müssen Sie Ihre E-Mail-Adresse bestätigen. Dazu folgen Sie bitte einfach dem folgenden Link:<br />
+<br />
+{$activateUrl}<br />
+<br />
+Vielen Dank<br />
+{$contextSignature}";s:31:"emails.userValidateSite.subject";s:18:"Account validieren";s:28:"emails.userValidateSite.body";s:297:"{$recipientName}<br />
+<br />
+Sie haben ein Benutzer/innenkonto bei {$siteTitle} angelegt, aber bevor Sie es benutzen können, müssen Sie Ihre E-Mail-Adresse bestätigen. Dazu folgen Sie bitte einfach dem folgenden Link:<br />
+<br />
+{$activateUrl}<br />
+<br />
+Vielen Dank<br />
+{$siteSignature}";s:31:"emails.reviewerRegister.subject";s:48:"Registrierung als Benutzer/in bei {$contextName}";s:28:"emails.reviewerRegister.body";s:911:"Angesichts Ihrer Erfahrung haben wir uns erlaubt, Ihren Namen der Gutachter/innendatenbank von {$contextName} hinzuzufügen. Dies verpflichtet Sie in keiner Weise, ermöglicht uns aber, Sie um mögliche Gutachten für eine Einreichung zu bitten. Wenn Sie zu einem Gutachten eingeladen werden, werden Sie Titel und Abstract des Beitrags sehen können und werden stets selber entscheiden können, ob Sie der Einladung folgen oder nicht. Sie können zu jedem Zeitpunkt Ihren Namen von der Gutachter/innenliste entfernen lassen.<br />
+<br />
+Wir senden Ihnen einen Benutzer/innennamen und ein Passwort, die sie in allen Schritten der Zusammenarbeit mit dem Verlag über dessen Website benötigen. Vielleicht möchten Sie z.B. Ihr Profil inkl. Ihrer Begutachtungsinteressen aktualisieren.<br />
+<br />
+Benutzer/innenname: {$recipientUsername}<br />
+Passwort: {$password}<br />
+<br />
+Vielen Dank! <br />
+{$signature}";s:27:"emails.editorAssign.subject";s:79:"Sie wurden als Redakteur/in von einer Einreichung bei {$contextName} zugewiesen";s:24:"emails.editorAssign.body";s:696:"<p>Guten Tag {$recipientName},</p><p> der folgende Beitrag wurde Ihnen zur Durchführung des redaktionellen Prozesses zugewiesen.</p><p><a href="{$submissionUrl}">{$submissionTitle}</a><br />{$authors}</p><p><b>Abstract</b></p>{$submissionAbstract}<p> Wenn Sie den Beitrag für {$contextName} relevant halten, leiten Sie bitte die Begutachtungsphase ein, indem Sie "Zur internen Begutachtung senden" klicken und anschließend durch Klicken von "Gutachter/in hinzufügen" eine/n Gutachter/in zuweisen.</p><p> Wenn hingegen die Einreichung für diesen Verlag ungeeignet ist, wählen Sie bitte "Beitrag ablehnen".</p><p> Vielen Dank im Voraus.</p><p> Mit freundlichen Grüßen</p>{$contextSignature}";s:28:"emails.reviewRequest.subject";s:42:"Anfrage zur Begutachtung eines Manuskripts";s:25:"emails.reviewRequest.body";s:1109:"<p>Guten Tag {$recipientName},</p><p>Ich glaube, dass Sie ein/e hervorragende/r Gutachter/in für eine Einreichung bei {$contextName} sein könnten. Titel und Abstract der Einreichung finden Sie unterhalb. Ich hoffe, dass Sie diese wichtige Aufgabe für uns übernehmen könnten.</p><p>Wenn Sie in der Lage sind, diese Einreichung zu begutachten, ist Ihre Begutachtung bis zum {$reviewDueDate} fällig. Sie können die Einreichung einsehen, Begutachtungsdateien hochladen und Ihre Begutachtung einreichen, indem Sie sich auf der Website von {$contextName} anmelden und den Schritten unter dem unten stehenden Link folgen. </p><p><a href="{$reviewAssignmentUrl}">{$submissionTitle}</a></p><p><b>Abstract</b></p>{$submissionAbstract}<p>Bitte <a href="{$reviewAssignmentUrl}">nehmen Sie das Gutachten an oder lehnen es ab</a> bis zum <b>{$responseDueDate}</b>. </p><p>Gerne stehe ich Ihnen zur Verfügung, wenn Sie Fragen zur Einreichung oder zum Begutachtungsverfahren haben.</p><p>Danke, dass Sie diesen Anfrage berücksichtigen. Ihre Hilfe wird sehr geschätzt.</p><p>Mit freundlichen Grüßen</p>{$signature}";s:38:"emails.reviewRequestSubsequent.subject";s:58:"Anfrage zur Begutachtung einer überarbeiteten Einreichung";s:35:"emails.reviewRequestSubsequent.body";s:1164:"<p>Guten Tag {$recipientName},</p><p>Danke für Ihr Gutachten zu <a href="{$reviewAssignmentUrl}">{$submissionTitle}</a>. Die Autor/innen haben das Feedback der Gutachter/innen berücksichtigt und nun eine überarbeitete Version ihrer Arbeit eingereicht. Ich schreibe Ihnen, um Sie zu fragen, ob Sie eine zweite Begutachtungsrunde für diese Einreichung durchführen würden.</p><p>Wenn Sie in der Lage sind, diese Einreichung zu begutachten, ist Ihre Begutachtung bis {$reviewDueDate} fällig. Sie können <a href="{$reviewAssignmentUrl}">den Begutachtungsschritten folgen</a>, um die Einreichung anzusehen, Begutachtungsdateien hochzuladen und Ihre Begutachtungskommentare einzureichen. <p><p><a href="{$reviewAssignmentUrl}">{$submissionTitle}</a></p><p><b>Abstract</b></p>{$submissionAbstract}<p>Bitte <a href="{$reviewAssignmentUrl}">nehmen Sie das Gutachten an oder lehnen es ab</a> bis zum <b>{$responseDueDate}</b>. </p><p>Bei Fragen zur Einreichung oder zum Begutachtungsverfahren können Sie sich gerne an mich wenden.</p><p>Danke, dass Sie diesen Anfrage berücksichtigen. Ihre Hilfe wird sehr geschätzt.</p><p>Mit freundlichen Grüßen</p>{$signature}";s:40:"emails.reviewResponseOverdueAuto.subject";s:42:"Anfrage zur Begutachtung eines Manuskripts";s:37:"emails.reviewResponseOverdueAuto.body";s:929:"Guten Tag {$recipientName},<br />
+dies ist eine freundliche Erinnerung an unsere Bitte an Sie, den Beitrag &quot;{$submissionTitle},&quot; für {$contextName} zu begutachten. Wir hatten auf Ihre Antwort bis zum {$responseDueDate} gehofft. Diese E-Mail wurde automatisch erzeugt und mit Verstreichen dieses Datums verschickt.
+<br />
+{$messageToReviewer}<br />
+<br />
+Bitte melden Sie sich bei der Webseite der Zeitschrift an, um uns mitzuteilen, ob Sie die Begutachtung übernehmen werden. Über die Webseite können Sie auch auf den Beitrag zugreifen und Ihr Gutachten sowie Ihre Empfehlung hinzufügen.<br />
+<br />
+Wir benötigen das Gutachten bis zum {$reviewDueDate}.<br />
+<br />
+URL des Beitrags {$reviewAssignmentUrl}<br />
+<br />
+Benutzer/inkennung: {$recipientUsername}<br />
+<br />
+Vielen Dank, dass Sie unsere Anfrage in Betracht ziehen. <br />
+<br />
+<br />
+Mit freundlichen Grüßen <br />
+{$contextSignature}<br />
+";s:27:"emails.reviewCancel.subject";s:39:"Anfrage zur Begutachtung zurückgezogen";s:24:"emails.reviewCancel.body";s:412:"{$recipientName}:<br />
+<br />
+Wir haben uns entschieden, unsere Anfrage nach einem Gutachten für den Beitrag &quot;{$submissionTitle},&quot; für {$contextName} zurückzuziehen. Verzeihen Sie bitte die Ihnen dadurch evtl. entstandenen Unannehmlichkeiten. Wir hoffen, dass wir weiterhin auf Ihre Hilfe als Gutachter/in zählen können.<br />
+<br />
+Falls Sie Fragen haben, können Sie sich gerne an mich wenden.";s:27:"emails.reviewReinstate.body";s:586:"<p>Guten Tag {$recipientName},</p><p> wir haben vor Kurzem unsere Anfrage nach einem Gutachten für {$submissionTitle} in {$contextName} zurückgezogen. Wir haben uns umentschieden und möchten unsere Anfrage nun erneuern.</p><p>Wir hoffen, dass Sie uns im Begutachtungsprozess unterstützen können, indem Sie sich unter <a href="{$reviewAssignmentUrl}">bei dem Verlag einloggen</a>, um die Einreichung anzusehen und Ihr Gutachten inkl. zugehöriger Dateien hochzuladen.</p><p>Wenn Sie Fragen haben, können Sie sich gern an mich wenden.</p><p>Mit freundlichen Grüßen</p>{$signature}";s:28:"emails.reviewDecline.subject";s:32:"Nicht in der Lage zu begutachten";s:25:"emails.reviewDecline.body";s:297:"Sehr geehrte Redaktion,<br />
+<br />
+leider kann ich gegenwärtig die Begutachtung des Beitrags " &quot;{$submissionTitle},&quot; " für {$contextName} nicht übernehmen. Ich danke für Ihr Vertrauen. Bei anderer Gelegenheit können Sie sich gerne wieder an mich wenden.<br />
+<br />
+{$senderName}";s:27:"emails.reviewRemind.subject";s:51:"Eine Erinnerung, Ihr Gutachten bitte abzuschließen";s:24:"emails.reviewRemind.body";s:760:"<p>Guten Tag {$recipientName},</p><p>nur eine freundliche Erinnerung an unsere Bitte um Ihre Begutachtung der Einreichung "{$submissionTitle}" für {$contextName}. Wir haben erwartet, dass wir diese Begutachtung bis zum {$reviewDueDate} erhalten, und würden uns freuen, sie zu bekommen, sobald Sie in der Lage sind, sie vorzubereiten.</p><p>Sie können sich <a href="{$reviewAssignmentUrl}">hier anmelden</a> und den Begutachtungsschritten folgen, um die Einreichung zu sehen, Begutachtungsdateien hochzuladen und Ihre Begutachtungskommentare einzureichen.</p><p>Wenn Sie eine Verlängerung der Frist benötigen, kontaktieren Sie mich bitte. Ich freue mich darauf, von Ihnen zu hören.</p><p>Vielen Dank im Voraus und mit freundlichen Grüßen</p>{$signature}";s:28:"emails.reviewRemindAuto.body";s:778:"<p>Guten Tag {$recipientName}</p><p>Diese E-Mail ist eine automatische Erinnerung von {$contextName} in Bezug auf unsere Bitte um Ihre Begutachtung der Einreichung "{$submissionTitle}"</p><p>Wir haben Ihr Gutachten bis zum {$reviewDueDate} erwartet und würden uns freuen, es zu erhalten, sobald Sie es vorbereiten können. </p><p>Bitte <a href="{$reviewAssignmentUrl}">melden Sie sich hier an</a> und folgen Sie den Begutachtungsschritten, um die Einreichung einzusehen, die Begutachtungsdateien hochzuladen und Ihre Begutachtungskommentare abzugeben.</p><p>Wenn Sie eine Verlängerung der Frist benötigen, setzen Sie sich bitte mit mir in Verbindung. Ich freue mich darauf, von Ihnen zu hören.</p><p>Vielen Dank im Voraus und mit freundlichen Grüßen</p>{$contextSignature}";s:35:"emails.editorDecisionAccept.subject";s:52:"Ihre Einreichung wurde bei {$contextName} angenommen";s:32:"emails.editorDecisionAccept.body";s:1082:"<p>Guten Tag {$recipientName},</p><p>ich freue mich, Ihnen mitteilen zu können, dass wir uns zur Annahme Ihrer Einreichung ohne weitere Überarbeitung entschieden haben. Nach einer sorgsamen Begutachtung hat Ihr Beitrag unsere Erwartungen erfüllt oder sogar übertroffen. Wir freuen uns daher darauf, Ihre Arbeit in {$contextName} zu veröffentlichen und danken Ihnen, unseren Verlag als Erscheinungsort gewählt zu haben.</p><p>Ihr Beitrag wird bald auf der Verlagsseite von Y{$contextName} veröffentlicht werden, worauf Sie gerne in Ihrer Publikationsliste hinweisen können. In Anbetracht der harten Arbeit, die in jeden erfolgreichen Beitrag einfließt, möchten wir Ihnen ausdrücklich dazu gratulieren, dass sie diesen Grad erreicht hat.</p><p>Im nächsten Schritt geht Ihr Beitrag ins Lektorat und in den Satz.</p><p>Sie werden in Kürze nähergehende Informationen erhalten.</p><p>Sollten Sie bis dahin Fragen haben, können Sie mich jederzeit über das <a href="{$authorSubmissionUrl}">Einreichungsdashboard</a> erreichen.</p><p>Mit freundlichen Grüßen</p>{$signature}";s:43:"emails.editorDecisionSendToInternal.subject";s:58:"Ihre Einreichung wurde zur internen Begutachtung geschickt";s:40:"emails.editorDecisionSendToInternal.body";s:797:"<p>Guten Tag {$recipientName},</p><p>ich freue mich, Ihnen mitteilen zu dürfen, dass die Redaktion Ihre Einreichung {$submissionTitle} geprüft und entschieden hat, sie in die interne Begutachtung zu geben. Wir werden Sie über die Rückmeldungen der Gutachter/innen und die nächsten Schritte informieren.</p><p>Bitte beachten Sie, dass dies noch keine Zusage zur Veröffentlichung darstellt. Wir werden die Empfehlung der Gutachter/innen abwarten, bevor wir entscheiden, ob wir die Einreichung publizieren werden. Unter Umständen werden Sie gebeten werden, Änderungen vorzunehmen und auf die Kommentare der Gutachter/innen zu antworten, bevor die finale Entscheidung getroffen wird.</p><p>Bei Fragen stehe ich Ihnen gerne über das Einreichungsdashboard zur Verfügung.</p><p>{$signature}</p>";s:39:"emails.editorDecisionSkipReview.subject";s:48:"Ihre Einreichung wurde in das Lektorat geschickt";s:36:"emails.editorDecisionSkipReview.body";s:1137:"<p>Guten Tag {$recipientName},</p>
+<p>ich freue mich, Ihnen mitteilen zu können, dass wir uns zur Annahme Ihrer Einreichung ohne weitere Begutachtung entschieden haben. Ihre Einreichung {$submissionTitle} hat unsere Erwartungen erfüllt und benötigt diesen daher Arbeitsschritt nicht. Wir freuen uns darauf, Ihre Einreichung in {$contextName} veröffentlichen zu dürfen und danken Ihnen, unseren Verlag als Erscheinungsort gewählt zu haben.</p>
+<p>Ihr Beitrag wird bald auf der Verlagsseite für {$contextName} veröffentlicht werden und wir laden Sie dazu ein, den Titel in Ihre Publikationsliste aufzunehmen. Wir sind uns der harten Arbeit, die in jede erfolgreiche Einreichung einfließt, bewusst und möchten Sie an dieser Stelle zu Ihrem Ergebnis beglückwünschen.</p>
+<p>Ihr Beitrag wird nun lektoriert und formatiert werden, um ihn für die Publikation vorzubereiten.</p>
+<p>Sie werden in Kürze weitere Anweisungen erhalten.</p>
+<p>Sollten Sie in der Zwischenzeit Fragen haben, erreichen Sie mich über das <a href="{$authorSubmissionUrl}">Einreichungsdashboard</a>.</p>
+<p>Mit freundlichen Grüßen</p>
+<p>{$signature}</p>
+";s:28:"emails.layoutRequest.subject";s:84:"Die Einreichung {$submissionId} ist bereit für die Produktion bei {$contextAcronym}";s:25:"emails.layoutRequest.body";s:838:"<p>Guten Tag {$recipientName},</p><p>eine neue Einreichung steht für die Layout-Bearbeitung bereit:</p><p><a href="{$submissionUrl}">{$submissionId} - {$submissionTitle}</a><br />{$contextName}</p><ol><li>Klicken Sie auf die obige Einreichungs-URL.</li><li>Laden Sie die produktionsfertigen Dateien herunter und verwenden Sie sie, um die Druckfahnen gemäß den Standards von {$contextName} zu erstellen. </li><li>Laden Sie die Druckfahnen in den Publikationsbereich der Einreichung hoch.</li><li>Benutzen Sie die Produktionsdiskussionen, um der Redaktion mitzuteilen, dass die Druckfahnen fertig sind.</li></ol><p>Wenn Sie diese Arbeit zu diesem Zeitpunkt noch nicht erledigen können oder Fragen haben, wenden Sie sich bitte an mich. Vielen Dank für Ihren Beitrag zu dieser Zeitschrift.</p><p>Mit freundlichen Grüßen</p>{$signature}";s:29:"emails.layoutComplete.subject";s:19:"Fahnen vollständig";s:26:"emails.layoutComplete.body";s:346:"<p>Guten Tag {$recipientName},</p><p>die Druckfahnen für die folgende Einreichung wurden nun vorbereitet und sind bereit für die endgültige Überprüfung.</p><p><a href="{$submissionUrl}">{$submissionTitle}</a><br />{$contextName}</p><p>Wenn Sie Fragen haben, kontaktieren Sie mich bitte.</p><p>Mit freundlichen Grüßen</p><p>{$signature}</p>";s:27:"emails.indexRequest.subject";s:15:"Index anfordern";s:24:"emails.indexRequest.body";s:770:"{$recipientName}:<br />
+<br />
+Die Einreichung &quot;{$submissionTitle}&quot; in {$contextName} benötigt nun Indexe, die durch die nächsten Schritte kreiert werden können.<br />
+1. Klicken Sie unterhalb auf die Einreichungs-URL.<br />
+2. Melden Sie sich an und benutzen Sie die korrigierten Dateien, um Druckfahnen im Rahmen der Standards von {$contextName} zu kreieren.<br />
+3. Schicken Sie die ERLEDIGT E-Mail an die Redaktion.<br />
+<br />
+{$contextName} URL: {$contextUrl}<br />
+Einreichungs-URL: {$submissionUrl}<br />
+Benutzer/innenname: {$recipientUsername}<br />
+<br />Wenn Sie derzeit nicht dazu in der Lage sind, diese Aufgabe zu übernehmen oder sonstige Fragen haben, kontaktieren Sie mich bitte. Vielen Dank für Ihren Beitrag.<br />
+<br />
+{$signature}";s:28:"emails.indexComplete.subject";s:24:"Indexfahnen vollständig";s:25:"emails.indexComplete.body";s:261:"{$recipientName}:<br />
+<br />
+Indexe wurden nun für das Manuskript, &quot;{$submissionTitle},&quot; in {$contextName} erstellt und sind für das Korrekturlesen bereit.<br />
+<br />
+Bitte kontaktieren Sie mich, wenn Sie Fragen haben.<br />
+<br />
+{$senderName}";s:24:"emails.emailLink.subject";s:40:"Möglicherweise interessantes Manuskript";s:21:"emails.emailLink.body";s:246:"Ich dachte, Sie würden sich vielleicht für den Beitrag „&quot;{$submissionTitle}&quot;“ von {$authors}, veröffentlicht in Band {$volume}, Nummer {$number} ({$year}) von {$contextName} unter „&quot;{$submissionUrl}&quot;“ interessieren.";s:28:"emails.emailLink.description";s:291:"Diese E-Mail-Vorlage bietet registrierten Leser/innen die Möglichkeit, Informationen über eine Monographie an eine interessierte Person zu senden. Sie ist über die Reading Tools verfügbar und muss von dem/der Verlagsmanager/in auf der Verwaltungsseite der Reading Tools aktiviert werden.";s:31:"emails.notifySubmission.subject";s:39:"Benachrichtigung über eine Einreichung";s:28:"emails.notifySubmission.body";s:153:"Sie haben eine neue Nachricht von {$sender} bezüglich &quot;{$submissionTitle}&quot; ({$monographDetailsUrl}):<br />
+<br />
+		{$message}<br />
+<br />
+		";s:35:"emails.notifySubmission.description";s:118:"Eine Benachrichtigung eines/einer Benutzer/in, die von einem Modal des Einreichungsinformationszentrums gesendet wird.";s:25:"emails.notifyFile.subject";s:45:"Benachrichtigung über eine Einreichungsdatei";s:22:"emails.notifyFile.body";s:189:"Sie haben eine neue Benachrichtigung von {$sender} zu der Datei &quot;{$fileName}&quot; in &quot;{$submissionTitle}&quot; ({$monographDetailsUrl}):<br />
+<br />
+		{$message}<br />
+<br />
+		";s:29:"emails.notifyFile.description";s:111:"Eine Benachrichtigung von einem/einer Benutzer/in, die von einem modalen Dateiinformationszentrum gesendet wird";s:43:"emails.statisticsReportNotification.subject";s:49:"Redaktionelle Aktivitäten für {$month}, {$year}";s:40:"emails.statisticsReportNotification.body";s:793:"
+Guten Tag {$recipientName}, <br />
+<br />
+der Bericht zu Ihrem Verlag für {$month}, {$year} ist nun verfügbar. Die Hauptstatistiken für diesen Monat finden Sie im Folgenden. <br />
+<ul>
+<li> Neue Einreichungen in diesem Monat: {$newSubmissions}</li>
+<li>Abgelehnte Einreichungen in diesem Monat: {$declinedSubmissions}</li>
+<li>Angenommene Einreichungen in diesem Monat: {$acceptedSubmissions}</li>
+<li>Gesamtzahl der Einreichungen im System: {$totalSubmissions}</li>
+</ul>
+Detailliertere Daten finden Sie beim Verlag unter <a href="{$editorialStatsLink}">Redaktionelle Trends</a> und <a href="{$publicationStatsLink}">Veröffentlichungsstatistik</a>. Eine Kopie des Gesamtberichtes der redaktionellen Trends ist beigefügt.<br />
+<br />
+Mit freundlichen Grüßen<br />
+{$contextSignature}";s:27:"emails.announcement.subject";s:20:"{$announcementTitle}";s:24:"emails.announcement.body";s:174:"<b>{$announcementTitle}</b><br />
+<br />
+{$announcementSummary}<br />
+<br />
+Besuchen Sie die Webseite, um die <a href="{$announcementUrl}">gesamte Ankündigung</a> zu lesen.";s:35:"emails.revisedVersionNotify.subject";s:34:"Überarbeitete Version hochgeladen";s:30:"emails.reviewReinstate.subject";s:68:"Können Sie weiterhin einen Beitrag für {$contextName} begutachten?";s:32:"emails.revisedVersionNotify.body";s:577:"<p>Guten Tag {$recipientName},</p><p> der/die Autor/in hat eine überarbeitete Version der Einreichung <b>{$authorsShort} — {$submissionTitle}</b> hochgeladen.<p> Als zuständige/r Redakteur/in möchten wir Sie bitten, sich einzuloggen, <a href="{$submissionUrl}">die Überarbeitung anzusehen</a> und eine Entscheidung zu treffen, ob die Einreichung für den weiteren Begutachtungsprozess angenommen oder abgelehnt werden sollte oder weiterer Überarbeitung bedarf.</p><br><br>—<br>Diese Nachricht wurde automatisch versendet von <a href="{$contextUrl}">{$contextName}</a>.";s:30:"emails.editorAssignReview.body";s:558:"<p>Guten Tag {$recipientName},</p><p>die folgende Einreichung wurde Ihnen zur Betreuung während des Begutachtungsprozesses zugewiesen:</p><p><a href="{$submissionUrl}">{$submissionTitle}</a><br />{$authors}</p><p><b>Abstract</b></p>{$submissionAbstract}<p>Bitte loggen Sie sich ein um <a href="{$submissionUrl}">die Einreichung zu sehen</a> und eine/n geeignete/n Gutachter/in zuzuweisen. Sie können eine/n Gutachter/in zuweisen, indem Sie auf "Gutachter/in hinzufügen" klicken.</p><p>Vielen Dank im Voraus.</p><p>Mit freundlichen Grüßen</p>{$signature}";s:34:"emails.editorAssignProduction.body";s:542:"<p>Guten Tag {$recipientName},</p><p>die folgende Einreichung wurde Ihnen zur Betreuung während der Produktionsphase zugewiesen:</p><p><a href="{$submissionUrl}">{$submissionTitle}</a><br />{$authors}</p><p><b>Abstract</b></p>{$submissionAbstract}<p>Bitte loggen Sie sich ein um <a href="{$submissionUrl}">die Einreichung anzusehen</a>. Sobald produktionsreife Dateien vorliegen, laden Sie sie bitte in der Rubrik <strong> Produktionsfertige Dateien</strong> hoch.</p><p>Vielen Dank im Voraus.</p><p>Mit freundlichen Grüßen</p>{$signature}";}}}

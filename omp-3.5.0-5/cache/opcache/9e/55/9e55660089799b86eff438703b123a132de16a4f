@@ -1,0 +1,101 @@
+1825506994a:3:{s:6:"domain";N;s:12:"plural-forms";s:26:"nplurals=2; plural=n != 1;";s:8:"messages";a:1:{s:0:"";a:20:{s:35:"emails.passwordResetConfirm.subject";s:47:"Confirmación de restablecemento do contrasinal";s:32:"emails.passwordResetConfirm.body";s:368:"Recibimos unha solicitude para restablecer o seu contrasinal no sitio web de {$siteTitle}.<br />
+<br />
+Se non enviou esta solicitude, ignore este correo electrónico e o seu contrasinal non se cambiará. Se desexa restablecer o seu contrasinal, faga clic no seguinte URL.<br />
+<br />
+Restablecer o meu contrasinal: {$passwordResetUrl}<br />
+<br />
+{$siteContactName}";s:27:"emails.userRegister.subject";s:21:"Rexistro na editorial";s:24:"emails.userRegister.body";s:454:"{$recipientName}<br />
+<br />
+Rexistrouse como usuario/a con {$contextName}. Incluímos o seu nome de usuario e contrasinal neste correo electrónico, que son necesarios para todo o traballo con esta editorial a través do seu sitio web. En calquera momento, pode solicitar que se elimine da lista de usuarios contactando comigo.<br />
+<br />
+Nome de usuario: {$recipientUsername} <br />
+Contrasinal: {$password} <br />
+<br />
+Grazas, <br />
+{$signature}";s:31:"emails.reviewerRegister.subject";s:41:"Rexistro como revisor/a en {$contextName}";s:28:"emails.reviewerRegister.body";s:905:"Á vista da túa experiencia, tomámonos a liberdade de rexistrar o teu nome na base de datos de revisores para {$contextName}. Isto non implica ningun compromiso pola súa parte, senón que simplemente nos permite achegarnos cunha presentación para eventualmente revisala. Ao ser convidado a revisar, terá a oportunidade de ver o título e resumo do traballo en cuestión e sempre estará en condicións de aceptar ou rexeitar a invitación. Podes solicitar en calquera momento que se elimine o teu nome desta lista de revisores.<br />
+<br />
+Proporcionámoslle un nome de usuario e un contrasinal, que se usan en todas as interaccións coa publicación a través do seu sitio web. Pode que desexe, por exemplo, actualizar o seu perfil, incluídos os seus intereses de revisión.<br />
+<br />
+Nome de usuario: {$recipientUsername} <br />
+Contrasinal: {$password}<br />
+<br />
+Grazas,<br />
+{$signature}";s:27:"emails.editorAssign.subject";s:16:"Tarefa editorial";s:24:"emails.editorAssign.body";s:277:"{$recipientName}:<br />
+<br />
+O envío, &quot; {$submissionTitle}, &quot; a {$contextName} asignóuselle como Editor para levar a cabo o proceso editorial completo.<br />
+<br />
+URL do envío: {$submissionUrl} <br />
+Nome de usuario: {$recipientUsername} <br />
+<br />
+Grazas,";s:28:"emails.reviewRequest.subject";s:37:"Solicitude de revisión do manuscrito";s:25:"emails.reviewRequest.body";s:553:"Estimado {$recipientName}, <br />
+<br />
+{$messageToReviewer} <br />
+<br />
+Inicie sesión no sitio web da publicación antes do {$responseDueDate} para indicar se realizará ou non a revisión, así como para acceder ó envío e rexistrar a súa revisión e recomendación. <br />
+<br />
+Prazo de envío da revisión {$reviewDueDate}.<br />
+<br />
+URL do envío: {$reviewAssignmentUrl} <br />
+<br />
+Nome de usuario: {$recipientUsername} <br />
+<br />
+Grazas por considerar esta solicitude. <br />
+<br />
+<br />
+Atentamente, <br />
+{$signature} <br />
+";s:40:"emails.reviewResponseOverdueAuto.subject";s:37:"Solicitude de revisión do manuscrito";s:37:"emails.reviewResponseOverdueAuto.body";s:800:"Estimado {$recipientName},<br />
+Só un recordatorio da nosa solicitude de revisión do envío, &quot;{$submissionTitle}&quot; para {$contextName}. Esperabamos ter a túa resposta antes do {$responseDueDate}, e este correo electrónico xerouse e enviouse automaticamente co paso desa data.
+<br />
+{$messageToReviewer} <br />
+<br />
+Inicie sesión no sitio web de publicación para indicar se realizará ou non a revisión, así como para acceder á presentación e rexistrar a súa revisión e recomendación.<br />
+<br />
+O prazo de envío da revisión é {$reviewDueDate}. <br />
+<br />
+URL do envío: {$reviewAssignmentUrl} <br />
+<br />
+Nome de usuario: {$recipientUsername} <br />
+<br />
+Grazas por considerar esta solicitude. <br />
+<br />
+<br />
+Atentamente, <br />
+{$contextSignature} <br />
+";s:27:"emails.reviewCancel.subject";s:33:"Solicitude de revisión cancelada";s:24:"emails.reviewCancel.body";s:368:"{$recipientName}: <br />
+<br />
+Neste momento decidimos cancelar a nosa solicitude para que revises o envío, &quot;{$submissionTitle}&quot; para {$contextName}. Desculpa as molestias que isto poida causarte e esperamos que poidamos chamarte para que poidas axudar noutro proceso de revisión no futuro. <br />
+<br />
+Se tes algunha dúbida, ponte en contacto con nos.";s:27:"emails.reviewReinstate.body";s:281:"{$recipientName}: <br />
+<br />
+Queremos restablecer a solicitude para que revises o envío, &quot;{$submissionTitle}&quot; para {$contextName}. Agardamos que poidas axudar no proceso de revisión desta publicación. <br />
+<br />
+Se tes algunha dúbida, ponte en contacto con nos.";s:28:"emails.reviewDecline.subject";s:28:"Non dispoñibel para revisar";s:25:"emails.reviewDecline.body";s:228:"{$recipientName}: <br />
+<br />
+Temo que neste momento non podo revisar o envío &quot;{$submissionTitle}&quot; para {$contextName}. Grazas por pensar en min e noutra ocasión non dubides en chamarme. <br />
+<br />
+{$senderName}";s:27:"emails.reviewRemind.subject";s:35:"Recordatorio de revisión do envío";s:24:"emails.reviewRemind.body";s:769:"{$recipientName}: <br />
+<br />
+Só un recordatorio da solicitude de revisión do envío &quot;{$submissionTitle}&quot; para {$contextName}. Agardabamos recibir esta revisión antes do {$reviewDueDate} e estaríamos encantados de recibila en canto poida preparala. <br />
+<br />
+Se non ten o seu nome de usuario e contrasinal para o sitio web, pode usar esta ligazón para restablecer o seu contrasinal (que logo se lle enviará por correo electrónico xunto co seu nome de usuario). {$passwordLostUrl} <br />
+<br />
+URL do envío: {$reviewAssignmentUrl} <br />
+<br />
+Nome de usuario: {$recipientUsername} <br />
+<br />
+Confirme a súa capacidade para completar esta contribución ao traballo da editorial. Ficamos a espera do seu contacto.. <br />
+<br />
+{$signature}";s:28:"emails.reviewRemindAuto.body";s:862:"{$recipientName}: <br />
+<br />
+Só un recordatorio da solicitude de revisión do envío &quot;{$submissionTitle}&quot; para {$contextName}. Agardabamos recibir esta revisión antes do {$reviewDueDate}, e este correo electrónico xerouse e enviouse automaticamente co paso desa data. Aínda estaremos encantados de recibilo en canto o teña preparado. <br />
+<br />
+Se non ten o seu nome de usuario e contrasinal para o sitio web, pode usar esta ligazón para restablecer o seu contrasinal (que logo se lle enviará por correo electrónico xunto co seu nome de usuario). {$passwordLostUrl} <br />
+<br />
+URL do envío: {$reviewAssignmentUrl} <br />
+<br />
+Nome de usuario: {$recipientUsername} <br />
+<br />
+Confirme a súa capacidade para completar esta contribución ao traballo da editorial. Ficamos a espera do seu contacto. <br />
+<br />
+{$contextSignature}";}}}

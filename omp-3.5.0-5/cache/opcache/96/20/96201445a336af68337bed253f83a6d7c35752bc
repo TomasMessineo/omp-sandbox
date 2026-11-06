@@ -1,0 +1,22 @@
+1825507645a:3:{s:6:"domain";N;s:12:"plural-forms";s:25:"nplurals=2; plural=n > 1;";s:8:"messages";a:1:{s:0:"";a:21:{s:38:"plugins.importexport.users.displayName";s:23:"Plugin Usuários em XML";s:38:"plugins.importexport.users.description";s:44:"Importar e exportar usuários no formato XML";s:35:"plugins.importexport.users.cliUsage";s:855:"Uso: {$scriptName} {$pluginName} [comando] ...
+Comandos:
+	import [xmlFileName] [press_path] [optional flags]
+	export [xmlFileName] [press_path]
+	export [xmlFileName] [press_path] [role_path1] [role_path2] ...
+
+Flags opcionais:
+	continue_on_error: Caso especificado, não interrompe a importação de usuários mesmo ocorrendo erro
+
+	send_notify: Caso especificado, enviar e-mails de notificação contendo login
+		e senha para usuários importados
+
+Examples:
+	Import users into myPress from myImportFile.xml, continuing on error:
+	{$scriptName} {$pluginName} import myImportFile.xml myPress continue_on_error
+
+	Export all users from myPress:
+	{$scriptName} {$pluginName} export myExportFile.xml myPress
+
+	Export all users registered as reviewers, along with their reviewer roles only:
+	{$scriptName} {$pluginName} export myExportFile.xml myPress reviewer
+";s:45:"plugins.importexport.users.import.importUsers";s:18:"Importar Usuários";s:46:"plugins.importexport.users.import.instructions";s:365:"Escolha um documento XML contendo as informações de usuários para importação nesta editora. Veja a ajuda do sistema para detalhes sobre o formato do documento.<br /><br />Caso o documento possua logins ou e-mails já cadastrados no sistema, os dados cadastrais não serão importados e quaisquer funções adicionais serão designadas aos usuários existentes.";s:42:"plugins.importexport.users.import.dataFile";s:28:"Arquivo de dados do Usuário";s:44:"plugins.importexport.users.import.sendNotify";s:92:"Enviar notificação via e-mail para cada cadastro importado, com login e senha do usuário.";s:49:"plugins.importexport.users.import.continueOnError";s:67:"Continuar a importação de outros cadastros caso ocorra uma falha.";s:51:"plugins.importexport.users.import.usersWereImported";s:66:"Os seguintes cadastros foram importados com sucesso para o sistema";s:48:"plugins.importexport.users.import.errorsOccurred";s:38:"Erros ocorridos durante a importação";s:46:"plugins.importexport.users.import.confirmUsers";s:52:"Deseja importar os usuários listados para o sistema";s:41:"plugins.importexport.users.import.warning";s:5:"Aviso";s:52:"plugins.importexport.users.import.encryptionMismatch";s:199:"Não é possível usar senhas criptografadas com {$importHash}; o sistema está configurado para utilizar {$ompHash}. Caso continue, será necessário recriar todas as senhas de usuários importados.";s:39:"plugins.importexport.users.unknownPress";s:42:"Caminho está inválido: "{$contextPath}".";s:45:"plugins.importexport.users.export.exportUsers";s:18:"Exportar Usuários";s:46:"plugins.importexport.users.export.exportByRole";s:18:"Exportar Por Papel";s:48:"plugins.importexport.users.export.exportAllUsers";s:14:"Exportar Todos";s:48:"plugins.importexport.users.export.errorsOccurred";s:38:"Error ocorridos durante a exportação";s:41:"plugins.importexport.users.importComplete";s:201:"A importação foi concluída com êxito. Usuários com nomes de usuários e endereços de e-mail que ainda não estão em uso foram importados, juntamente com os grupos de usuários que os acompanham.";s:34:"plugins.importexport.users.results";s:10:"Resultados";s:37:"plugins.importexport.users.uploadFile";s:58:"Faça o upload de um arquivo em "Importar" para continuar.";}}}

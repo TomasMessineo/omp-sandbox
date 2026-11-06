@@ -1,0 +1,131 @@
+1825506994a:3:{s:6:"domain";N;s:12:"plural-forms";N;s:8:"messages";a:1:{s:0:"";a:36:{s:35:"emails.passwordResetConfirm.subject";s:49:"Confirmation de réinitialisation du mot de passe";s:32:"emails.passwordResetConfirm.body";s:404:"Nous avons reçu une requête de réinitialisation de votre mot de passe pour le site Web {$siteTitle}.<br />
+<br />
+Si vous n'avez pas fait cette requête, veuillez ignorer ce courriel et votre mot de passe demeurera le même. Si vous souhaitez modifier votre mot de passe, cliquez sur l'adresse URL ci-dessous.<br />
+<br />
+Modifier mon mot de passe: {$passwordResetUrl}<br />
+<br />
+{$siteContactName}";s:27:"emails.userRegister.subject";s:24:"Inscription à la presse";s:24:"emails.userRegister.body";s:472:"{$recipientName}<br />
+<br />
+Vous êtes désormais inscrit à la presse {$contextName}. Ce courriel contient votre nom d'utilisateur et votre mot de passe, dont vous aurez besoin pour tous vos travaux au sein de la presse. Vous pouvez demander que l'on retire votre nom de la liste des utilisateurs en tout temps. Il suffit de me contacter.<br />
+<br />
+<br />
+Nom d'utilisateur: {$recipientUsername}<br />
+Mot de passe: {$password}<br />
+<br />
+Merci,<br />
+{$signature}";s:31:"emails.reviewerRegister.subject";s:64:"Inscription à titre d'évaluateur pour la presse {$contextName}";s:28:"emails.reviewerRegister.body";s:974:"En raison de votre expertise, nous avons ajouté votre nom à notre base de données d'évaluateurs pour la presse {$contextName}. Ceci ne vous oblige à rien, mais nous permet simplement de vous approcher si nous recevons une soumission que vous pourriez évaluer. Après avoir reçu une demande d'évaluation, vous aurez la possibilité de lire le titre et le résumé de l'article en question. Vous serez toujours libre d'accepter ou de refuser l'invitation. Vous pouvez demander que l'on retire votre nom de notre liste d'évaluateurs en tout temps.<br />
+<br />
+Voici votre nom d'utilisateur et votre mot de passe, dont vous aurez besoin dans tous vos échanges avec la presse à travers son site Web. Vous pourriez, par exemple, mettre votre profil à jour, y compris vos champs d'intérêt en ce qui concerne l'évaluation des articles.<br />
+<br />
+<br />
+Nom d'utilisateur: {$recipientUsername}<br />
+Mot de passe: {$password}<br />
+<br />
+Merci,<br />
+{$signature}";s:27:"emails.editorAssign.subject";s:18:"Travail éditorial";s:24:"emails.editorAssign.body";s:345:"{$recipientName}:<br />
+<br />
+La soumission &quot;{$submissionTitle}&quot; à la presse {$contextName} vous a été assignée. En tant que rédacteur en chef, vous devrez superviser le processus éditorial de cette soumission.<br />
+<br />
+URL de la soumission: {$submissionUrl}<br />
+Nom d'utilisateur: {$recipientUsername}<br />
+<br />
+Merci,";s:28:"emails.reviewRequest.subject";s:37:"Requête d'évaluation d'un manuscrit";s:25:"emails.reviewRequest.body";s:647:"Bonjour {$recipientName},<br />
+<br />
+{$messageToReviewer}<br />
+<br />
+Veuillez ouvrir une session sur le site Web de la presse d'ici le {$responseDueDate} pour indiquer si vous serez en mesure d'évaluer l'article ou non. Ceci vous permettra également d'accéder à la soumission, et de saisir votre évaluation et vos recommandations.<br />
+<br />
+<br />
+L'évaluation doit être terminée d'ici le {$reviewDueDate}.<br />
+<br />
+URL de la soumission: {$reviewAssignmentUrl}<br />
+<br />
+Nom d'utilisateur: {$recipientUsername}<br />
+<br />
+Merci de votre intérêt à évaluer des articles pour notre presse.<br />
+<br />
+{$signature}<br />
+";s:27:"emails.reviewCancel.subject";s:39:"Annulation de la requête d'évaluation";s:24:"emails.reviewCancel.body";s:440:"{$recipientName}:<br />
+<br />
+<br />
+Nous avons décidé d'annuler notre requête d'évaluation pour la soumission &quot;{$submissionTitle}&quot; de la presse {$contextName}. Nous vous prions de nous excuser pour tout inconvénient que cette décision pourrait occasionner et nous espérons que vous serez en mesure d'évaluer une soumission dans un avenir prochain.<br />
+<br />
+Si vous avez des questions, n'hésitez pas à me contacter.";s:28:"emails.reviewDecline.subject";s:20:"Ne peux pas évaluer";s:25:"emails.reviewDecline.body";s:264:"Éditeurs:<br />
+<br />
+Malheureusement, je ne pourrai pas évaluer &quot;{$submissionTitle}&quot; pour la presse {$contextName}. Merci de m'avoir invité à évaluer cet article et n'hésitez pas à me contacter dans un avenir prochain.<br />
+<br />
+{$senderName}";s:27:"emails.reviewRemind.subject";s:20:"Rappel d'évaluation";s:24:"emails.reviewRemind.body";s:969:"{$recipientName}:<br />
+<br />
+Nous vous remercions d'avoir accepté d'évaluer &quot;{$submissionTitle}&quot; pour la presse {$contextName}. Veuillez noter que cette évaluation doit nous parvenir avant le {$reviewDueDate}. Nous vous serions reconnaissants si vous pouviez nous faire parvenir votre évaluation dans les plus brefs délais.<br />
+<br />
+Si vous n'avez plus votre nom d'utilisateur et mot de passe pour le site Web, vous pouvez réinitialiser votre mot de passe en cliquant sur le lien suivant. Votre mot de passe et nom d'utilisateur vous seront envoyés par courriel. {$passwordLostUrl}<br />
+<br />
+URL de la soumission: {$reviewAssignmentUrl}<br />
+<br />
+Nom d'utilisateur: {$recipientUsername}<br />
+<br />
+Nous vous prions de confirmer si vous êtes encore disponible pour participer à cette étape cruciale de notre processus éditorial. Nous vous prions d'agréer l'expression de nos sentiments les plus distingués. <br />
+<br />
+{$signature}";s:28:"emails.reviewRemindAuto.body";s:1033:"{$recipientName}:<br />
+<br />
+Nous vous remercions d'avoir accepté d'évaluer &quot;{$submissionTitle}&quot; pour la presse {$contextName}. Veuillez noter que cette évaluation doit nous parvenir avant le {$reviewDueDate}. Ce courriel a été généré et envoyé automatiquement parce que vous avez dépassé la date d'échéance. Toutefois, nous vous serions reconnaissants si vous pouviez nous faire parvenir votre évaluation dans les plus brefs délais.<br />
+<br />
+Si vous n'avez plus votre nom d'utilisateur et mot de passe pour le site Web, vous pouvez réinitialiser votre mot de passe en cliquant sur le lien suivant. Votre mot de passe et nom d'utilisateur vous seront envoyés par courriel. {$passwordLostUrl}<br />
+<br />
+URL de la soumission: {$reviewAssignmentUrl}<br />
+<br />
+Nous vous prions de confirmer si vous êtes encore disponible pour participer à cette étape cruciale de notre processus éditorial. Veuillez agréer l'expression de nos sentiments les plus distingués. <br />
+<br />
+{$contextSignature}";s:35:"emails.editorDecisionAccept.subject";s:31:"Décision du rédacteur en chef";s:32:"emails.editorDecisionAccept.body";s:238:"{$authors}:<br />
+<br />
+Nous avons pris une décision concernant votre soumission à la presse {$contextName} intitulée &quot;{$submissionTitle}&quot;.<br />
+<br />
+Nous avons décidé de:<br />
+<br />
+URL du manuscrit: {$submissionUrl}";s:28:"emails.layoutRequest.subject";s:33:"Requête des épreuves en placard";s:25:"emails.layoutRequest.body";s:819:"{$recipientName}:<br />
+<br />
+Il faut maintenant préparer les épreuves en placard de la soumission &quot;{$submissionTitle}&quot; pour la presse {$contextName}. Pour ce faire, veuillez suivre les étapes suivantes:<br />
+<br />
+1. Cliquez sur le lien URL de la soumission ci-dessous.<br />
+2. Ouvrez une session sur la presse et utilisez le fichier Version de mise en page pour créer les épreuves en placard conformément aux normes de la presse.<br />
+3. Envoyez le courriel COMPLET au rédacteur en chef.<br />
+<br />
+{$contextName} URL: {$contextUrl}<br />
+URL de la soumission: {$submissionUrl}<br />
+Nom d'utilisateur: {$recipientUsername}<br />
+<br />
+Si vous ne pouvez pas faire ce travail en ce moment ou si vous avez des questions, n'hésitez pas à me contacter. Merci d'avoir contribué à cette presse.";s:29:"emails.layoutComplete.subject";s:33:"Épreuves en placard complétées";s:26:"emails.layoutComplete.body";s:276:"{$recipientName}:<br />
+<br />
+Les épreuves en placard du manuscrit &quot;{$submissionTitle}&quot; pour la presse {$contextName} ont été préparées et peuvent être révisées.<br />
+<br />
+Si vous avez questions, n'hésitez pas à me contacter.<br />
+<br />
+{$senderName}";s:27:"emails.indexRequest.subject";s:19:"Requête d'indexage";s:24:"emails.indexRequest.body";s:809:"{$recipientName}:<br />
+<br />
+La soumission &quot;{$submissionTitle}&quot; par la presse {$contextName} doit désormais être indexée. Veuillez suivre les étapes suivantes:<br />
+<br />
+1. Cliquez sur le lien URL de la soumission ci-dessous.<br />
+2. Ouvrez une session sur la presse et utilisez les fichiers d'épreuves de mise en page pour créer les épreuves en placard conformément aux normes de la presse.<br />
+3. Envoyez le courriel COMPLET au rédacteur en chef.<br />
+<br />
+{$contextName} URL: {$contextUrl}<br />
+URL de la soumission: {$submissionUrl}<br />
+Nom d'utilisateur: {$recipientUsername}<br />
+<br />
+Si vous ne pouvez pas faire ce travail en ce moment ou si vous avez des questions, n'hésitez pas à me contacter. Merci d'avoir contribué à cette presse.<br />
+<br />
+{$signature}";s:28:"emails.indexComplete.subject";s:44:"Indexage des épreuves en placard complété";s:25:"emails.indexComplete.body";s:257:"{$recipientName}:<br />
+<br />
+Les index du manuscrit &quot;{$submissionTitle}&quot; pour la presse {$contextName} sont prêts et peuvent être révisés.<br />
+<br />
+Si vous avez questions, n'hésitez pas à me contacter.<br />
+<br />
+{$signatureFullName}";s:24:"emails.emailLink.subject";s:35:"Manuscrit susceptible d'intéresser";s:21:"emails.emailLink.body";s:226:"Nous crayons que l'article intitulé &quot;{$submissionTitle}&quot; par {$authors} publié dans le Volume {$volume}, No {$number} ({$year}) de la presse {$contextName} au &quot;{$submissionUrl}&quot; pourrait vous intéresser.";s:28:"emails.emailLink.description";s:299:"Ce modèle de courriel permet à un lecteur inscrit d'envoyer des renseignements sur une monographie à une personne qui pourrait être intéressée. Il est disponible dans les Outils de lecture et peut être activé par le gestionnaire de la presse sur la page Administration des outils de lecture.";s:31:"emails.notifySubmission.subject";s:18:"Avis de soumission";s:28:"emails.notifySubmission.body";s:164:"Vous avez reçu un message de {$sender} concernant la monographie &quot;{$submissionTitle}&quot; ({$monographDetailsUrl}):<br />
+<br />
+		{$message}<br />
+<br />
+		";s:35:"emails.notifySubmission.description";s:87:"Avis envoyé par un usager à partir d'un centre de renseignements sur les soumissions.";s:25:"emails.notifyFile.subject";s:31:"Avis de soumission d'un fichier";s:22:"emails.notifyFile.body";s:183:"Vous avez un message de {$sender} concernant le fichier &quot;{$fileName}&quot; dans &quot;{$submissionTitle}&quot; ({$monographDetailsUrl}):<br />
+<br />
+		{$message}<br />
+<br />
+		";s:29:"emails.notifyFile.description";s:84:"Avis envoyé par un usager à partir d'un centre de renseignements sur les fichiers.";}}}

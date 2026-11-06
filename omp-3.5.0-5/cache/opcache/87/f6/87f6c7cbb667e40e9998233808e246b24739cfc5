@@ -1,0 +1,1 @@
+1825506994a:3:{s:6:"domain";N;s:12:"plural-forms";s:25:"nplurals=2; plural=n > 1;";s:8:"messages";a:1:{s:0:"";a:2:{s:39:"plugins.generic.pdfJsViewer.description";s:94:"Ce module fournit un support de rendu pour les fichiers PDF utilisant la bibliothèque PDF.js.";s:39:"plugins.generic.pdfJsViewer.displayName";s:34:"Plugin PDF.js l visionneuse de PDF";}}}

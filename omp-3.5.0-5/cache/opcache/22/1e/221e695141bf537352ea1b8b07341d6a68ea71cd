@@ -1,0 +1,1 @@
+1825506995a:3:{s:6:"domain";N;s:12:"plural-forms";s:43:"nplurals=2; plural=n==1 || n%10==1 ? 0 : 1;";s:8:"messages";a:1:{s:0:"";a:2:{s:45:"plugins.generic.htmlMonographFile.displayName";s:44:"HTML-монографска датотека";s:45:"plugins.generic.htmlMonographFile.description";s:144:"Овој приклучок обезбедува поддршка за рендерирање на HTML монографски датотеки.";}}}

@@ -65,8 +65,11 @@ class Version extends \PKP\core\DataObject
      *
      * @param string|Version $version the version to compare against
      */
-    public function compare(string|Version $version): int
+    public function compare(string|Version|null $version): int
     {
+        if ($version === null) {
+            return 1;
+        }
         if ($version instanceof Version) {
             return $this->compare($version->getVersionString());
         }

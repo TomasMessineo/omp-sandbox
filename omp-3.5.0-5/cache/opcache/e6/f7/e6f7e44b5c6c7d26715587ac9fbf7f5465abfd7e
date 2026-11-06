@@ -1,0 +1,180 @@
+1825506996a:3:{s:6:"domain";N;s:12:"plural-forms";s:84:"nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;";s:8:"messages";a:1:{s:0:"";a:51:{s:35:"emails.passwordResetConfirm.subject";s:33:"Potwierdzenie zresetowania hasła";s:32:"emails.passwordResetConfirm.body";s:330:"Otrzymaliśmy prośbę, aby zresetować Twoje hasło na {$siteTitle}stronie.<br />
+<br />
+Jeśli nie wysłałeś tej prośby, zignoruj tego maila, Twoje hasło nie zostanie zmienione. Jeśli chcesz zresetować hasło, kliknij na poniższy URL.<br />
+<br />
+Zresetuj moje hasło: {$passwordResetUrl}<br />
+<br />
+{$siteContactName}";s:27:"emails.userRegister.subject";s:11:"Rejestracja";s:24:"emails.userRegister.body";s:416:"{$recipientName}<br />
+<br />
+Zostałeś zarejestrowany jako użytkownik platformy {$contextName}. W tym mailu zawarliśmy Twój login i hasło, które są potrzebne do pracy na tej stronie. W dowolnym momencie, możesz poprosić o usunięcie z listy użytkowników poprzez skontaktowanie się ze mną.<br />
+<br />
+Login: {$recipientUsername}<br />
+Hasło: {$password}<br />
+<br />
+Z poważaniem,<br />
+{$signature}";s:34:"emails.userValidateContext.subject";s:22:"Potwierdź swoje konto";s:31:"emails.userValidateContext.body";s:286:"{$recipientName}<br />
+<br />
+utworzyłeś konto  {$contextName}, ale zanim będziesz mógł z niego korzystać, musisz potwierdzić swój adres email. Aby to zrobić kliknij link znajdujący się poniżej:<br />
+<br />
+{$activateUrl}<br />
+<br />
+Dziękujemy,<br />
+{$contextSignature}";s:31:"emails.userValidateSite.subject";s:22:"Potwierdź swoje konto";s:28:"emails.userValidateSite.body";s:271:"{$recipientName}<br />
+<br />
+Utworzyłeś konto {$siteTitle}, ale zanim zaczniesz z niego korzystać, musisz zatwierdzić swoje konto e-mail. Aby to zrobić, po prostu kliknij na poniższy link::<br />
+<br />
+{$activateUrl}<br />
+<br />
+Dziękuę,<br />
+{$siteSignature}";s:31:"emails.reviewerRegister.subject";s:50:"Zarejestruj się jako recenzent na  {$contextName}";s:28:"emails.reviewerRegister.body";s:897:"Mając na uwadze Twoje doświadczenie, zarejestrowaliśmy Twoje imię i nazwisko w bazie recenzentów dla {$contextName}. Nie jest to w żaden sposób zobowiązujące dla Ciebie, ale po prostu pozwala nam na skontaktowanie się z Tobą w sprawie zgłoszeń do recenzji. Po zaproszeniu do recenzji, będziesz miał możliwość przeczytania tytułu i abstraktu proponowanej rozprawy, przy czym zawsze możesz odmówić lub przyjąć zaproszenie. W dowolnym momencie możesz również poprosić o usunięcie Twojego imienia i nazwiska z listy recenzentów. <br />
+<br />
+Przekazujemy Ci login i hasło, które będą używane we wszelkich interakcjach z wydawnictwem poprzez tę stronę. Możesz chcieć np. zaktualizować swój profil, podając obszar swoich zainteresowań naukowych. <br />
+<br />
+Login:  {$recipientUsername}<br />
+Hasło: {$password}<br />
+<br />
+Dziękujemy,<br />
+{$signature}";s:27:"emails.editorAssign.subject";s:18:"Zadania redakcyjne";s:24:"emails.editorAssign.body";s:235:"{$recipientName}:<br />
+<br />
+Zgłoszenie, &quot;{$submissionTitle},&quot; do  {$contextName} zostało Ci zlecone do redakcji..<br />
+<br />
+URL zgłoszenia: {$submissionUrl}<br />
+Login: {$recipientUsername}<br />
+<br />
+Dziękujemy,";s:28:"emails.reviewRequest.subject";s:31:"Prośba o recenzję manuskryptu";s:25:"emails.reviewRequest.body";s:558:"Szanowny/Szanowna {$recipientName},<br />
+<br />
+{$messageToReviewer}<br />
+<br />
+Prosimy, zaloguj się na platformę wydawniczą  {$responseDueDate}, aby zasygnalizować, czy podejmuje się Pan/Pani recenzji, a także aby mieć dostęp do zgłoszenia oraz swoich recenzji i rekomendacji..<br />
+<br />
+Termin oddania recenzji: {$reviewDueDate}.<br />
+<br />
+URL złoszenia: {$reviewAssignmentUrl}<br />
+<br />
+Login:{$recipientUsername}<br />
+<br />
+Dziękujemy za rozpatrzenie naszej prośby, .<br />
+<br />
+<br />
+Z poważaniem,<br />
+{$signature}<br />
+";s:40:"emails.reviewResponseOverdueAuto.subject";s:29:"Prośba o recenzję rękopisu";s:37:"emails.reviewResponseOverdueAuto.body";s:817:"Szanowny/ Szanowna {$recipientName},<br />
+Uprzejmie przypominamy o naszej prośbie o recenzję zgłoszenia &quot;{$submissionTitle},&quot; dla {$contextName}. Mamy nadzieję otrzymać od Ciebie odpowiedź do {$responseDueDate}, ten email został wysłany automatycznie i zawiera zgodę na przekazywanie danych.
+<br />
+{$messageToReviewer}<br />
+<br />
+Proszę, zaloguj się na stronie wydawnictwa, aby zaznaczyć, czy podejmujesz się recenzji, a także, aby uzyskać dostęp do zgłoszenia oraz zarejestrować swoją recenzję i rekomendację.<br />
+<br />
+Termin recenzji {$reviewDueDate}.<br />
+<br />
+Adres URL zgłoszenia: {$reviewAssignmentUrl}<br />
+<br />
+Login: {$recipientUsername}<br />
+<br />
+Dziękujemy za rozpatrzenie naszej prośby.<br />
+<br />
+<br />
+Z poważaniem,<br />
+{$contextSignature}<br />
+";s:27:"emails.reviewCancel.subject";s:29:"Prośba o anulowanie recenzji";s:24:"emails.reviewCancel.body";s:391:"{$recipientName}:<br />
+<br />
+Zdecydowaliśmy o wycofaniu naszej prośby o recenzję tekstu,  &quot;{$submissionTitle},&quot; dla {$contextName}. Przepraszamy za niedogodności, jakie mogliśmy spowodować i mamy nadzieję, że w przyszłości będziemy mogli się kontaktować z prośbą o udział w redakcji innych tekstów. 
+<br />
+<br />
+W razie pytań, proszę skontaktuj się ze mną.";s:27:"emails.reviewReinstate.body";s:273:"{$recipientName}:<br />
+<br />
+Piszemy, aby ponowić prośbę o recenzję tekstu,  &quot;{$submissionTitle},&quot; dla  {$contextName}. Mamy nadzieję, że weźmiesz udział w procedurze recenzji dla tego pisma.<br />
+<br />
+W razie pytań, proszę, kontaktuj się ze mną.";s:28:"emails.reviewDecline.subject";s:21:"Niezdolny do recenzji";s:25:"emails.reviewDecline.body";s:250:"Redaktor (redaktorzy): :<br />
+<br />
+Obawiam się, że nie jestem w stanie w chwili obecnej zrecenzować zgłoszony tekst, &quot;{$submissionTitle},&quot; dla  {$contextName}. Dziękuję za wzięcie mnie pod uwagę, (...) <br />
+<br />
+{$senderName}";s:27:"emails.reviewRemind.subject";s:21:"Przypomnienie o (...)";s:24:"emails.reviewRemind.body";s:729:"{$recipientName}:<br />
+<br />
+Uprzejmie przypominamy o naszej prośbie o recenzję zgłoszenia &quot;{$submissionTitle},&quot; dla: {$contextName}. Mamy nadzieję otrzymać recenzję przed: {$reviewDueDate}, chociaż bylibyśmy usatysfakcjonowani, jeśli otrzymamy ją tak szybko, jak to możliwe. <br />
+<br />
+Jeśli nie posiadasz loginu lub hasła, użyj linku poniżej do resetu hasła (który zostanie wysłane razem z loginem). {$passwordLostUrl}<br />
+<br />
+Adres URL zgłoszenia: {$reviewAssignmentUrl}<br />
+<br />
+Login: {$recipientUsername}<br />
+<br />
+Prosimy, potwierdź możliwość wniesienia tego znaczącego wkładu w pracę wydawnictwa. Z niecierpliwością oczekuję na odpowiedź.<br />
+<br />
+{$signature}";s:28:"emails.reviewRemindAuto.body";s:841:"{$recipientName}:<br />
+<br />
+Przypomnienie o prośbie o recenzję tekstu,  &quot;{$submissionTitle},&quot; dla {$contextName}. Mamy nadzieję, aby otrzymać recenzję przed {$reviewDueDate}, ten mail został wysłany automatycznie w momencie upływu tego terminu. Mimo tego, chcielibyśmy otrzymać recenzję możliwie jak najszybciej. <br />
+<br />
+Jeśli nie posiadasz loginu lub hasła do strony internetowej wydawnictwa, użyj tego linku, aby zresetować hasło (które zostanie do Ciebie wysłane razem z loginem).  {$passwordLostUrl}<br />
+<br />
+URL zgłoszonego tekstu: {$reviewAssignmentUrl}<br />
+<br />
+Login:  {$recipientUsername}<br />
+<br />
+Prosimy, potwierdź swoją gotowość do wniesienia tego znaczącego wkładu do pracy naszego wydawnictwa. Z niecierpliwością czekam na odpowiedź. <br />
+<br />
+{$contextSignature}";s:35:"emails.editorDecisionAccept.subject";s:17:"Decyzja redaktora";s:32:"emails.editorDecisionAccept.body";s:203:"{$authors}:<br />
+<br />
+Podjęliśmy decyzję odnośnie Pańskiego zgłoszenia do {$contextName}, &quot;{$submissionTitle}&quot;.<br />
+<br />
+Nasza decyzja:<br />
+<br />
+URL rękopisu: {$submissionUrl}";s:43:"emails.editorDecisionSendToInternal.subject";s:62:"Twoje zgłoszenie zostało przesłane do recenzji wewnętrznej";s:40:"emails.editorDecisionSendToInternal.body";s:816:"<p>Szanowna Pani/Szanowny Panie{$recipientName},</p><p>mam przyjemność poinformować, że jeden z redaktorów przejrzał Pani/Pana zgłoszenie, {$submissionTitle}, i zdecydował się wysłać je do recenzji zewnętrznej. Otrzyma Pani/Pan od nas informację o opiniach recenzentów oraz informacje o kolejnych krokach.</p><p>Prosimy pamiętać, że wysłanie zgłoszenia do recenzji zewnętrznej nie gwarantuje, że zostanie ono opublikowane. Rozważymy zalecenia recenzentów przed podjęciem decyzji o przyjęciu zgłoszenia do publikacji. Może Pani/Pan zostać poproszona/y o wprowadzenie poprawek i ustosunkowanie się do uwag recenzentów przed podjęciem ostatecznej decyzji.</p><p>Jeśli ma Pani/Pan jakieś pytania, skontaktuj się z nami ze swojego zgłoszeniowego panelu roboczego.</p><p>{$signature}</p>";s:39:"emails.editorDecisionSkipReview.subject";s:46:"Twoje zgłoszenie zostało wysłane do korekty";s:36:"emails.editorDecisionSkipReview.body";s:1055:"Droga(i) {$recipientName},</p>
+<p>Z przyjemnością informuję, że zdecydowaliśmy się przyjąć Twoje zgłoszenie bez recenzji. Uznaliśmy, że Twoja praca, {$submissionTitle}, spełnia nasze oczekiwania, a my nie wymagamy, aby prace tego typu były poddawane recenzji. Jesteśmy podekscytowani możliwością opublikowania Twojego artykułu w {$contextName} i dziękujemy za wybranie naszego wydawnictwa jako miejsca publikacji.</p>
+<p>Twoje zgłoszenie zostanie wkrótce opublikowane na stronie wydawnictwa {$contextName} i możesz je dołączyć do swojej listy publikacji. Zdajemy sobie sprawę z ciężkiej pracy, która wkładana jest w każde udane zgłoszenie i chcemy Ci pogratulować wysiłków.</p>
+<p>Twoje zgłoszenie zostanie teraz poddane redakcji i formatowaniu, aby przygotować je do publikacji. </p>
+<p>Wkrótce otrzymasz dalsze instrukcje.</p>
+<p>W razie jakichkolwiek pytań proszę o kontakt ze mną ze strony <a href="{$authorSubmissionUrl}">panelu roboczego zgłoszenia</a>.</p>
+<p>Z wyrazami szacunku,</p>
+<p>{$signature}</p>,
+";s:28:"emails.layoutRequest.subject";s:19:"Prośba o szczotkę";s:25:"emails.layoutRequest.body";s:734:"</p>{$recipientName}, </p><p>Nowe zgłoszenie jest gotowe na redakcję techniczną:</p><p><a href="{$submissionUrl}">{$submissionId} {$submissionTitle}</a><br />{$contextName}</p><ol><li>1. Kliknij powyższy adres URL zgłoszenia.</li><li>2. Pobierz pliki gotowych produkcji i wykorzystaj je do stworzenia odbitki (galley) zgodnie ze standardami wydawnictwa.</li><li>3. Prześlij odbitki do sekcji Forma publikacji zgłoszenia.</li><li>4. Użyj Dyskusji w trakcie produkcji, aby powiadomić redaktora, że odbitki są gotowe.</li></ol><p>Jeśli nie możesz podjąć się tego zlecenia lub masz jakiekolwiek pytania, proszę, skontaktuj się ze mną. Dziękujemy, za Twój wkład w pracę wydawnictwa.</p><p>Pozdrawiam,</p>{$signature}";s:29:"emails.layoutComplete.subject";s:39:"Ukończono korektę układu graficznego";s:26:"emails.layoutComplete.body";s:244:"{$recipientName}:<br />
+<br />
+Szczotki zostały przygotowane dla manuskryptu, &quot;{$submissionTitle},&quot; dla {$contextName} i są gotowe do korekty.<br />
+<br />
+W razie pytań, proszę, skontaktuj się ze mną.<br />
+<br />
+{$senderName}";s:27:"emails.indexRequest.subject";s:16:"Prośba o indeks";s:24:"emails.indexRequest.body";s:724:"{$recipientName}:<br />
+<br />
+Zgłoszenie &quot;{$submissionTitle}&quot; do {$contextName} potrzebuje utworzenia indeksów wedle następujących kroków.<br />
+1. Kliknij poniższy adres URL zgłoszenia.<br />
+2. Zaloguj się do wydawnictwa i użyj pliku korekty, aby utworzyć korektę szpaltową zgodnie z wytycznymi tego wydawnictwa. <br />
+3. Wyślij email ukończenia do redaktora.<br />
+<br />
+{$contextName} URL: {$contextUrl}<br />
+Adres URL zgłoszenia: {$submissionUrl}<br />
+Login: {$recipientUsername}<br />
+<br />
+Jeśli nie jesteś w stanie podjąć się tego zadania lub masz jakiekolwiek pytania, proszę, skontaktuj się ze mną. Dziękujemy za Twój wkład w pracę wydawnictwa. <br />
+<br />
+{$signature}";s:28:"emails.indexComplete.subject";s:38:"Ukończono Indeks Szczotki Drukarskiej";s:25:"emails.indexComplete.body";s:234:"{$recipientName}:<br />
+<br />
+Indeksy do manuskryptu &quot;{$submissionTitle} dla  {$contextName} zostały przygotowane i są gotowe do korekty. <br />
+<br />
+W razie pytań skontaktuj się ze mną. <br />
+<br />
+{$signatureFullName}";s:24:"emails.emailLink.subject";s:44:"Manuskrypt, który może Cię zainteresować";s:21:"emails.emailLink.body";s:201:"Możesz być zainteresowany zapoznaniem się z  &quot;{$submissionTitle}&quot;  {$authors} opublikowanym w tomie:  {$volume}, numer {$number} ({$year}) z {$contextName} w: &quot;{$submissionUrl}&quot;.";s:28:"emails.emailLink.description";s:293:"Ten email dostarcza zarejestrowanemu czytelnikowi możliwość wysłania informacji o monografii do osoby, która może być nią zainteresowana. Jest dostępny przez Narzędzia Czytelnicze i musi być aktywowany przez menedżera wydawnictwa na stronie administrującej narzędzia czytelnicze.";s:31:"emails.notifySubmission.subject";s:34:"Powiadomienie o zgłoszeniu tekstu";s:28:"emails.notifySubmission.body";s:142:"Masz wiadomość od: {$sender} dotyczącą  &quot;{$submissionTitle}&quot; ({$monographDetailsUrl}):<br />
+<br />
+		{$message}<br />
+<br />
+		";s:35:"emails.notifySubmission.description";s:86:"Powiadomienie od użytkownika wysłane z modalnego centrum informacji o zgłoszeniach.";s:25:"emails.notifyFile.subject";s:33:"Powiadomienie o pliku zgłoszenia";s:22:"emails.notifyFile.body";s:173:"Masz wiadomość od {$sender} dotyczącą pliku  &quot;{$fileName}&quot; w &quot;{$submissionTitle}&quot; ({$monographDetailsUrl}):<br />
+<br />
+		{$message}<br />
+<br />
+		";s:29:"emails.notifyFile.description";s:77:"Powiadomienie od użytkownika wysłane z modalnego centrum informacji o pliku";s:43:"emails.statisticsReportNotification.subject";s:40:"Zadanie redakcyjne dla {$month}, {$year}";s:40:"emails.statisticsReportNotification.body";s:794:"
+{$recipientName}, <br />
+<br />
+Raport o sprawności wydawnictwa na {$month}, {$year} jest teraz dostępny. Poniżej znajdziesz Twoje najważniejsze statystyki dla tego miesiąca.<br />
+<ul>
+	<li>Nowe zgłoszenia w tym miesiącu: {$newSubmissions}</li>
+	<li>Odrzucone zgłoszenia w tym miesiącu: {$declinedSubmissions}</li>
+	<li>Zaakceptowane zgłoszenia w tym miesiącu: {$acceptedSubmissions}</li>
+	<li>Wszystkie zgłoszenia w systemie: {$totalSubmissions}</li>
+</ul>
+Zaloguj się do wydawnictwa po więcej szczegółów <a href="{$editorialStatsLink}">trendy redakcyjne</a> i <a href="{$publicationStatsLink}">statystyki opublikowanych artykułów </a>. Pełna kopia trendów redakcyjnych z tego miesiąca znajduje się w załączniku.<br />
+<br />
+Z poważaniem,<br />
+{$contextSignature}";s:27:"emails.announcement.subject";s:20:"{$announcementTitle}";s:24:"emails.announcement.body";s:171:"<b>{$announcementTitle}</b><br />
+<br />
+{$announcementSummary}<br />
+<br />
+Odwiedź naszą stronę, <a href="{$announcementUrl}">, aby przeczytać całe ogłoszenie</a>.";}}}

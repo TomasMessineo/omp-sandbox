@@ -1,0 +1,10 @@
+1825507645a:3:{s:6:"domain";N;s:12:"plural-forms";N;s:8:"messages";a:1:{s:0:"";a:15:{s:36:"plugins.importexport.csv.displayName";s:35:"Tab Delimited Content Import Plugin";s:36:"plugins.importexport.csv.description";s:56:"Import submissions into presses from tab delimited data.";s:32:"plugins.importexport.csv.cliOnly";s:173:"
+		<p>This plugin currently supports command-line operation only. Execute...
+			<pre>php tools/importExport.php CSVImportExportPlugin</pre>
+			...for more information.</p>
+	";s:33:"plugins.importexport.csv.cliUsage";s:242:"Command-line tool for importing CSV data into OMP
+			Usage:
+			{$scriptName} [--dry-run] fileName.csv username
+			The --dry-run option can be used to test without making changes.
+			Specify the username you wish to assign the submissions to.
+";s:41:"plugins.importexport.csv.fileDoesNotExist";s:48:"The file "{$filename}" does not exist.  Exiting.";s:36:"plugins.importexport.csv.unknownUser";s:38:"Unknown User: "{$username}".  Exiting.";s:38:"plugins.importexport.csv.unknownLocale";s:39:"Unknown Locale: "{$locale}".  Skipping.";s:37:"plugins.importexport.csv.unknownPress";s:43:"Unknown Press: "{$contextPath}".  Skipping.";s:32:"plugins.importexport.csv.noGenre";s:39:"There is no manuscript genre.  Exiting.";s:38:"plugins.importexport.csv.noAuthorGroup";s:82:"There is no default author group in the press {$press}.  Skipping this submission.";s:33:"plugins.importexport.csv.noSeries";s:83:"The series path {$seriesPath} does not exist.  Unable to add it to this submission.";s:42:"plugins.importexport.csv.import.submission";s:45:"Submission: '{$title}' successfully imported.";s:51:"plugins.importexport.csv.import.success.description";s:72:"The import was successful. Successfully-imported items are listed below.";s:38:"plugins.importexport.csv.invalidHeader";s:137:"The CSV file is either missing or has an invalid header, please take a look at the sample file "sample.csv" present at the plugin folder.";s:38:"plugins.importexport.csv.invalidAuthor";s:61:"The author "{$author}" has an invalid format and was skipped.";}}}

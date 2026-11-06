@@ -1,0 +1,1 @@
+1825506995a:3:{s:6:"domain";N;s:12:"plural-forms";s:43:"nplurals=2; plural=n==1 || n%10==1 ? 0 : 1;";s:8:"messages";a:1:{s:0:"";a:2:{s:34:"plugins.generic.googleScholar.name";s:66:"Приклучок за индексирање на Google Scholar";s:41:"plugins.generic.googleScholar.description";s:135:"Овој приклучок овозможува индексирање на објавената содржина во Google Scholar.";}}}

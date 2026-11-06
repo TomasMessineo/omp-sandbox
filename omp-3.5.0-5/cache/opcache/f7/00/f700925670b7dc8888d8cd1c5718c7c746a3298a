@@ -1,0 +1,1 @@
+1825506992a:3:{s:6:"domain";N;s:12:"plural-forms";s:26:"nplurals=2; plural=n != 1;";s:8:"messages";a:1:{s:0:"";a:2:{s:35:"plugins.generic.dublinCoreMeta.name";s:34:"Módulo de indexación Dublin Core";s:42:"plugins.generic.dublinCoreMeta.description";s:116:"Este módulo incrusta metaetiquetas Dublin Core en las visualizaciones de las monografías con fines de indexación.";}}}

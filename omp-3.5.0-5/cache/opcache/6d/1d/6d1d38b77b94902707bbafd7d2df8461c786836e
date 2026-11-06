@@ -1,0 +1,168 @@
+1825506993a:3:{s:6:"domain";N;s:12:"plural-forms";s:26:"nplurals=2; plural=n != 1;";s:8:"messages";a:1:{s:0:"";a:43:{s:35:"emails.passwordResetConfirm.subject";s:44:"Confirmació del restabliment de contrasenya";s:32:"emails.passwordResetConfirm.body";s:374:"Hem rebut una sol·licitud per restablir la vostra contrasenya del lloc web {$siteTitle}.<br />
+<br />
+Si no heu fet cap sol·licitud, ignoreu aquest correu electrònic i no es canviarà la vostra contrasenya. Si voleu restablir la vostra contrasenya, cliqueu a la URL de sota.<br />
+<br />
+Restableix la meva contrasenya: {$passwordResetUrl}<br />
+<br />
+{$siteContactName}";s:27:"emails.userRegister.subject";s:23:"Registre de publicació";s:24:"emails.userRegister.body";s:475:"{$recipientName}<br />
+<br />
+Us heu registrat com a usuari/ària amb {$contextName}. Hem inclòs el vostre nom d'usuari/ària i la contrasenya en aquest correu electrònic, que són necessaris per a totes les tasques editorials d'aquest lloc web. En qualsevol moment podeu demanar que se us elimini de la llista d'usuaris/àries contactant amb mi.<br />
+<br />
+Nom d'usuari/ària: {$recipientUsername}<br />
+Contrasenya: {$password}<br />
+<br />
+Gràcies,<br />
+{$signature}";s:31:"emails.reviewerRegister.subject";s:45:"Registra'm com a revisor/a amb {$contextName}";s:28:"emails.reviewerRegister.body";s:868:"Tenint en compte la vostra experiència, ens hem pres la llibertat de registrar-vos a la base de dades de revisors/ores de {$contextName}. Això no comporta cap tipus de compromís per part vostra, sinó que ens serveix per oferir-vos una possible revisió d'una tramesa. Si sou convidat a revisar, podreu veure el títol i el resum de l'article en qüestió i sempre podreu acceptar o rebutjar la invitació. També podeu demanar que s'elimini el vostre nom de la llista de revisors/ores.<br />
+<br />
+Us proporcionem un nom d'usuari/ària i una contrasenya que s'usa en totes les interaccions amb la publicació a través del lloc web. Per exemple, potser voleu actualitzar el vostre perfil, incloent-hi els vostres interessos de revisió.<br />
+<br />
+Nom d'usuari/ària: {$recipientUsername}<br />
+Contrasenya: {$password}<br />
+<br />
+Gràcies,<br />
+{$signature}";s:27:"emails.editorAssign.subject";s:24:"Assignació d'editorials";s:24:"emails.editorAssign.body";s:291:"{$recipientName}:<br />
+<br />
+Se us ha assignat la tramesa de «{$submissionTitle},» a {$contextName} perquè superviseu el procés editorial en el vostre rol d'editor/a.<br />
+<br />
+URL de la tramesa: {$submissionUrl}<br />
+Nom d'usuari/ària: {$recipientUsername}<br />
+<br />
+Gràcies,";s:28:"emails.reviewRequest.subject";s:39:"Sol·licitud de revisió d'un manuscrit";s:25:"emails.reviewRequest.body";s:566:"Benvolgut/uda {$recipientName},<br />
+<br />
+{$messageToReviewer}<br />
+<br />
+Inicieu sessió al lloc web de la publicació a través de {$responseDueDate} per indicar si accepteu o no la revisió, així com per accedir a la tramesa i enregistrar la vostra revisió i recomanació.<br />
+<br />
+La revisió s'ha de lliurar el {$reviewDueDate}.<br />
+<br />
+URL de la tramesa: {$reviewAssignmentUrl}<br />
+<br />
+Nom d'usuari/ària: {$recipientUsername}<br />
+<br />
+Gràcies per considerar la sol·licitud.<br />
+<br />
+<br />
+Salutacions,<br />
+{$signature}<br />
+";s:40:"emails.reviewResponseOverdueAuto.subject";s:38:"Sol·licitud de revisió del manuscrit";s:37:"emails.reviewResponseOverdueAuto.body";s:878:"Benvolgut/uda {$recipientName},<br />
+Només volem recordar-vos amablement la nostra petició de revisió de la tramesa, &quot;{$submissionTitle},&quot; for {$contextName}. Esperàvem rebre la vostra resposta abans del {$responseDueDate}, i com que aquesta data ja ha passat s'ha generat i enviat automàticament aquest correu electrònic.
+<br />
+{$messageToReviewer}<br />
+<br />
+Si us plau, inicieu la sessió en el lloc web de la publicació per indicar si podreu fer-vos càrrec o no de la revisió, i per accedir a la tramesa i registrar la vostra revisió i recomanació.<br />
+<br />
+La data límit per a la revisió és el {$reviewDueDate}.<br />
+<br />
+URL de la tramesa: {$reviewAssignmentUrl}<br />
+<br />
+Nom d'usuari/ària: {$recipientUsername}<br />
+<br />
+Gràcies per considerar aquesta petició.<br />
+<br />
+<br />
+Cordialment,<br />
+{$contextSignature}<br />
+";s:27:"emails.reviewCancel.subject";s:37:"Sol·licitud de revisió cancel·lada";s:24:"emails.reviewCancel.body";s:330:"{$recipientName}:<br />
+<br />
+Hem decidit cancel·lar la sol·licitud perquè reviseu la tramesa «{$submissionTitle},» per al {$contextName}. Ens disculpem per qualsevol inconvenient que això us hagi causat i esperem poder-vos contactar per a futurs processos de revisió.<br />
+<br />
+Si teniu cap pregunta, contacteu amb mi.";s:27:"emails.reviewReinstate.body";s:297:"{$recipientName}:<br />
+<br />
+Ens agradaria restablir la petició que us vam fer per revisar la tramesa &quot;{$submissionTitle},&quot; per a {$contextName}. Desitgem que ens pugueu ajudar en aquest procés de revisió editorial.<br />
+<br />
+Si teniu qualsevol pregunta no dubteu a contactar-me.";s:28:"emails.reviewDecline.subject";s:25:"No disponible per revisar";s:25:"emails.reviewDecline.body";s:292:"{$recipientName}:<br />
+<br />
+Sento comunicar-vos que en aquests moments no estic disponible per realitzar la revisió de la tramesa «{$submissionTitle},» per {$contextName}. Gràcies per pensar en mi per aquesta tasca; podeu contactar en mi en futures ocasions.<br />
+<br />
+{$senderName}";s:27:"emails.reviewRemind.subject";s:34:"Recordatori de revisió de tramesa";s:24:"emails.reviewRemind.body";s:863:"{$recipientName}:<br />
+<br />
+Aquest missatge és només un recordatori de la nostra sol·licitud de revisió de la tramesa, &quot;{$submissionTitle},&quot; per a {$contextName}. Esperàvem que aquesta revisió estigués llesta abans del {$reviewDueDate} i ens agradaria molt rebre-la tan aviat com la tingueu acabada.<br />
+<br />
+Si no teniu el vostre nom d'usuari/ària i la contrasenya del lloc web, podeu utilitzar l'enllaç per restaurar la contrasenya, que se us enviarà per correu electrònic juntament amb el vostre nom d'usuari/ària. {$passwordLostUrl}<br />
+<br />
+URL de la tramesa: {$reviewAssignmentUrl}<br />
+<br />
+Nom d'usuari/ària: {$recipientUsername}<br />
+<br />
+Confirmeu que esteu disponibles per completar aquesta contribució de vital importància per a l'editorial. Espero rebre notícies vostres ben aviat.<br />
+<br />
+{$signature}";s:28:"emails.reviewRemindAuto.body";s:1020:"{$recipientName}:<br />
+<br />
+Aquest missatge és només un recordatori de la nostra sol·licitud de revisió de la tramesa, &quot;{$submissionTitle},&quot; per a {$contextName}. Esperàvem que aquesta revisió estigués llesta abans del {$reviewDueDate}. Aquest correu electrònic s'ha generat automàticament i s'ha enviat quan ha passat la data assenyalada. De totes maneres, encara ens agradaria molt rebre la vostra revisió tan aviat com la pugueu tenir acabada.<br />
+<br />
+Si no teniu el vostre nom d'usuari/ària i la contrasenya del lloc web, podeu utilitzar l'enllaç per restaurar la contrasenya, que se us enviarà per correu electrònic juntament amb el vostre nom d'usuari/ària. {$passwordLostUrl}<br />
+<br />
+URL de la tramesa: {$reviewAssignmentUrl}<br />
+<br />
+Nom d'usuari/ària: {$recipientUsername}<br />
+<br />
+Confirmeu que esteu disponibles per completar aquesta contribució de vital importància per a l'editorial. Espero rebre notícies vostres ben aviat.<br />
+<br />
+{$contextSignature}";s:35:"emails.editorDecisionAccept.subject";s:24:"Decisió de l’editor/a";s:32:"emails.editorDecisionAccept.body";s:215:"{$authors}:<br />
+<br />
+Hem pres una decisió respecte a la vostra tramesa per a {$contextName}, &quot;{$submissionTitle}&quot;.<br />
+<br />
+La nostra decisió és:<br />
+<br />
+URL del manuscrit: {$submissionUrl}";s:28:"emails.layoutRequest.subject";s:21:"Sol·licita galerades";s:25:"emails.layoutRequest.body";s:731:"{$layoutEditorName}:<br />
+<br />
+La tramesa «{$submissionTitle}» a {$contextName} necessita galerades per poder continuar amb aquests passos.<br />
+1. Cliqueu en l'enllaç de la tramesa a continuació.<br />
+2. Inicieu sessió a la publicació i utilitzeu la versió maquetada de l'fitxer per crear galerades d'acord amb els estàndards de la publicació.<br />
+3. Envieu el correu electrònic COMPLET a l'editor/a.<br />
+<br />
+{$contextName} URL: {$contextUrl}<br />
+URL de la tramesa: {$submissionUrl}<br />
+Nom d'usuari/ària: {$layoutEditorUsername}<br />
+<br />
+Si no podeu realitzar aquesta tasca en aquests moments o teniu cap pregunta, poseu-vos en contacte amb mi. Gràcies per la vostra contribució a la publicació.";s:29:"emails.layoutComplete.subject";s:36:"Galerades de maquetació completades";s:26:"emails.layoutComplete.body";s:251:"{$recipientName}:<br />
+<br />
+Les galerades del manuscrit &quot;{$submissionTitle}&quot; per a {$contextName} ja estan preparades i llestes per a la correcció de proves.<br />
+<br />
+Si teniu cap pregunta contacteu amb mi.<br />
+<br />
+{$senderName}";s:27:"emails.indexRequest.subject";s:18:"Sol·licita índex";s:24:"emails.indexRequest.body";s:732:"{$indexerName}:<br />
+<br />
+La tramesa «{$submissionTitle}» a {$contextName} necessita índexs creats seguint els següents passos..<br />
+1. Cliqueu en l'enllaç de la tramesa a continuació.<br />
+2. Inicieu sessió a la publicació i utilitzeu l'fitxer de galerades per crear galerades d'acord amb els estàndards de la publicació.<br />
+3. Envieu el correu electrònic COMPLET a l'editor/a.<br />
+<br />
+{$contextName} URL: {$contextUrl}<br />
+URL de la tramesa: {$submissionUrl}<br />
+Nom d'usuari/ària: {$indexerUsername}<br />
+<br />
+Si no podeu realitzar aquesta tasca en aquests moments o teniu cap pregunta, poseu-vos en contacte amb mi. Gràcies per la vostra contribució a la publicació.<br />
+<br />
+{$signature}";s:28:"emails.indexComplete.subject";s:34:"Galerades d'indexació completades";s:25:"emails.indexComplete.body";s:257:"{$recipientName}:<br />
+<br />
+Els índexs ja s'han preparat per al manuscrit «{$submissionTitle},» per {$contextName}i ja estan llestos per a la correcció de proves.<br />
+<br />
+Si teniu cap pregunta, contacteu amb mi.<br />
+<br />
+{$signatureFullName}";s:24:"emails.emailLink.subject";s:30:"Manuscrit de possible interès";s:21:"emails.emailLink.body";s:168:"Crec que us pot interessar veure «{$submissionTitle}» de {$authors} publicat en el vol. {$volume}, núm. {$number} ({$year}) de {$contextName} a «{$submissionUrl}».";s:28:"emails.emailLink.description";s:311:"Aquesta plantilla de correu electrònic proporciona a un lector/a registrat l'oportunitat d'enviar informació sobre una monografia a algú que pugui estar-hi interessat. Està disponible a través de les eines de lectura i ho ha d'activar el cap editorial a la pàgina d'administració de les eines de lectura.";s:31:"emails.notifySubmission.subject";s:23:"Notificació de tramesa";s:28:"emails.notifySubmission.body";s:127:"Teniu un missatge de {$sender} sobre «{$submissionTitle}» ({$monographDetailsUrl}):<br />
+<br />
+		{$message}<br />
+<br />
+		";s:35:"emails.notifySubmission.description";s:86:"Una notificació d'un usuari/ària enviada des del centre d'informació de la tramesa.";s:25:"emails.notifyFile.subject";s:36:"Notificació de fitxer de la tramesa";s:22:"emails.notifyFile.body";s:159:"Teniu un missatge de {$sender} referent a l'fitxer «{$fileName}» a «{$submissionTitle}» ({$monographDetailsUrl}):<br />
+<br />
+		{$message}<br />
+<br />
+		";s:29:"emails.notifyFile.description";s:83:"Una notificació d'un usuari/ària enviada des del centre d'informació de l'fitxer";s:43:"emails.statisticsReportNotification.subject";s:41:"Activitat editorial per {$month}, {$year}";s:40:"emails.statisticsReportNotification.body";s:770:"
+{$recipientName}, <br />
+<br />
+L'informe de salut de {$month}, {$year} per a la vostra publicació ja està disponible. Les estadístiques clau d'aquest mes son les següents.<br />
+<ul>
+	<li>Trameses noves aquest mes: {$newSubmissions}</li>
+	<li>Trameses rebutjades aquest mes: {$declinedSubmissions}</li>
+	<li>Trameses acceptades aquest mes: {$acceptedSubmissions}</li>
+	<li>Trameses totals en el sistema: {$totalSubmissions}</li>
+</ul>
+Inicieu sessió a la publicació per veure les <a href="{$editorialStatsLink}">tendències editorials</a> i les <a href="{$publicationStatsLink}">estadístiques d'articles publicats</a> amb més detall . S'adjunta una còpia completa de les tendències editorials d'aquest mes.<br />
+<br />
+Cordialment,<br />
+{$contextSignature}";s:27:"emails.announcement.subject";s:20:"{$announcementTitle}";s:24:"emails.announcement.body";s:167:"<b>{$announcementTitle}</b><br />
+<br />
+{$announcementSummary}<br />
+<br />
+Visiteu la nostra pàgina web per llegir l'<a href="{$announcementUrl}">avís complet</a>.";}}}

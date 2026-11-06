@@ -1,0 +1,115 @@
+1825506996a:3:{s:6:"domain";N;s:12:"plural-forms";s:74:"nplurals=3; plural=n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < 20)) ? 1 : 2;";s:8:"messages";a:1:{s:0:"";a:54:{s:35:"emails.passwordResetConfirm.subject";s:32:"Confirmare de resetare a parolei";s:32:"emails.passwordResetConfirm.body";s:373:"Am primit o solicitare de resetare a parolei dumneavoastră pentru {$siteTitle} web site.<br />
+<br />
+Dacă nu ați emis dumneavoastră o solicitare , puteți ignora acest email, iar contul dumneavoastră nu va fi afectat. Pentru a vă reseta parola, clicați pe adresa URL de mai jos.<br />
+<br />
+Resetați-vă parola: {$passwordResetUrl}<br />
+<br />
+{$siteContactName}";s:34:"emails.userValidateContext.subject";s:20:"Validați-vă contul";s:31:"emails.userValidateSite.subject";s:20:"Validați-vă contul";s:38:"emails.reviewRequestSubsequent.subject";s:47:"Solicitare de revizie a unei trimiteri revizate";s:40:"emails.reviewResponseOverdueAuto.subject";s:33:"Cerere de revizie a manuscrisului";s:27:"emails.reviewCancel.subject";s:30:"Solicitare de revizie anulată";s:30:"emails.reviewReinstate.subject";s:45:"Puteți revizui textul pentru {$contextName}?";s:28:"emails.reviewDecline.subject";s:27:"Nu se poate realiza revizia";s:27:"emails.reviewRemind.subject";s:32:"Memento de completare a reviziei";s:35:"emails.editorDecisionAccept.subject";s:62:"Cererea dumneavoastră pentru {$contextName} a fost acceptată";s:39:"emails.editorDecisionSkipReview.subject";s:53:"Cererea dumneavoastră a fost trimisă către editare";s:28:"emails.layoutRequest.subject";s:68:"Cererea {$submissionld} este gata de producție la {$contextAcronym}";s:29:"emails.layoutComplete.subject";s:13:"Gale complete";s:27:"emails.indexRequest.subject";s:16:"Indice solicitat";s:24:"emails.emailLink.subject";s:28:"Manuscris de posibil interes";s:31:"emails.notifySubmission.subject";s:20:"Notificare de cerere";s:25:"emails.notifyFile.subject";s:36:"Notificare privind dosarul de cerere";s:35:"emails.revisedVersionNotify.subject";s:33:"Versiunea revizuită încărcată";s:43:"emails.statisticsReportNotification.subject";s:47:"Activitate editorială pentru {$month}, {$year}";s:27:"emails.announcement.subject";s:20:"{$announcementTitle}";s:31:"emails.reviewerRegister.subject";s:45:"Înregistrai-vă ca revizor cu {$contextName}";s:28:"emails.indexComplete.subject";s:23:"Gale de indice complete";s:28:"emails.reviewRequest.subject";s:37:"Solicitare de revizie a manuscrisului";s:43:"emails.editorDecisionSendToInternal.subject";s:62:"Cererea dumneavoastră a fost trimisă către revizie internă";s:24:"emails.userRegister.body";s:463:"{$recipientName}<br />
+<br />
+Ați fost înregistrat cu numele de utilizator {$contextName}. În acest email al inclus numele de utilizator și parola dumneavoastră de care aveți nevoie pentru a lucra cu această editură, prin intermediul website-ului. Puteți solicita în orice moment să fiți eliminat din lista de utilizatori.<br />
+<br />
+Nume de utilizator: {$recipientUsername}<br />
+Parolă: {$password}<br />
+<br />
+Vă mulțumim, <br />
+{$signature}";s:31:"emails.userValidateContext.body";s:295:"{$recipientName}<br />
+<br />
+Ați creat un cont, folosind numele de utilizator {$contextName}, dar este necesară activarea acestuia înainte de utilizare. Pentru a face acest lucru, accesați linkul de mai jos:<br />
+<br />
+{$activateUrl}<br />
+<br />
+Vă mulțumim, <br />
+{$contextSignature}";s:28:"emails.reviewerRegister.body";s:908:"Luând în considerare expertiza dumneavoastră, v-am înregistrat numele în baza de date a revizorilor cu numele de utilizator {$contextName}. Acest fapt nu presupune niciun fel de implicare din partea dumneavoastră, doar ne permite să vă contactăm în cazul unei revizii a unei lucrări. Dacă veți fi invitat să realizați o revizie, veți avea oportunitatea să vedeți titlul și rezumatul lucrării în cauză și veți putea accepta sau refuza invitația. De asemenea, puteți solicita în orice moment să fiți eliminat din lista de revizori.<br />
+<br />
+Vă oferim un nume de utilizator și o parolă pentru a putea interacționa cu editura prin intermediul website-ului. De exemplu, vă puteți actualiza profilul, inclusiv interesele dumneavoastră de revizie.<br />
+<br />
+Nume de utilizator: {$recipientUsername}<br />
+Parolă: {$password}<br />
+<br />
+Vă mulțumim,<br />
+{$signature}";s:27:"emails.editorAssign.subject";s:72:"Ați fost desemnat ca editor pentru o lucrare trimisă la {$contextName}";s:24:"emails.editorAssign.body";s:691:"<p>Stimate {$recipientName}, </p><p> V-a fost atribuită următoarea lucrare pentru a o monitoriza pe durata procesului editorial.</p><p><a href="{$submissionUrl}">{$submissionTitle}</a><br />{$authors}</p><p><b>Abstract</b></p>{$submissionAbstract}<p>Dacă considerați că lucrarea trimisă este relevantă pentru {$contextName}, vă rugăm să înaintați lucrarea către stadiul de revizie prin selectarea "Trimiteți către revizie internă" și, ulterior, desemnați revizori prin clicarea "Adaugă revizor". </p><p>Dacă lucrarea trimisă nu este adecvată pentru această editură, vă rugăm să o refuzați. </p><p>Vă mulțumim anticipat.</p><p> Cu stimă, </p>{$contextSignature}";s:24:"emails.reviewCancel.body";s:354:"{$recipientName}:<br />
+<br />
+Am decis să anulăm solicitarea către dumneavoastră de a revizui o lucrarea &quot;{$submissionTitle},&quot; pentru {$contextName}. Ne cerem scuze pentru orice inconvenient creat și sperăm că va fi posibilă o viitoare colaborare de revizie în viitor.<br />
+<br />
+ă rog să mă contactați dacă aveți întrebări.";s:25:"emails.reviewDecline.body";s:298:"Editor(i):<br />
+<br />
+Din păcate nu sunt disponibil în acest moment pentru a revizui lucrarea trimisă, &quot;{$submissionTitle},&quot; pentru{$contextName}. Vă mulțumesc pentru că v-ați gândit la mine și puteți să mă contactați pentru colaborări viitoare.<br />
+<br />
+{$senderName}";s:24:"emails.reviewRemind.body";s:710:"<p>Stimate {$recipientName},</p><p>Dorim să vă reamintim de solicitarea noastră de a revizui lucrarea ,"{$submissionTitle}," pentru{$contextName}. Dorim să primim lucrarea până la data de {$reviewDueDate} și ne-ar face plăcere să o primim de îndată ce veți putea să o pregătiți. </p><p>Puteți<a href="{$reviewAssignmentUrl}">să vă logați pe site-ul editurii</a> și să urmați pașii de revizie pentru a putea accesa lucrarea, a încărca fișierele de revizie și a trimite comentariile de revizie.</p><p>Dacă aveți nevoie de o prelungire a termenului limită, vă rog să mă contactați. Aștept să primesc vești de la dumneavoastră.</p><p>Vă mulțumesc anticipat ,</p>{$signature}";s:28:"emails.userValidateSite.body";s:295:"{$recipientName}<br />
+<br />
+Ați creat un cont, folosind numele de utilizator {$contextName}, dar este necesară activarea acestuia înainte de utilizare. Pentru a face acest lucru, accesați linkul de mai jos:<br />
+<br />
+{$activateUrl}<br />
+<br />
+Vă mulțumim, <br />
+{$contextSignature}";s:37:"emails.reviewResponseOverdueAuto.body";s:910:"Stimate {$recipientName},<br />
+Dorim să vă reamintim de solicitarea noastră de a revizui lucrarea, &quot;{$submissionTitle},&quot; pentru{$contextName}. Sperăm că vom avea răspunsul dumneavoastră până la data de {$responseDueDate}. Acest email a fost generat automat și trimis odată cu trecerea acestei date.
+<br />
+{$messageToReviewer}<br />
+<br />
+Vă rugăm să vă logați pe website-ul editurii pentru a confirma sau infirma dacă veți realiza revizia și, de asemenea, pentru a accesa lucrarea trimisă și pentru a înregistra revizia și recomandările.<br />
+<br />
+Revizia era termenul limită în data de {$reviewDueDate}.<br />
+<br />
+URL-ul lucrării trimise: {$reviewAssignmentUrl}<br />
+<br />
+Nume de utilizator: {$recipientUsername}<br />
+<br />
+Vă mulțumim că ați luat în considerare această solicitare .<br />
+<br />
+<br />
+Cu sinceritate,<br />
+{$contextSignature}<br />
+";s:27:"emails.reviewReinstate.body";s:604:"<p>Stimate {$recipientName},</p><p> Recent am anulat solicitarea noastră către dumneavoastră de a revizui o lucrare {$submissionTitle}, pentru {$contextName}. Am revenit asupra aceste decizii și sperăm că sunteți disponibil pentru a realiza revizia.</p><p>Dacă sunteți disponibil să ne ajutați cu revizia lucrării, puteți <a href="{$reviewAssignmentUrl}"> să vă logați pe site-ul editurii</a> pentru a accesa lucrarea, a încărca fișierele de revizie și a trimite solicitarea de revizie. </p><p> Vă rugăm să mă contactați dacă aveți întrebări.</p><p>Cu stimă,</p>{$signature}";s:28:"emails.reviewRemindAuto.body";s:789:"<p>Stimate {$recipientName}:</p><p> Acest email este un memento automat de la {$contextName} cu privire la solicitarea noastră către dumneavoastră de a revizui lucrarea, "{$submissionTitle}."</p><p> Dorim să primim lucrarea revizuită până la data de {$reviewDueDate} și ne-ar face plăcere să o primim de îndată ce veți putea să o pregătiți.</p><p> Vă rugăm <a href="{$reviewAssignmentUrl}"> să vă logați pe site-ul editurii </a> și să urmați pașii de revizie pentru a accesa lucrarea trimisă, a încărca fișierele de revizie și a trimite comentariile de revizie.</p><p>Dacă aveți nevoie de o prelungire a termenului limită, vă rog să mă contactați. Aștept să primesc vești de la dumneavoastră.</p><p>Vă mulțumesc anticipat, </p>{$contextSignature}";s:40:"emails.editorDecisionSendToInternal.body";s:827:"<p>Stimate {$recipientName},</p><p> Am plăcerea de a vă informa despre faptul că un editor a revizuit lucrarea dumneavoastră, {$submissionTitle}, și a decis să fie trimisă pentru o revizie internă. Vă vom contacta în legătură cu feedbackul primit de la revizori și cu informațiile despre următoarele etape. </p><p> Vă rugăm să rețineți că trimiterea lucrării spre revizie internă nu garantează faptul că va fi publicată. Vom lua în considerare recomandările revizorilor înainte de a decide dacă acceptăm lucrarea pentru publicare. Este posibil să vi se ceară să faceți revizuiri și să răspundeți comentariilor revizorilor înainte de a se lua o decizie finală.</p><p> Dacă aveți întrebări, vă rog să mă contactați prin intermediul interfeței de trimiteri.</p><p>{$signature}</p>";s:32:"emails.editorDecisionAccept.body";s:1095:"<p>Stimate {$recipientName},</p><p> Am plăcerea de a vă informa că am decis să vă acceptăm lucrarea trimisă, fără alte revizii viitoare. În urma unei revizii minuțioase, am decis că lucrarea trimisă de dumneavoastră, {$submissionTitle}, îndeplinește așteptările noastre. Suntem încântați să vă publicăm lucrarea în {$contextName} și vă mulțumim pentru că ați ales editura noastră drept loc de publicare a articolului dumneavoastră.</p><p> Lucrarea trimisă de dumneavoastră va fi publicată curând pe website-ul editurii pentru {$contextName} și vă invităm să o includeți în lista dumneavoastră de publicații. Recunoaștem munca asiduă depusă pentru redactarea fiecărei lucrări și dorim să vă felicităm pentru că ați ajuns în această etapă.</p><p> Lucrarea va fi editată și formatată pentru a fi publicată.</p><p>În scurt timp veți primii alte instrucțiuni.</p><p>Dacă aveți întrebări, vă rog să mă contactați prin intermediul <a href="{$authorSubmissionUrl}"> interfeței de trimiteri</a>.</p><p> Cu stimă, </p>{$signature}";s:35:"emails.reviewRequestSubsequent.body";s:1158:"<p>Stimate {$recipientName}, ,</p><p>Mulțumim pentru revizuirea lucrării <a href="{$reviewAssignmentUrl}">{$submissionTitle}</a>. Autorii au luat în considerare feedbackul revizorilor și au oferit o versiune revizuită a lucrării lor. Vă scriu cu intenția de a vă întreba dacă ați dori să coordonați a doua rundă colegială de revizie pentru această lucrare trimisă. </p><p>Dacă sunteți disponibil pentru revizie, termenul limită este {$reviewDueDate}. Puteți <a href="{$reviewAssignmentUrl}">urma etapele de revizie </a> pentru a vedea lucrarea trimisă, a încărca fișierele de revizie și a trimite comentariile dumneavoastră de revizie.<p><p><a href="{$reviewAssignmentUrl}">{$submissionTitle}</a></p><p><b>Rezumat</b></p>{$submissionAbstract}<p>Vă rugăm<a href="{$reviewAssignmentUrl}">să acceptați sau să refuzați</a> revizia până la data de <b>{$responseDueDate}</b>.</p><p>Pentru orice întrebare legată de lucrarea trimisă sau de procesul de revizie, mă puteți contacta.</p><p> Vă mulțumim că ați luat în considerare această solicitare. Ajutorul dumneavoastră este apreciat.</p><p>Cu stimă,</p>{$signature}";s:25:"emails.reviewRequest.body";s:997:"<p>Stimate{$recipientName}, </p><p>considerăm că ați fi un revizor potrivit pentru această lucrare  {$contextName}. Titlul și rezumatul acesteia se află mai jos și sperăm că vă veți îndeplini această sarcină importantă pentru noi. </p><p>Dacă sunteți disponibil pentru revizie, termenul limită este {$reviewDueDate}. Pentru a putea accesa lucrarea, a încărca paginile de revizie și a trimite revizia, trebuie să vă logați pe site-ul editurii și să urmați pașii din linkul de mai jos.</p><p><a href="{$reviewAssignmentUrl}">{$submissionTitle}</a></p><p><b>Rezumat</b></p>{$submissionAbstract}<p>Vă rugăm<a href="{$reviewAssignmentUrl}"> să acceptați sau să refuzați</a>revizia până la<b>$responseDueDate}</b>.</p><p>Pentru orice întrebare legată de  lucrarea trimisă sau de procesul de revizie, mă puteți contacta.</p><p>Vă mulțumim că ați luat în considerare această solicitare. Ajutorul dumneavoastră este apreciat.</p><p>Cu stimă,</p>{$signature}";s:25:"emails.indexComplete.body";s:253:"{$recipientName}:<br />
+<br />
+Indicele sunt pregătite pentru manuscris, &quot;{$submissionTitle},&quot; pentru{$contextName} și sunt gata pentru corectură.<br />
+<br />
+Vă rog să mă contactați dacă aveți întrebări.<br />
+<br />
+{$senderName}";s:21:"emails.emailLink.body";s:187:"S-ar putea să fiți interesat de &quot;{$submissionTitle}&quot; de {$authors}, publicat în volumul {$volume}, Nr. {$number} ({$year}) din {$contextName} la &quot;{$submissionUrl}&quot;.";s:28:"emails.notifySubmission.body";s:150:"Ați primit un mesaj de la {$sender}, cu privire la &quot;{$submissionTitle}&quot; ({$monographDetailsUrl}):<br />
+<br />
+		{$message}<br />
+<br />
+		";s:35:"emails.notifySubmission.description";s:95:"Notificare de la un utilizator, trimisă din cadrul unui centru de informații despre trimieri.";s:22:"emails.notifyFile.body";s:188:"Ați primit un mesaj de la {$sender}, cu privire la fișierul &quot;{$fileName}&quot; în &quot;{$submissionTitle}&quot; ({$monographDetailsUrl}):<br />
+<br />
+		{$message}<br />
+<br />
+		";s:29:"emails.notifyFile.description";s:85:"O notificare de la un utilizator, din cadrul unui centru de informații despre arhive";s:32:"emails.revisedVersionNotify.body";s:444:"<p>Stimate {$recipientName},</p><p> Autorul a încărcat revizii pentru lucrarea trimisă, <b>{$authorsShort} — {$submissionTitle}</b>. <p> În calitate de editor, vă rog să vă logați și <a href="{$submissionUrl}"> să accesați reviziile </a> și să acceptași, să refuzați sau să trimiteți lucrarea pentru revizii viitoare. </p><br><br>—<br> Acesta este un mesaj generat automat de la <a href="{$contextUrl}">{$contextName}</a>.";s:40:"emails.statisticsReportNotification.body";s:803:"
+{$recipientName}, <br />
+<br />
+Buletinul editorial pentru {$month}, {$year} este acum disponibil. Statisticile fundamentale din această lună sunt următoarele:<br />
+<ul>
+	<li>Lucrări trimise noi în această lună: {$newSubmissions}</li>
+	<li>Lucrări trimise respinse în această lună: {$declinedSubmissions}</li>
+	<li>Lucrări trimise acceptate în această lună: {$acceptedSubmissions}</li>
+	<li>Totalul lucrărilor trimise înregistrate în sistem: {$totalSubmissions}</li>
+</ul>
+Logați-vă pe site-ul editurii pentru a mai multe detalii<a href="{$editorialStatsLink}">trenduri editoriale</a>și<a href="{$publicationStatsLink}">statisticile cărților publicate</a>.O copie a trendurilor editoriale din această lună este atașată.<br />
+<br />
+Cu sinceritate,<br />
+{$contextSignature}";s:24:"emails.announcement.body";s:176:"<b>{$announcementTitle}</b><br />
+<br />
+{$announcementSummary}<br />
+<br />
+Accesați website-ul nostru pentru a putea citi <a href="{$announcementUrl}"> întregul anunț</a>.";s:30:"emails.editorAssignReview.body";s:482:"<p>Stimate {$recipientName},</p><p> Următoarea lucrare v-a fost atribuită pentru a o revizui.</p><p> <a href="{$submissionUrl}">{$submissionTitle}</a><br />{$authors}</p><p><b>Rezumat</b></p>{$submissionAbstract}<p>Vă rog să vă logați pentru a <a href="{$submissionUrl}">vedea lucrarea trimisă</a>și pentru a desemna revizori calificați. Puteți desemna un revizor prin clicarea funcției "Adaugă revizor".</p><p>Vă mulțumesc anticipat!</p><p>Cu stimă, </p>{$signature}";s:34:"emails.editorAssignProduction.body";s:541:"<p>Stimate {$recipientName},</p><p>Următoarea lucrare v-a fost atribuită pentru a o supraveghea în etapa de producție.</p><p> <a href="{$submissionUrl}">{$submissionTitle}</a><br />{$authors}</p><p><b>Rezumat</b></p>{$submissionAbstract}<p>Vă rog să vă logați <a href="{$submissionUrl}">pentru a vedea lucrarea</a>. Odată ce fișierele pregătite pentru producție sunt disponibile, încărcați-le în secțiunea <strong> Publicații>Format de Publicații</strong>.</p><p>Vă mulțumesc anticipat.</p><p>Cu stimă, </p>{$signature}";s:36:"emails.editorDecisionSkipReview.body";s:1075:"<p>Stimate{$recipientName},</p>
+<p>Am plăcerea de a vă informa că am decis să vă acceptăm lucrarea trimisă fără revizie colegială. Lucrarea dumneavoastră, {$submissionTitle}, îndeplinește așteptările noastre, iar acest tip de scriere nu necesită revizie colegială. Suntem încântați să vă publicăm lucrarea în {$contextName} și vă mulțumim pentru că ați ales editura noastră drept loc de publicare a articolului dumneavoastră.</p>
+<p>Lucrarea trimisă de dumneavoastră va fi publicată curând pe website-ul editurii pentru {$contextName} și vă invităm să o includeți în lista dumneavoastră de publicații. Recunoaștem munca asiduă depusă pentru redactarea fiecărei lucrări și dorim să vă felicităm pentru efortul depus.</p>
+<p>Lucrarea va fi editată și formatată pentru a fi publicată.</p>
+<p>În scurt timp veți primii alte instrucțiuni.</p>
+<p>Dacă aveți întrebări, vă rog să mă contactați prin intermediul <a href="{$authorSubmissionUrl}"> interfeței de trimiteri</a>.</p>
+<p>Cu bine,</p>
+<p>{$signature}</p>
+";s:24:"emails.indexRequest.body";s:748:"{$recipientName}:<br />
+<br />
+Lucrarea trimisă, &quot;{$submissionTitle}&quot; către{$contextName}, necesită indice create urmând următoarele etapei.<br />
+1. Clicați pe URL-ul de trimitere de mai jos.<br />
+2. Logați-vă pe site-ul editurii și utilizați fișierul Page Proofs pentru a crea galele, în conformitate cu standardele editurii.<br />
+3. Trimiteți emailul COMPLET editorului.<br />
+<br />
+{$contextName} URL: {$contextUrl}<br />
+URL-ul de trimitere: {$submissionUrl}<br />
+Nume de utilizator: {$recipientUsername}<br />
+<br />
+Vă rog să mă contactați dacă nu sunteți disponibil pentru a prelua această sarcină sau dacă aveți întrebări. Vă mulțumim pentru contribuțiile aduse editurii.<br />
+<br />
+{$signature}";}}}

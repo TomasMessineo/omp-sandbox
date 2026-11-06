@@ -1,0 +1,170 @@
+1825506994a:3:{s:6:"domain";N;s:12:"plural-forms";s:26:"nplurals=2; plural=n != 1;";s:8:"messages";a:1:{s:0:"";a:51:{s:35:"emails.passwordResetConfirm.subject";s:40:"Jelszó visszaállítás megerősítése";s:32:"emails.passwordResetConfirm.body";s:378:"A jelszava visszaállításával kapcsolatban kaptunk egy kérést a(z) {$siteTitle} oldaltól.<br />
+<br />
+Ha nem Ön küldte, akkor hagyja figyelmen kívül ezt a levelet és a jelszava nem fog megváltozni. Ha szeretné visszaállítani a jelszavát, kattintson az alábbi URL-re.<br />
+<br />
+Jelszavam visszaállítása: {$passwordResetUrl}<br />
+<br />
+{$siteContactName}";s:27:"emails.userRegister.subject";s:27:"Regisztráció a kiadónál";s:24:"emails.userRegister.body";s:472:"{$recipientName}<br />
+<br />
+Ön mostantól a(z) {$contextName} felhasználójaként van regisztrálva. Ez a levél tartalmazza a felhasználónevét és jelszavát, amelyre a kiadónál végzett összes munkafolyamatnál szüksége lesz az oldalon. Bármikor eltávolíttathatja magát a felhasználói listáról, ha kapcsolatba lép velünk.<br />
+<br />
+Felhasználónév: {$recipientUsername}<br />
+Jelszó: {$password}<br />
+<br />
+Köszönettel,<br />
+{$signature}";s:34:"emails.userValidateContext.subject";s:21:"Fiók megerősítése";s:31:"emails.userValidateContext.body";s:287:"{$recipientName}<br />
+<br />
+Létrehozott egy fiókot a(z) {$contextName} névvel, de mielőtt használni kezdené szükség van az e-mail fiókjának megerősítésére. Ehhez kövesse az alábbi linket:<br />
+<br />
+{$activateUrl}<br />
+<br />
+Köszönettel,<br />
+{$contextSignature}";s:31:"emails.userValidateSite.subject";s:21:"Fiók megerősítése";s:28:"emails.userValidateSite.body";s:273:"{$recipientName}<br />
+<br />
+Létrehozott egy fiókot a(z) {$siteTitle} oldalnál, de mielőtt elkezdené használni meg kell erősítenie az e-mail fiókját. Ehhez kövesse az alábbi linket:<br />
+<br />
+{$activateUrl}<br />
+<br />
+Köszönettel,<br />
+{$siteSignature}";s:31:"emails.reviewerRegister.subject";s:69:"Regisztráció szakmai lektorként az adott oldalnál: {$contextName}";s:28:"emails.reviewerRegister.body";s:1018:"A szakértelmének fényében vettük a bátorságot és regisztráltuk a nevét a szakmai lektor névlistára a(z) {$contextName} oldalnál. Ez nem von maga után semmilyen kötelezettségvállalást az Ön részéről, hanem egyszerűen lehetővé teszi számunkra, hogy szakmai lektorálási felkéréssel keressük meg Önt. Ha szakmai lektorálási felkérés érkezik az Ön számára, akkor lehetősége van megnézni a kérdéses beadvány címét és absztraktját, és minden esetben lehetősége lesz arra, hogy elfogadja vagy elutasítsa a felkérést. Továbbá bármikor kérheti, hogy távolítsuk el a nevét a szakmai lektor névlistáról.<br />
+<br />
+Készítettünk Önnek egy felhasználónevet és jelszót, amelyet a kiadó oldalánál végzett valamennyi munkafolyamatnál használhat. Ha akarja, például frissítheti a profilját, beleértve a szakterületeit is.<br />
+<br />
+Felhasználónév: {$recipientUsername}<br />
+Jelszó: {$password}<br />
+<br />
+Köszönettel,<br />
+{$signature}";s:27:"emails.editorAssign.subject";s:28:"Szerkesztői hozzárendelés";s:24:"emails.editorAssign.body";s:336:"{$recipientName}:<br />
+<br />
+A benyújtott &quot;{$submissionTitle}&quot; című kézirat a(z) {$contextName} oldalnál Önhöz lett hozzárendelve, hogy szerkesztőként vigye végig a szerkesztési munkafolyamatot.<br />
+<br />
+Kézirat URL: {$submissionUrl}<br />
+Felhasználónév: {$recipientUsername}<br />
+<br />
+Köszönettel,";s:28:"emails.reviewRequest.subject";s:41:"Kézirat szakmai lektorálásnak kérése";s:25:"emails.reviewRequest.body";s:624:"Tisztelt {$recipientName}!<br />
+<br />
+{$messageToReviewer}<br />
+<br />
+Kérjük, jelentkezzen be a kiadó honlapjára {$ responseDueDate} -ig, hogy jelezze, vállalja -e a szakmai lektorálást vagy sem, valamint, hogy hozzáférjen a beküldött anyaghoz, és rögzítse lektori véleményét és javaslatait.<br />
+<br />
+A szakmai lektorálás elküldésének határideje: {$reviewDueDate}.<br />
+<br />
+Kézirat URL: {$reviewAssignmentUrl}<br />
+<br />
+Felhasználónév: {$recipientUsername}<br />
+<br />
+Köszönjük, hogy fontolóra veszi kérésünket.<br />
+<br />
+<br />
+Üdvözlettel,<br />
+{$signature}<br />
+";s:40:"emails.reviewResponseOverdueAuto.subject";s:43:"Kézirat szakmai lektorálásának kérése";s:37:"emails.reviewResponseOverdueAuto.body";s:885:"Tisztelt {$recipientName}!<br />
+Szeretnénk emlékeztetni, hogy várjuk Öntől a(z) &quot;{$submissionTitle},&quot; kézirattal kapcsolatos lektori véleményét a(z) {$contextName} oldalánál. Reméljük, hogy végezni tud a megadott {$responseDueDate} határidőig. Ez az email automatikusan generálódik és a határidő lejártakor kerül küldésre.
+<br />
+{$messageToReviewer}<br />
+<br />
+Kérjük, jelentkezzen be az oldalra és jelezze, hogy tudja-e vállalni a szakmai lektorálást vagy sem, itt a kézirathoz is hozzáfér és a lektori véleményét és javaslatait is rögzítheti.<br />
+<br />
+A bírálat határideje {$reviewDueDate}.<br />
+<br />
+Kézirat URL: {$reviewAssignmentUrl}<br />
+<br />
+Felhasználónév: {$recipientUsername}<br />
+<br />
+Köszönjük, hogy foglalkozik kérésünkkel.<br />
+<br />
+<br />
+Üdvözlettel,<br />
+{$contextSignature}<br />
+";s:27:"emails.reviewCancel.subject";s:42:"Szakmai lektorálási felkérés törölve";s:24:"emails.reviewCancel.body";s:424:"Tisztelt {$recipientName}!<br />
+<br />
+Úgy döntöttünk, hogy töröljük felkérését a(z) &quot;{$submissionTitle},&quot; című kézirat szakmai lektorálásra a(z) {$contextName} oldalánál. Elnézést kérünk az esetleges kellemetlenségekért, és bízunk benne, hogy a jövőben fogunk együtt dolgozni a szakmai lektorálás munkafolyamatában.<br />
+<br />
+Ha bármilyen kérdése van, nyugodtan keressen meg.";s:27:"emails.reviewReinstate.body";s:364:"Tisztelt {$recipientName}!<br />
+<br />
+Szeretnénk ismételten kérni, hogy készítse el a &quot;{$submissionTitle},&quot; című kézirat szakmai lektorálását a(z) {$contextName} oldalnál. Reméljük, hogy segíteni tud majd a beküldött anyag szakmai lektorálási munkafolyamatában.<br />
+<br />
+Ha bármilyen kérdése van nyugodtan forduljon hozzánk.";s:28:"emails.reviewDecline.subject";s:43:"Szakmai lektorálási feladat elutasítása";s:25:"emails.reviewDecline.body";s:290:"Szerkesztők()nek:<br />
+<br />
+Sajnálom, de jelenleg nem tudom elvállalni a &quot;{$submissionTitle},&quot; című kézirat szakmai lektorálását a(z) {$contextName} oldalnál. Köszönöm, hogy gondoltak rám, kérem, más alkalommal keressenek meg bátran.<br />
+<br />
+{$senderName}";s:27:"emails.reviewRemind.subject";s:35:"Szakmai lektorálási emlékeztető";s:24:"emails.reviewRemind.body";s:799:"Tisztelt {$recipientName}!<br />
+<br />
+Ez egy emlékeztető a(z) "{$submissionTitle}," című anyag szakmai lektorálási munkájával kapcsolatban a(z) {$contextName} oldaltól. Reméljük, hogy a megadott {$reviewDueDate} határidőig el tud készülni a szakmai lektorálással, örömmel fogadjuk, amint elkészül vele.<br />
+<br />
+Ha nincs meg a felhasználóneve és jelszava az oldalhoz, akkor az alábbi linket használhatja a jelszava visszaállítására (amelyet e-mailben fog megkapni a felhasználónevével együtt). {$passwordLostUrl}<br />
+<br />
+Kézirat URL: {$reviewAssignmentUrl}<br />
+<br />
+Felhasználónév: {$recipientUsername}<br />
+<br />
+Kérjük, erősítse meg, hogy tudja vállalni ezt a fontos munkát a részünkre. Várjuk a válaszát.<br />
+<br />
+{$signature}";s:28:"emails.reviewRemindAuto.body";s:790:"Tisztelt {$recipientName}!<br />
+<br />
+Ez egy emlékeztető a(z) "{$submissionTitle}," című kézirat szakmai lektorálásával kapcsolatban a(z) {$contextName} oldaltól. Reméljük, hogy a megadott {$reviewDueDate} határidőig el tud készülni a szakmai lektorálással, örömmel fogadjuk, amint elküldi azt.<br />
+<br />
+Ha nincs felhasználóneve és jelszava az oldalhoz, akkor az alábbi linket használhatja a jelszó visszaállítására (amelyet e-mailben fog megkapni a felhasználónevével együtt). {$passwordLostUrl}<br />
+<br />
+Kézirat URL: {$reviewAssignmentUrl}<br />
+<br />
+Felhasználónév: {$recipientUsername}<br />
+<br />
+Kérjük, erősítse meg, hogy tudja vállalni ezt a fontos munkát a részünkre. Várjuk a válaszát.<br />
+<br />
+{$contextSignature}";s:35:"emails.editorDecisionAccept.subject";s:70:"A beküldött anyag elfogadásra került a(z) {$contextName} oldalnál";s:32:"emails.editorDecisionAccept.body";s:1098:"<p>Tisztelt {$recipientName}!</p>
+<p>Örömmel értesítjük, hogy úgy döntöttünk további felülvizsgálat nélkül elfogadjuk beküldött anyagát. A szakmai lektorálást követően úgy találtuk, hogy a kézirat ({$submissionTitle}) megfelelt vagy felülmúlta elvárásainkat. Örömmel jelentjük meg beküldött anyagát a(z) {$contextName} oldalán, és köszönjük, hogy kiadónkat választotta munkája megjelentetésének helyszínéül.</p>
+<p>Beküldött anyagát hamarosan közzétesszük a(z) {$contextName} kiadó honlapján, amit így már felvehet a publikációs listájára. Elismerjük azt a kemény munkát, ami egy sikeres megjelentetéshez vezet és szeretnénk gratulálni ehhez.</p>
+<p>A továbbiak során beküldött anyaga keresztülmegy az olvasószerkesztés és a formázás  folyamatán, ami előkészíti a közzétételre.</p><p >Hamarosan megkapja a további utasításokat.</p><p>Ha bármilyen kérdése van nyugodtan forduljon hozzánk a <a href="{$authorSubmissionUrl}">beküldött anyag felületén</a> keresztül.</p><p> >Üdvözlettel:</p>{$signature}";s:43:"emails.editorDecisionSendToInternal.subject";s:62:"A beküldött anyag belső szakmai lektorálásra lett küldve";s:40:"emails.editorDecisionSendToInternal.body";s:909:"<p>Tisztelt {$recipientName},</p><p>Örömmel értesítjük, hogy egy szerkesztő átnézte a {$submissionTitle} című kéziratát, és továbbküldte azt belső szakmai lektorálásra. Nemsokára jelentkezni fogunk a szakmai lektorok visszajelzéseivel és a következő lépésekkel kapcsolatos információkkal.</p><p>Kérjük, vegye figyelembe, hogy a beküldött anyag belső szakmai lektorálásra való továbbküldése nem garantálja annak megjelentetését. Mérlegelni fogjuk a szakmai lektorok ajánlásait mielőtt döntést hozunk a beküldött anyag közzétételre való elfogadásáról. Előfordulhat, hogy a végleges döntés meghozatala előtt felkérjük, hogy végezzen módosításokat és válaszoljon a szakmai lektorok észrevételeire.</p><p>Ha bármilyen kérdése van nyugodtan forduljon hozzánk a beküldött anyag felületén keresztül.</p><p>Üdvözlettel, {$signature}</p>";s:39:"emails.editorDecisionSkipReview.subject";s:54:"A beküldött anyag olvasószerkesztésre lett küldve";s:36:"emails.editorDecisionSkipReview.body";s:1138:"<p>Tisztelt {$recipientName}!</p>
+<p>Örömmel értesítjük, hogy úgy döntöttünk szakmai lektorálás nélkül elfogadjuk beadványát. Úgy találtuk, hogy az Ön beadványa ({$submissionTitle}) megfelel az elvárásainknak, és az ilyen típusú munkáknak nem kell szakmai lektoráláson keresztül menniük. Örülünk, hogy a(z) {$contextName} oldalán tehetjük közzé munkáját, és köszönjük, hogy kiadónkat választotta munkája megjelentetésének helyszínéül.</p>
+<p>Beküldött anyagát hamarosan közzétesszük a(z) {$contextName} kiadó oldalán, amit így már felvehet a publikációs listájára. Elismerjük azt a kemény munkát, ami egy sikeres megjelentetéshez vezet és szeretnénk gratulálni ehhez.</p>
+<p>A továbbiak során beküldött anyaga keresztülmegy az olvasószerkesztés és a formázás  folyamatán, ami előkészíti a közzétételre.</p>
+<p >Hamarosan megkapja a további utasításokat.</p>
+<p>Ha bármilyen kérdése van nyugodtan forduljon hozzánk a <a href="{$authorSubmissionUrl}">beküldött anyag felületén</a> keresztül.</p>
+<p> >Üdvözlettel:</p>
+<p>{$signature}</p>
+";s:28:"emails.layoutRequest.subject";s:86:"A {$submissionId} beküldött anyag készen áll az előállításra {$contextAcronym}";s:25:"emails.layoutRequest.body";s:873:"<p>Tisztelt {$recipientName}!</p><p>Egy új beküldött anyag készen áll a tördelőszerkesztésre: </p><p><a href="{$submissionUrl}">{$submissionId} {$submissionTitle}</a><br />{$contextName}</p><ol><li>1. Kattintson a beküldött anyag fent található URL linkjére.</li><li>2. Töltse le a Megjelentetésre előkészített fájlokat, és használja őket a kefelenyomatok létrehozásához a kiadó szabványainak megfelelően.</li><li>3. Töltse fel a kefelenyomatokat a beküldött anyag Kiadványformátumok részébe.</li><li>4. A Megjelentetéssel kapcsolatos megbeszélések segítségével értesítse a szerkesztőt, hogy a kefelenyomatok készen állnak.</li></ol><p>Ha jelenleg nem tudja elvégezni ezt a munkát, vagy bármilyen kérdése van forduljon hozzánk bizalommal. Köszönjük a kiadónak végzett munkáját.</p><p>Üdvözlettel:</p>{$signature}";s:29:"emails.layoutComplete.subject";s:28:"Kefelenyomatok elkészültek";s:26:"emails.layoutComplete.body";s:330:"<p>Tisztelt {$recipientName}!<p><p>A kefelenyomatok elkészültek a következő beküldött anyaghoz és készen állnak az utolsó átnézésre.</p><p><a href="{$submissionUrl}">{$submissionTitle}</a><br />{$contextName}</p><p>Ha bármilyen kérdése van nyugodtan forduljon hozzánk.</p><p>Üdvözlettel,</p><p>{$senderName}</p>";s:27:"emails.indexRequest.subject";s:14:"Index kérése";s:24:"emails.indexRequest.body";s:779:"{$recipientName}:<br />
+<br />
+A(z) {$contextName} oldal &quot;{$submissionTitle}&quot; című beküldött anyagához most indexeket kell létrehozni az alábbi lépésekkel.<br />
+1. Kattintson a beküldött anyag alább látható URL linkjére.<br />
+2. Jelentkezzen be és használja a kefelenyomat fájljait, hogy létrehozza az anyag megfelelő formátumát a kiadó szabványainak megfelelően.<br />
+3. Küldje el a Befejezés e-mailt a szerkesztőnek.<br />
+<br />
+{$contextName} URL: {$contextUrl}<br />
+Beküldött anyag URL: {$submissionUrl}<br />
+Felhasználónév: {$recipientUsername}<br />
+<br />
+Ha jelenleg nem tudja elkészíteni a munkát, vagy kérdése van nyugodtan forduljon hozzánk. Köszönjük a kiadónak végzett munkáját.<br />
+<br />
+{$signature}";s:28:"emails.indexComplete.subject";s:29:"Index formátumok létrehozva";s:25:"emails.indexComplete.body";s:295:"{$recipientName}:<br />
+<br />
+A(z) {$contextName} oldal &quot;{$submissionTitle},&quot; című kéziratához elkészültek az indexek, és a beküldött anyag készen áll a korrektúrázásra.<br />
+<br />
+Ha bármi kérdése van nyugodtan forduljon hozzánk.<br />
+<br />
+{$signatureFullName}";s:24:"emails.emailLink.subject";s:51:"Lehetséges érdeklődésre számot tartó kézirat";s:21:"emails.emailLink.body";s:198:"Úgy gondoltuk érdekelheti az alábbi megjelentett mű: {$authors}: &quot;{$submissionTitle}&quot;  ({$volume} kötet, {$number} szám ({$year})) - {$contextName} URL: &quot;{$submissionUrl}&quot;.";s:28:"emails.emailLink.description";s:303:"Ez az e-mail sablon lehetőséget biztosít a regisztrált olvasónak arra, hogy egy kiadványról információt küldjön valakinek, akit az érdekelhet. Az Olvasási eszközökön keresztül érhető el, és a Kiadó menedzsernek kell engedélyeznie az Olvasási eszközök adminisztrációs oldalán.";s:31:"emails.notifySubmission.subject";s:34:"Értesítés beküldött anyagról";s:28:"emails.notifySubmission.body";s:177:"Önnek üzenetet küldött {$sender} az alábbi beküldött anyagot illetően: &quot;{$submissionTitle}&quot; ({$monographDetailsUrl}):<br />
+<br />
+		{$message}<br />
+<br />
+		";s:35:"emails.notifySubmission.description";s:98:"Értesítés egy felhasználótól, amit a beküldött anyag információs központból küldött.";s:25:"emails.notifyFile.subject";s:40:"Értesítés beküldött anyag fájlról";s:22:"emails.notifyFile.body";s:194:"Önnek üzenetet küldött {$sender} az alábbi fájllal kapcsolatban &quot;{$fileName}&quot; , &quot;{$submissionTitle}&quot; ({$monographDetailsUrl}):<br />
+<br />
+		{$message}<br />
+<br />
+		";s:29:"emails.notifyFile.description";s:102:"Értesítés egy felhasználótól, amit a beküldött anyag fájlinformációs központból küldött";s:43:"emails.statisticsReportNotification.subject";s:44:"Szerkesztői tevékenység {$month}, {$year}";s:40:"emails.statisticsReportNotification.body";s:849:"
+Tisztelt {$recipientName}! <br />
+<br />
+Az oldal egészségének állapotjelentése {$month}, {$year} elérhető.  Ennek a hónapnak a legfontosabb statisztikái az alábbiakban találhatók.<br />
+<ul>
+	<li>Új beküldött anyagok ebben a hónapban: {$newSubmissions}</li>
+	<li>Visszautasított anyagok ebben a hónapban: {$declinedSubmissions}</li>
+	<li>Elfogadott anyagok ebben a hónapban: {$acceptedSubmissions}</li>
+	<li>A rendszerben található összes  beküldött anyag: {$totalSubmissions}</li>
+</ul>
+Jelentkezzen be az oldalra a további részletekért, hogy megtekinthesse a <a href="{$editorialStatsLink}">szerkesztői trendek</a> és a <a href="{$publicationStatsLink}">megjelentetett könyvek statisztikáit</a>. Az e havi szerkesztői trendek teljes másolatát mellékeljük.<br />
+<br />
+Üdvözlettel,<br />
+{$contextSignature}";s:27:"emails.announcement.subject";s:20:"{$announcementTitle}";s:24:"emails.announcement.body";s:180:"<b>{$announcementTitle}</b><br />
+<br />
+{$announcementSummary}<br />
+<br />
+Látogassa meg oldalunkat, hogy elolvashassa a <a href="{$announcementUrl}">a teljes értesítést</a>.";}}}

@@ -1,0 +1,6 @@
+1825507151a:3:{s:6:"domain";N;s:12:"plural-forms";s:26:"nplurals=2; plural=n != 1;";s:8:"messages";a:1:{s:0:"";a:4:{s:40:"emails.manualPaymentNotification.subject";s:28:"Notificación de pago manual";s:37:"emails.manualPaymentNotification.body";s:392:"Es necesario procesar un pago manual para la editorial {$contextName} y el usuario/a {$senderName} (username &quot;{$senderUsername}&quot;).<br />
+<br />
+El elemento por el que hay que pagar es &quot;{$paymentName}&quot;.<br />
+El coste es {$paymentAmount} ({$paymentCurrencyCode}).<br />
+<br />
+Este correo electrónico ha sido generado por el módulo de pago manual de Open Monograph Press.";s:44:"emails.manualPaymentNotification.description";s:125:"Esta plantilla de correo electrónico se usa para notificar al gestor/a de la revista de que se ha solicitado un pago manual.";s:57:"emailTemplate.variable.manualPaymentPlugin.senderUsername";s:53:"El nombre de usuario/a de la persona que hizo el pago";}}}

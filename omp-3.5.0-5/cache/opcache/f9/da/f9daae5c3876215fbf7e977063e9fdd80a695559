@@ -1,0 +1,1 @@
+1825506996a:3:{s:6:"domain";N;s:12:"plural-forms";s:84:"nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;";s:8:"messages";a:1:{s:0:"";a:2:{s:26:"author.submit.notAccepting";s:45:"Wydawnictwo nie przyjmuje obecnie zgłoszeń.";s:13:"author.submit";s:16:"Nowe zgłoszenie";}}}

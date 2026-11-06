@@ -1,0 +1,1 @@
+1825507151a:3:{s:6:"domain";N;s:12:"plural-forms";s:26:"nplurals=2; plural=n != 1;";s:8:"messages";a:1:{s:0:"";a:3:{s:37:"plugins.block.information.displayName";s:23:"Bloques de información";s:37:"plugins.block.information.description";s:72:"Este módulo proporciona un enlace con información en la barra lateral.";s:30:"plugins.block.information.link";s:12:"Información";}}}

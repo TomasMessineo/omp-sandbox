@@ -1,0 +1,7 @@
+1825506997a:3:{s:6:"domain";N;s:12:"plural-forms";s:26:"nplurals=2; plural=n != 1;";s:8:"messages";a:1:{s:0:"";a:2:{s:35:"emails.passwordResetConfirm.subject";s:44:"Bekräftelse av återställning av lösenord";s:32:"emails.passwordResetConfirm.body";s:386:"Vi har mottagit en begäran om att återställa ditt lösenord för webbplatsen {$siteTitle}.<br />
+<br />
+Om du inte har begärt ett nytt lösenord kan du bortse från detta mejl — ditt lösenord kommer då inte att ändras. Om du vill återställa ditt lösenord, klicka på länken nedan.<br />
+<br />
+Återställ mitt lösenord: {$passwordResetUrl}<br />
+<br />
+{$siteContactName}";}}}

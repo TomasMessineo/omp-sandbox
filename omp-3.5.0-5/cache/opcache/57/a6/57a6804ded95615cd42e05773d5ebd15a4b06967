@@ -1,0 +1,166 @@
+1825506997a:3:{s:6:"domain";N;s:12:"plural-forms";s:26:"nplurals=2; plural=n != 1;";s:8:"messages";a:1:{s:0:"";a:43:{s:35:"emails.passwordResetConfirm.subject";s:25:"Parola Sıfırlama Onayı";s:32:"emails.passwordResetConfirm.body";s:349:"{$siteTitle} web sitesi için parolanızı sıfırlama isteği aldık.<br />
+<br />
+Bu isteği siz yapmadıysanız, lütfen bu e-postayı dikkate almayın, parolanız değiştirilmeyecektir. Parolanızı sıfırlamak istiyorsanız, aşağıdaki URL'ye tıklayın.<br />
+<br />
+Parolamı sıfırla: {$passwordResetUrl}<br />
+<br />
+{$siteContactName}";s:27:"emails.userRegister.subject";s:16:"Yayınevi Kaydı";s:24:"emails.userRegister.body";s:483:"Sayın {$recipientName}<br />
+<br /> Artık {$contextName} ile bir kullanıcı olarak kaydoldunuz. Web sitesi aracılığıyla bu yayıneviyle ilgili tüm çalışmalar için gerekli olan kullanıcı adınızı ve parolanızı bu e-postaya ekledik. Dilediğiniz zaman, bizimle iletişime geçerek kullanıcı listesinden çıkarılmayı isteyebilirsiniz.<br />
+<br />
+Kullanıcı adı: {$recipientUsername}<br />
+Parola: {$password}<br />
+<br />
+Teşekkür ederim,<br />
+{$signature}";s:31:"emails.reviewerRegister.subject";s:43:"{$contextName} ile Danışman olarak kayıt";s:28:"emails.reviewerRegister.body";s:937:"Uzmanlığınızın ışığında, adınızı {$contextName} için danışman veritabanına kaydetme müsaadesini aldık. Bu, sizin açınızdan herhangi bir taahhüt gerektirmez, ancak size muhtemelen değerlendirme isteği göndererek ulaşmamızı sağlayacaktır. Değerlendirmeye davet edildiğinizde, söz konusu yazı taslağının başlığını ve özetini görme fırsatınız olacak ve her zaman daveti kabul etme veya reddetme konumunda olacaksınız. Ayrıca istediğiniz zaman adınızın bu danışman listesinden kaldırılmasını isteyebilirsiniz.<br />
+<br />
+Web sitesi aracılığıyla yayınevi ile tüm etkileşimlerde kullanılan bir kullanıcı adı ve parola sağlıyoruz. Örneğin, ilgi alanlarınızı gözden geçirme dahil olmak üzere profilinizi güncellemek isteyebilirsiniz.<br />
+<br />
+Kullanıcı adı: {$recipientUsername}<br />
+Parola: {$password}<br />
+<br />Teşekkür ederim,<br />
+{$signature}";s:27:"emails.editorAssign.subject";s:15:"Editoryal Atama";s:24:"emails.editorAssign.body";s:299:"Sayın {$recipientName}:<br />
+<br />{$contextName} için &quot;{$submissionTitle},&quot; başlıklı gönderi içerik sürecini yönetebilmeniz için Editör rolünüze atandı.<br />
+<br />
+Gönderi URL: {$submissionUrl}<br />
+Kullanıcı adı: {$recipientUsername}<br />
+<br />
+Teşekkür ederim,";s:28:"emails.reviewRequest.subject";s:37:"Yazı Taslağı Değerlendirme Talebi";s:25:"emails.reviewRequest.body";s:531:"Sayın {$recipientName}:<br />
+<br />
+{$messageToReviewer}<br />
+<br />
+Değerlendirmeyi yapıp yapmayacağınızı belirtmek, gönderiye erişmek ve değerlendirme ve önerinizi kaydetmek için lütfen yayınevi web sitesine giriş yapın.<br />
+<br />
+Değerlendirme için son tarih: {$reviewDueDate}<br />
+<br />
+Gönderi URL: {$reviewAssignmentUrl}<br />
+<br />
+Username: {$recipientUsername}<br />
+<br />
+Bu isteği değerlendirdiğiniz için teşekkür ederiz.<br />
+<br />
+<br />
+Saygılarımızla,<br />
+{$signature}<br />
+";s:40:"emails.reviewResponseOverdueAuto.subject";s:37:"Yazı Taslağı Değerlendirme Talebi";s:37:"emails.reviewResponseOverdueAuto.body";s:820:"Sayın {$recipientName},<br />
+{$contextName} için &quot;{$submissionTitle}&quot; başlıklı gönderiyi gözden geçirmenizi rica ediyoruz. Cevabınızı {$responseDueDate} tarihine kadar almayı umuyorduk ve bu e-posta o tarihin geçmesiyle birlikte otomatik olarak oluşturuldu ve size gönderildi. 
+<br />
+{$messageToReviewer}<br />
+<br />
+Değerlendirmeyi yapıp yapmayacağınızı belirtmek, gönderiye erişmek ve değerlendirme ve önerinizi kaydetmek için lütfen yayınevi web sitesine giriş yapın.<br />
+<br />
+Değerlendirme için son tarih: {$reviewDueDate}.<br />
+<br />
+Gönderi URL: {$reviewAssignmentUrl}<br />
+<br />
+Kullanıcı adı: {$recipientUsername}<br />
+<br />
+Bu isteği değerlendirdiğiniz için teşekkür ederiz.<br />
+<br />
+<br />
+Saygılarımızla,<br />
+{$contextSignature}<br />
+";s:27:"emails.reviewCancel.subject";s:35:"Değerlendirme Talebi İptal Edildi";s:24:"emails.reviewCancel.body";s:459:"Sayın {$recipientName}:<br />
+<br />
+Bu noktada, {$contextName} için &quot;{$submissionTitle}&quot; başlıklı gönderiyi değerlendirmenize dair isteğimizi iptal etmeye karar verdik. Bu durumun neden olabileceği rahatsızlıktan dolayı özür dileriz ve gelecekte bu değerlendirme sürecine yardımcı olmak için sizi yeniden arayabileceğimizi umuyoruz.<br />
+<br />
+Herhangi bir sorunuz olursa, lütfen bizimle iletişime geçin.
+Saygılarımızla.";s:27:"emails.reviewReinstate.body";s:353:"Sayın {$recipientName}:<br />
+<br />
+{$contextName} için "{$submissionTitle}" başlıklı gönderiyi gözden geçirmeniz için talebimizi yeniden etkin hale getirmek istiyoruz. Bu yayınevinin değerlendirme sürecine yardımcı olabileceğinizi umuyoruz.<br />
+<br />
+Herhangi bir sorunuz olursa, lütfen bizimle iletişime geçin.
+Saygılarımızla.";s:28:"emails.reviewDecline.subject";s:27:"Değerlendirmeyi Yapamıyor";s:25:"emails.reviewDecline.body";s:286:"Sayın Editör(ler):<br />
+<br />
+Korkarım ki bu kez {$contextName} için &quot;{$submissionTitle},&quot; başlıklı gönderiyi değerlendiremeyeceğim. Beni düşündüğün için teşekkür ederim. Lütfen başka zaman beni tekrar aramaktan çekinmeyiniz.<br />
+<br />
+{$senderName}";s:27:"emails.reviewRemind.subject";s:41:"Gönderi Değerlendirme Hatırlatıcısı";s:24:"emails.reviewRemind.body";s:848:"Sayın {$recipientName}:<br />
+<br />
+{$contextName} için &quot;{$submissionTitle}&quot; başlıklı gönderiyi gözden geçirmenizi rica ediyoruz. Bu değerlendirmenin {$reviewDueDate} tarihine kadar elimizde olmasını umuyoruz ve hazırlanır hazırlanmaz değerlendirmenin elimizde olmasından memnuniyet duyacağız.<br />
+<br />
+Web sitesi için kullanıcı adınız ve şifreniz yoksa, parolanızı sıfırlamak için bu bağlantıyı kullanabilirsiniz (ki kullanıcı adınız ile birlikte size e-posta ile gönderilecektir). {$passwordLostUrl}<br />
+<br />
+Gönderi URL: {$reviewAssignmentUrl}<br />
+<br />
+Kullanıcı adı: {$recipientUsername}<br />
+<br />
+Lütfen yayınevinin çalışmalarına hayati katkısı olacak bu işlemi tamamlayabileceğinizi teyit ediniz. Cevabınızı sabırsızlıkla bekliyoruz.<br />
+<br />
+{$signature}";s:28:"emails.reviewRemindAuto.body";s:954:"Sayın {$recipientName}:<br />
+<br /> 
+{$contextName} için &quot;{$submissionTitle}&quot; başlıklı gönderiyi gözden geçirmenizi rica ediyoruz. Bu değerlendirmenin {$reviewDueDate} tarihine kadar elimizde olmasını umuyorduk ve bu e-posta o tarihin geçmesiyle birlikte otomatik olarak oluşturuldu ve size gönderildi. Değerlendirmenizi hazırlayabildiğiniz anda elimize geçmesinden yine de memnun olacağız.<br />
+<br />
+Web sitesi için kullanıcı adınız ve şifreniz yoksa, parolanızı sıfırlamak için bu bağlantıyı kullanabilirsiniz (ki kullanıcı adınız ile birlikte size e-posta ile gönderilecektir). {$passwordLostUrl}<br />
+<br />
+Gönderi URL: {$reviewAssignmentUrl}<br />
+<br />
+Kullanıcı adı: {$recipientUsername}<br />
+<br />
+Lütfen yayınevinin çalışmalarına hayati katkısı olacak bu işlemi tamamlayabileceğinizi teyit ediniz. Cevabınızı sabırsızlıkla bekliyoruz.<br />
+<br />
+{$contextSignature}";s:35:"emails.editorDecisionAccept.subject";s:15:"Editör Kararı";s:32:"emails.editorDecisionAccept.body";s:225:"Sayın {$authors}:<br />
+<br />
+{$contextName} için gönderilen &quot;{$submissionTitle}&quot; başlıklı eseriniz konusunda bir karara varıldı.<br />
+<br />
+Kararımız:<br />
+<br />
+Yazı Taslağı URL: {$submissionUrl}";s:28:"emails.layoutRequest.subject";s:21:"Prova Dizgileri İste";s:25:"emails.layoutRequest.body";s:760:"Sayın {$recipientName}:<br />
+<br />
+{$contextName}’e gönderilen &quot;{$submissionTitle}&quot; başlıklı gönderi için şimdi bu adımları izleyerek prova dizgilerin oluşturulması gereklidir.<br />
+1. Aşağıdaki Gönderi URL’sine tıklayın.<br />
+2. Yayınevine giriş yapın ve yayınevi standartlarına göre prova dizgileri oluşturmak için Mizanpaj Sürümü dosyasını kullanın.<br />
+3. TAMAMLANDI e-postasını editöre gönderin.<br />
+<br />
+{$contextName} URL: {$contextUrl}<br />
+Gönderi URL: {$submissionUrl}<br />
+Kullanıcı adı: {$recipientUsername}<br />
+<br />
+Şu anda bu işi üstlenemiyorsanız veya herhangi bir sorunuz olursa, lütfen bizimle iletişime geçin. Bu yayınevine katkılarınız için teşekkür ederiz.";s:29:"emails.layoutComplete.subject";s:28:"Prova Dizgileri Hazırlandı";s:26:"emails.layoutComplete.body";s:289:"Sayın {$recipientName}:<br />
+<br />
+{$contextName}’e gönderilen &quot;{$submissionTitle}&quot; başlıklı taslak eserin prova dizgileri hazırlanmış olup prova için hazırdır.<br />
+<br />
+Herhangi bir sorunuz olursa, lütfen bizimle iletişime geçin.<br />
+<br />
+{$senderName}";s:27:"emails.indexRequest.subject";s:13:"İstek Dizini";s:24:"emails.indexRequest.body";s:774:"Sayın {$recipientName}:<br />
+<br />
+{$contextName}'e gönderilen &quot;{$submissionTitle}&quot; başlıklı gönderi için şimdi bu adımları izleyerek dizin oluşturulması gereklidir.<br />
+1. Aşağıdaki Gönderi URL'sine tıklayın.<br />
+2. Yayınevine giriş yapın ve yayınevi standartlarına göre prova dizgileri oluşturmak için Sayfa Provaları dosyasını kullanın.<br />
+3. TAMAMLANDİ e-postasını editöre gönderin.<br />
+<br />
+{$contextName} URL: {$contextUrl}<br />
+Gönderim URL'si: {$submissionUrl}<br />
+Kullanıcı adı: {$recipientUsername}<br />
+<br />
+Şu anda bu işi üstlenemiyorsanız veya herhangi bir sorunuz olursa, lütfen bizimle iletişime geçin. Bu yayınevine katkılarınız için teşekkür ederiz.<br />
+<br />
+{$signature}";s:28:"emails.indexComplete.subject";s:23:"Dizin provaları Hazır";s:25:"emails.indexComplete.body";s:271:"Sayın {$recipientName}:<br />
+<br />
+Dizinler artık  {$contextName} için gönderilen "{$submissionTitle}" için hazırlanmıştır ve prova için hazırdır.<br />
+<br />
+Herhangi bir sorunuz olursa, lütfen bizimle iletişime geçin.<br />
+<br />
+{$signatureFullName}";s:24:"emails.emailLink.subject";s:32:"İlginizi Çekebilecek Bir Kitap";s:21:"emails.emailLink.body";s:242:"&quot;{$submissionUrl}&quot; adresinde yayınlanan {$contextName}’in Vol {$volume}, No {$number} ({$year}) sayısında mevcut {$authors}’e ait &quot;{$submissionTitle}&quot; başlıklı eseri görmek ilginizi çekebilir diye düşündüm.";s:28:"emails.emailLink.description";s:267:"Bu e-posta şablonu, kayıtlı bir okuyucuya, ilgilenebilecek birine bir kitap hakkında bilgi gönderme fırsatı sağlar. Okuma Araçları üzerinden kullanılabilir ve Yayınevi Yöneticisi tarafından Okuma Araçları Yönetimi sayfasından etkinleştirilmelidir.";s:31:"emails.notifySubmission.subject";s:19:"Gönderim Bildirimi";s:28:"emails.notifySubmission.body";s:156:"{$sender} kullanıcısından &quot;{$submissionTitle}&quot; ({$monographDetailsUrl}) ile ilgili bir mesajınız var:<br />
+<br />
+{$message}<br />
+<br />
+		";s:35:"emails.notifySubmission.description";s:90:"Gönderi bilgi merkezi penceresi aracılığıyla kullanıcıdan gönderilen bir bildirim.";s:25:"emails.notifyFile.subject";s:27:"Gönderi Dosyası Bildirimi";s:22:"emails.notifyFile.body";s:191:"({$monographDetailsUrl}) &quot; {$submissionTitle} içindeki {$fileName} dosyasıyla ilgili olarak {$sender}" kullanıcısından bir mesajınız var:<br />
+<br />
+		{$message}<br />
+<br />
+		";s:29:"emails.notifyFile.description";s:86:"Dosya bilgi merkezi penceresi aracılığıyla kullanıcıdan gönderilen bir bildirim";s:43:"emails.statisticsReportNotification.subject";s:42:"{$month}, {$year} için editoryal etkinlik";s:40:"emails.statisticsReportNotification.body";s:724:"
+{$recipientName}, <br />
+<br />{$month}, {$year} için yayınevi sağlık raporunuz artık hazır. Bu ay için önemli istatistikler aşağıdadır.<br />
+<ul>
+	<li>Bu ayki yeni gönderiler: {$newSubmissions}</li>
+	<li>Bu ay reddedilen gönderiler: {$declinedSubmissions}</li>
+	<li>Bu ay kabul edilen gönderiler: {$acceptedSubmissions}</li>
+	<li>Sistemdeki toplam gönderi sayısı: {$totalSubmissions}</li>
+</ul>
+Daha ayrıntılı <a href="{$editorialStatsLink}">editoryal eğilimleri</a> ve <a href="{$publicationStatsLink}">yayınlanan makale istatistiklerini</a>görüntülemek için yayınevine giriş yapın. Bu ayki editoryal eğilimlerin tam bir kopyası ektedir.<br />
+<br />
+Içtenlikle<br />
+{$contextSignature}";s:27:"emails.announcement.subject";s:20:"{$announcementTitle}";s:24:"emails.announcement.body";s:170:"<b>{$announcementTitle}</b><br />
+<br />
+{$announcementSummary}<br />
+<br />
+<a href="{$announcementUrl}">Duyurunun tamamını</a> okumak için web sitemizi ziyaret edin.";}}}

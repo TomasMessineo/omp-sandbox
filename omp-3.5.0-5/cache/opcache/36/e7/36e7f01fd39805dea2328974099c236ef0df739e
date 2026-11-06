@@ -1,0 +1,115 @@
+1825506993a:3:{s:6:"domain";N;s:12:"plural-forms";s:26:"nplurals=2; plural=n != 1;";s:8:"messages";a:1:{s:0:"";a:58:{s:35:"emails.passwordResetConfirm.subject";s:42:"Bekræftelse af nulstilling af adgangskode";s:32:"emails.passwordResetConfirm.body";s:383:"Vi har modtaget en forespørgsel om at nulstille din adgangskode til webstedet {$siteTitle}.<br />
+<br />
+Hvis du ikke selv har sendt denne forespørgsel, skal du ignorere denne e-mail, og din adgangskode vil ikke blive ændret. Klik på nedenstående URL-adresse, hvis adgangskoden skal ændres.<br />
+<br />
+Nulstil min password: {$passwordResetUrl}<br />
+<br />
+{$siteContactName}";s:27:"emails.userRegister.subject";s:24:"Registrering hos udgiver";s:24:"emails.userRegister.body";s:460:"Kære {$recipientName}<br />
+<br />
+Du er nu blevet registreret som bruger med {$contextName}. Vi har inkluderet dit brugernavn og din adgangskode i denne e-mail. Dette skal bruges i forbindelse med arbejde på denne udgivers hjemmeside. På ethvert tidspunkt kan du bede om at blive fjernet fra listen over brugere ved at kontakte mig.<br />
+<br />
+Brugernavn: {$recipientUsername}<br />
+Password: {$password}<br />
+<br />
+Med venlig hilsen<br />
+{$signature}";s:34:"emails.userValidateContext.subject";s:17:"Valider din konto";s:31:"emails.userValidateContext.body";s:267:"{$recipientName}<br />
+<br />
+Du har oprettet en konto ved {$contextName}, men du skal validere din e-mail, adresse før du kan begynde at bruge kontoen. Følg linket nedenfor for at gøre dette:<br />
+<br />
+{$activateUrl}<br />
+<br />
+Tak,<br />
+{$contextSignature}";s:31:"emails.userValidateSite.subject";s:17:"Valider din konto";s:28:"emails.userValidateSite.body";s:262:"{$recipientName}<br />
+<br />
+Du har oprettet en konto ved {$siteTitle}, men du skal validere din e-mail adresse, før du kan begynde at bruge kontoen. Følg linket nedenfor for at gøre dette:<br />
+<br />
+{$activateUrl}<br />
+<br />
+Tak,<br />
+{$siteSignature}";s:31:"emails.reviewerRegister.subject";s:45:"Registrering som bedømmer hos {$contextName}";s:28:"emails.reviewerRegister.body";s:939:"På baggrund af din ekspertise har vi taget den frihed at registrere dit navn i bedømmerdatabasen for {$contextName}. Dette stiller ikke krav om nogen form for engagement fra din side, men gør det blot muligt for os at kontakte dig med hensyn til en eventuelt bedømmelse af et manuskript. Hvis du inviteres til at foretage en bedømmelse, vil du have mulighed for at se titlen på og et resumé af det pågældende manuskript, og du vil altid kunne acceptere eller afvise invitationen. Du kan til enhver tid også bede om at få dit navn fjernet fra listen over bedømmere.<br />
+<br />
+Vi giver dig et brugernavn og en adgangskode, der skal bruges i forbindelse med alle interaktioner med tidsskriftet via tidsskriftets webside. Du kan f.eks. bede om at få opdateret din profil, herunder dine bedømmelsesinteresser.<br />
+<br />
+Brugernavn: {$recipientUsername}<br />
+Password: {$password}<br />
+<br />
+Mange tak. <br />
+{$signature}";s:27:"emails.editorAssign.subject";s:71:"Du er blevet tilknyttet en indsendelse til {$contextName} som redaktør";s:24:"emails.editorAssign.body";s:633:"<p>Kære {$recipientName}</p><p>Du er blevet tilknyttet den følgende indsendelse for at følge den gennem den redaktionelle proces.</p><p><a href="{$submissionUrl}">{$submissionTitle}</a><br />{$authors}</p><p><b>Abstract</b></p>{$submissionAbstract}<p>Hvis du vurderer, at indsendelsen er relevant for {$contextName}, bedes du sende den videre til bedømmelsestrinnet ved at vælge "Send til intern bedømmelse" og dernæst tilknytte bedømmere ved at klikke på "Tilføj bedømmer".</p><p> Hvis indsendelsen ikke passer til denne udgiver, bedes du afvise den.</p><p>På forhånd tak.</p><p>Med venlig hilsen</p>{$contextSignature}";s:28:"emails.reviewRequest.subject";s:42:"Forespørgsel om bedømmelse af manuskript";s:25:"emails.reviewRequest.body";s:959:"<p>Kære {$recipientName}</p><p>Jeg tror, at du vil være en fremragende bedømmer på en indsendelse til {$contextName}. Indsendelsens titel og resumé finder du nedenfor, og jeg håber, du vil overveje at påtage dig denne vigtige opgave for os.</p><p>Hvis du har mulighed for at bedømme denne indsendelse, skal bedømmelsen afleveres senest d. {$reviewDueDate}. Du kan se indsendelsen, uploade bedømmelsesfiler og indsende din bedømmelse ved at logge ind på udgiverens hjemmeside og følge trinnene nedenfor.</p><p><a href="{$reviewAssignmentUrl}">{$submissionTitle}</a></p><p><b>Resumé</b></p>{$submissionAbstract}<p>Vær venlig at <a href="{$reviewAssignmentUrl}">acceptere eller afvise</a>bedømmelsen senest d. <b>{$responseDueDate}</b>.</p><p>Du er velkommen til at kontakte mig, hvis du har nogle spørgsmål omkring indsendelsen eller bedømmelsesprocessen.</p><p>Tak for at overveje denne forespørgsel.</p><p>Med venlig hilsen</p>{$signature}";s:38:"emails.reviewRequestSubsequent.subject";s:52:"Forespørgsel om bedømmelse af en revideret artikel";s:35:"emails.reviewRequestSubsequent.body";s:1105:"<p>Kære {$recipientName}</p><p>Tak for din bedømmelse af <a href="{$reviewAssignmentUrl}">{$submissionTitle}</a>. Forfatterne har gennemgået feedbacken fra bedømmerne og har nu indsendt en revideret udgave af deres manuskript. Jeg skriver for at spørge, om du vil foretage endnu en runde fagfællebedømmelse af dette manuskript.</p><p>Hvis du har mulighed for at bedømme denne indsendelse, skal din bedømmelse være færdig senest d. {$reviewDueDate}. Du kan <a href="{$reviewAssignmentUrl}">følge trinnene i bedømmelsen</a> for at se indsendelsen, uploade filer og indsende dine bedømmelseskommentarer</p><p><a href="{$reviewAssignmentUrl}">{$submissionTitle}</a></p><p><b>Resumé</b></p>{$submissionAbstract}<p>Vær venlig at <a href="{$reviewAssignmentUrl}">acceptere eller afvise bedømmelsesopgaven</a> senest d. <b>{$responseDueDate}</b>.</p><p>Hvis du har spørgsmål omkring indsendelsen eller bedømmelsesprocessen, er du meget velkommen til at kontakte mig.</p><p>Jeg vil takke dig for at overveje denne anmodning. Din hjælp er meget værdsat.</p><p>Med venlig hilsen</p>{$signature}";s:40:"emails.reviewResponseOverdueAuto.subject";s:42:"Forespørgsel om bedømmelse af manuskript";s:37:"emails.reviewResponseOverdueAuto.body";s:866:"Kære {$recipientName}:<br />
+Dette er blot for at minde dig om vores forespørgsel om din bedømmelse af manuskriptet &quot;{$submissionTitle},&quot; for {$contextName}. Vi havde håbet på at modtage dit svar senest den {$responseDueDate}, og denne e-mail er blevet automatisk genereret og sendt til dig, da den pågældende dato er overskredet.
+<br />
+{$messageToReviewer}<br />
+<br />
+Log på tidsskriftets websted for at angive, om du vil påtage dig bedømmelsen eller ej, samt for at få adgang til manuskriptet og registrere din bedømmelse og anbefaling. <br />
+<br />
+Selve bedømmelsen skal afleveres senest den {$reviewDueDate}.<br />
+<br />
+Submission URL: {$reviewAssignmentUrl}<br />
+<br />
+Brugernavn: {$recipientUsername}<br />
+<br />
+Tak for din overvejelse af denne forespørgsel.<br />
+<br />
+<br />
+Mange hilsner<br />
+{$contextSignature}<br />
+";s:27:"emails.reviewCancel.subject";s:43:"Annullering af forespørgsel om bedømmelse";s:24:"emails.reviewCancel.body";s:464:"{$recipientName}:<br />
+<br />
+På nuværende tidspunkt har vi valgt at annullere vores forespørgsel til dig om at bedømme manuskriptet &quot;{$submissionTitle}&quot; til {$contextName}. Vi beklager den ulejlighed, dette eventuelt måtte forårsage, og vi håber, at vi må henvende os til dig i fremtiden og bede om din assistance i forbindelse med dette tidsskrifts bedømmelsesproces.<br />
+<br />
+Hvis du har spørgsmål, er du velkommen til at kontakte mig.";s:27:"emails.reviewReinstate.body";s:575:"<p>Kære {$recipientName}</p><p>Vi annullerede for nylig vores anmodning til dig om at bedømme indsendelsen: {$submissionTitle} til {$contextName}. Vi har nu omgjort den beslutning, og vi håber, at du stadig har mulighed for at bedømme indsendelsen.</p><p>Hvis du kan hjælpe med bedømmelsen af denne indsendelse, kan du <a href="{$reviewAssignmentUrl}">logge ind på udgiverens webside</a> for at se indsendelsen, uploade filer og indsende din bedømmelse.</p><p>Hvis du har nogle spørgsmål, er du velkommen til at kontakte mig.</p><p>Med venlig hilsen</p>{$signature}";s:28:"emails.reviewDecline.subject";s:29:"Kan ikke foretage bedømmelse";s:25:"emails.reviewDecline.body";s:271:"Redaktører:<br />
+<br />
+Jeg beklager, at jeg på nuværende tidspunkt ikke kan bedømme manuskriptet &quot;{$submissionTitle}&quot; til {$contextName}. Tak, fordi du tænkte på mig, og du er altid velkommen til at kontakte mig en anden gang.<br />
+<br />
+{$senderName}";s:27:"emails.reviewRemind.subject";s:42:"Påmindelse om at afslutte din bedømmelse";s:24:"emails.reviewRemind.body";s:667:"<p>Kære {$recipientName}</p><p>Dette er blot for at minde dig om vores anmodning om, at du vil bedømme manuskriptet: "{$submissionTitle}" til {$contextName}. Vi havde håbet på at modtage bedømmelsen senest den {$reviewDueDate} og ser frem til at modtage den, så snart du er færdig med den.</p><p>Du kan <a href="{$reviewAssignmentUrl}">logge ind på udgiverens webside</a> og følge trinnene for bedømmelse for at se manuskriptet, uploade filer og indsende dine bedømmelseskommentarer.</p><p>Kontakt mig venligst, hvis du har brug for en udsættelse af deadlinen. Jeg ser frem til at høre fra dig.</p><p>På forhånd tak og med venlig hilsen</p>{$signature}";s:28:"emails.reviewRemindAuto.body";s:697:"<p>Kære {$recipientName}</p><p>Dette er en automatisk udsendt e-mail fra {$contextName} for at minde dig om vores anmodning om, at du vil bedømme manuskriptet: "{$submissionTitle}".</p><p>Vi havde håbet på at modtage bedømmelsen senest den {$reviewDueDate} og ser frem til at modtage den, så snart du er færdig med den.</p><p>Du kan <a href="{$reviewAssignmentUrl}">logge ind på udgiverens webside</a> og følge trinnene for bedømmelse for at se manuskriptet, uploade filer og indsende dine bedømmelseskommentarer.</p><p>Kontakt mig venligst, hvis du har brug for en udsættelse af deadlinen. Jeg ser frem til at høre fra dig.</p><p>På forhånd tak og med venlig hilsen</p>{$signature}";s:35:"emails.editorDecisionAccept.subject";s:19:"Redaktørbeslutning";s:32:"emails.editorDecisionAccept.body";s:1008:"<p>Kære {$recipientName}</p><p>Jeg er glad for at kunne meddele dig, at vi har besluttet at acceptere din indsendelse uden yderligere revision. Efter omhyggelig gennemgang fandt vi, at din indsendelse, {$submissionTitle}, levede op til eller oversteg vores forventninger. Vi er glade for at udgive dit manuskript i {$contextName}, og vi takker dig, fordi du valgte os til at udgive dit arbejde.</p><p>Din bidrag vil snart blive offentliggjort på hjemmesiden for {$contextName}, og du er velkommen til at inkludere det i din liste over publikationer. Vi anerkender det hårde arbejde, der ligger i hver succesfuld indsendelse, og vi vil gerne lykønske dig med at nå hertil.</p><p>Din indsendelse vil nu gennemgå manuskriptredigering og formatering for at forberede den til publicering.</p><p >Du vil snart modtage yderligere instruktioner.</p><p>Hvis du har spørgsmål, bedes du kontakte mig fra dit <a href="{$authorSubmissionUrl}">indsendelseskontrolpanel</a>.</p><p >Med venlig hilsen</p>{$signature}";s:43:"emails.editorDecisionSendToInternal.subject";s:54:"Din indsendelse er blevet sendt til intern bedømmelse";s:40:"emails.editorDecisionSendToInternal.body";s:721:"<p>Kære {$recipientName}.</p><p>Jeg har fornøjelsen at meddele dig, at en redaktør har gennemset din indsendelse, {$submissionTitle}, og har besluttet at sende den til intern bedømmelse. Du hører fra os med feedback fra bedømmerne og information om næste trin.</p><p>Vær opmærksom på, at dette ikke garanterer, at indsendelsen vil blive publiceret. Vi tager bedømmernes anbefalinger i betragtning, før vi beslutter, om indsendelsen kan accepteres til publicering. Du bliver muligvis bedt om at lave revisioner og svare på bedømmernes beskeder, før der kan træffes en endelig beslutning.</p><p>Hvis du har nogle spørgsmål, bedes du kontakte mig fra dit indsendelsesbetjeningspanel.</p><p>{$signature}</p>";s:39:"emails.editorDecisionSkipReview.subject";s:56:"Din indsendelse er blevet sendt til manuskriptredigering";s:36:"emails.editorDecisionSkipReview.body";s:1056:"<p>Kære {$recipientName}</p>
+<p>Jeg har fornøjelsen af at meddele dig, at vi har besluttet at acceptere din indsendelse uden fagfællebedømmelse. Vi syntes, at din indsendelse, {$submissionTitle}, levede op til vores forventninger, og vi kræver ikke, at denne type indsendelse skal igennem fagfællebedømmelse. Vi glæder os til at udgive dit arbejde i {$contextName}, og vi takker dig for at have valgt os til udgivelsen.</p>
+<p>Din indsendelse vil snart blive udgivet på vores side for {$contextName} og du må gerne inkludere den i din liste over udgivelser. Vi anerkender det hårde arbejde, der ligger bag enhver succesrig indsendelse, og vi vil gerne ønske dig tillykke med din indsats.</p>
+<p>Din indsendelse vil nu gå igennem manuskriptredigering og blive formateret for at forberede den til udgivelse.</p>
+<p>Du vil snart modtage yderligere instruktioner.</p>
+<p>Hvis du har nogle spørgsmål, bedes du kontakte mig fra dit <a href="{$authorSubmissionUrl}">indsendelsesbetjeningspanel</a>.</p>
+<p>Med venlig hilsen</p>
+<p>{$signature}</p>
+";s:28:"emails.layoutRequest.subject";s:36:"Forespørgsel om publiceringsversion";s:25:"emails.layoutRequest.body";s:822:"<p>Kære {$recipientName}</p><p>En ny indsendelse er klar til layoutredigering:</p><p><a href="{$submissionUrl}">{$submissionId} {$submissionTitle}</a><br />{$contextName}</p><ol><li>Klik på indsendelsens URL-adresse ovenfor.</li><li>Download de(n) produktionsklare fil(er) og formater dem til publiceringsklare fil(er) i overensstemmelse med udgiverens standarder.</li><li>Upload de(n) publiceringsklare fil(er) til indsendelsessektionen Publiceringsformater.</li><li>Brug diskussionen under produktionssektionen til at give redaktøren besked om, at de(n) publiceringsklare fil(er) er klar.</li></ol><p>Hvis du ikke har mulighed for at påtage dig dette arbejde på nuværende tidspunkt eller har spørgsmål, bedes du kontakte mig. Tak for dit bidrag til denne udgivers arbejde.</p><p>Med venlig hilsen</p>{$signature}";s:29:"emails.layoutComplete.subject";s:32:"Publiceringsversion færdiggjort";s:26:"emails.layoutComplete.body";s:337:"<p>Kære {$recipientName}</p><p>Der er nu færdiggjort en publiceringsklar fil for den følgende indsendelse, som er klar til en sidste revidering.</p><p><a href="{$submissionUrl}">{$submissionTitle}</a><br />{$contextName}</p><p>Hvis du har nogle spørgsmål, må du endelig kontakte mig.</p><p>Med venlig hilsen</p><p>{$senderName}</p>";s:27:"emails.indexRequest.subject";s:28:"Forespørgsel om indeksering";s:24:"emails.indexRequest.body";s:724:"{$recipientName}:<br />
+<br />
+Indsendelsen &quot;{$submissionTitle}&quot; til {$contextName} skal nu indekseres ved at følge disse trin.<br />
+1. Klik på manuskriptets URL-adresse nedenfor.<br />
+2. Hent filerne placeret under ‘Produktionsklare filer’ og formater dem til publikationsformater i overensstemmelse med tidsskriftets krav..<br />
+3. Send den FÆRDIGE e-mail til redaktøren<br />
+<br />
+{$contextName} URL: {$contextUrl}<br />
+Submission URL: {$submissionUrl}<br />
+Username: {$recipientUsername}<br />
+<br />
+Hvis du ikke er i stand til at påtage dig dette arbejde på nuværende tidspunkt eller har spørgsmål, bedes du kontakte mig. Tak for dit bidrag til dette tidsskrift.<br />
+<br />
+{$signature}";s:28:"emails.indexComplete.subject";s:21:"Register færdiggjort";s:25:"emails.indexComplete.body";s:266:"{$recipientName}:<br />
+<br />
+Der er nu udarbejdet indeks til manuskriptet &quot;{$submissionTitle},&quot; til {$contextName} og den er klar til korrekturlæsning.<br />
+<br />
+Hvis du har spørgsmål, er du velkommen til at kontakte mig.<br />
+<br />
+{$senderName}";s:24:"emails.emailLink.subject";s:39:"Artikel, der muligvis har din interesse";s:21:"emails.emailLink.body";s:220:"Jeg tænkte, at du måske ville være interesseret i at læse &quot;{$submissionTitle}&quot; af {$authors} der er publiceret i Årg. {$volume}, Nummer {$number} ({$year}) i {$contextName} at &quot;{$submissionUrl}&quot;.";s:28:"emails.emailLink.description";s:270:"Denne e-mail-skabelon giver en registreret læser mulighed for at sende oplysninger om en artikel til en person, der muligvis er interesseret. Den er tilgængelig via læseværktøjerne og skal aktiveres af tidsskriftschefen på siden Administration af læseværktøjer.";s:31:"emails.notifySubmission.subject";s:22:"Indsendelsesmeddelelse";s:28:"emails.notifySubmission.body";s:141:"Du har en besked fra {$sender} vedrørende &quot;{$submissionTitle}&quot; ({$monographDetailsUrl}):<br />
+<br />
+		{$message}<br />
+<br />
+		";s:35:"emails.notifySubmission.description";s:78:"En meddelelse fra en bruger sendt fra et indsendelsesinformationscenter modal.";s:25:"emails.notifyFile.subject";s:29:"Meddelelse om indsendelsesfil";s:22:"emails.notifyFile.body";s:173:"Du har en besked fra {$sender} vedrørende filen &quot;{$fileName}&quot; i &quot;{$submissionTitle}&quot; ({$monographDetailsUrl}):<br />
+<br />
+		{$message}<br />
+<br />
+		";s:29:"emails.notifyFile.description";s:68:"En meddelelse fra en bruger sendt fra et filinformationscenter modal";s:43:"emails.statisticsReportNotification.subject";s:43:"Redaktionel aktivitet for {$month}, {$year}";s:40:"emails.statisticsReportNotification.body";s:776:"
+Kære {$recipientName}<br />
+<br />
+Din udgivers tilstandsrapport for {$month}, {$year} er nu tilgængelig. De statistiske nøgletal ses nedenfor.<br />
+<ul>
+	<li>Nye indsendelser I denne måned: {$newSubmissions}</li>
+	<li>Afviste indsendelser I denne måned: {$declinedSubmissions}</li>
+	<li>Accepterede indsendelser i denne måned: {$acceptedSubmissions}</li>
+	<li>Systemets samlede antal indsendelser: {$totalSubmissions}</li>
+</ul>
+Log ind på din udgivers hjemmeside for at se flere oplysninger om<a href="{$editorialStatsLink}">redaktionelle udviklingstendenser</a> og <a href="{$publicationStatsLink}">offentliggjorte bogstatistikker</a>. En komplet kopi af denne måneds redaktionelle udvikling er vedhæftet.<br />
+<br />
+Med venlig hilsen<br />
+{$contextSignature}";s:27:"emails.announcement.subject";s:20:"{$announcementTitle}";s:24:"emails.announcement.body";s:161:"<b>{$announcementTitle}</b><br />
+<br />
+{$announcementSummary}<br />
+<br />
+Besøg vores websted for at læse <a href="{$announcementUrl}">hele meddelelsen</a>.";s:32:"emails.revisedVersionNotify.body";s:441:"<p>Kære {$recipientName}</p><p>Forfatteren har uploadet et revideret manuskript: <b>{$authorsShort} — {$submissionTitle}</b>.</p><p>Som tildelt redaktør, vil vi bede dig om at logge ind og <a href="{$submissionUrl}">gennemgå revisionen</a> for at beslutte, om indsendelsen skal accepteres, afvises eller sendes i endnu en bedømmelsesrunde.</p><br><br>—<br>Dette er en automatisk besked fra <a href="{$contextUrl}">{$contextName}</a>.";s:30:"emails.reviewReinstate.subject";s:48:"Kan du stadig bedømme noget for {$contextName}?";s:35:"emails.revisedVersionNotify.subject";s:25:"Revideret udgave uploadet";s:30:"emails.editorAssignReview.body";s:487:"<p>Kære {$recipientName}</p><p>Du er blevet tilknyttet den følgende indsendelse for at følge den gennem bedømmelsesfasen.</p><p><a href="{$submissionUrl}">{$submissionTitle}</a><br />{$authors}</p><p><b>Abstract</b></p>{$submissionAbstract}<p>Log venligst ind for at <a href="{$submissionUrl}">se indsendelsen</a> og tildele kvalificerede bedømmere. Du kan tilknytte en bedømmer ved at klikke på "Tilføj bedømmer".</p><p>På forhånd tak.</p><p>Med venlig hilsen</p>{$signature}";s:34:"emails.editorAssignProduction.body";s:519:"<p>Kære {$recipientName}</p><p>Du er blevet tilknyttet den følgende indsendelse for at følge den gennem produktionstrinnet.</p><p><a href="{$submissionUrl}">{$submissionTitle}</a><br />{$authors}</p><p><b>Abstract</b></p>{$submissionAbstract}<p>Log venligst ind for at <a href="{$submissionUrl}">se indsendelsen</a>. Når de produktionsklare filer er tilgængelige, bedes du uploade dem under <strong>Publikation > Publiceringsversioner</strong> fanen.</p><p>På forhånd tak.</p><p>Med venlig hilsen</p>{$signature}";}}}

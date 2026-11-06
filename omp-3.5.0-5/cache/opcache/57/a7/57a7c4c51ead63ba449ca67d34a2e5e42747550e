@@ -1,0 +1,124 @@
+1825506996a:3:{s:6:"domain";N;s:12:"plural-forms";s:25:"nplurals=2; plural=n > 1;";s:8:"messages";a:1:{s:0:"";a:60:{s:35:"emails.passwordResetConfirm.subject";s:37:"Confirmação de Alteração de Senha";s:32:"emails.passwordResetConfirm.body";s:318:"Recebemos um pedido de alteração da sua senha para o site de {$siteTitle}.<br />
+<br />
+Se não enviou este pedido, ignore este e-mail e a sua senha permanecerá inalterada. Se pretende alterar a sua senha, clique no URL abaixo.<br />
+<br />
+Alterar a minha senha: {$passwordResetUrl}<br />
+<br />
+{$siteContactName}";s:27:"emails.userRegister.subject";s:18:"Registo da Editora";s:24:"emails.userRegister.body";s:459:"{$recipientName}<br />
+<br />
+Encontra-se registado com sucesso na {$contextName}. Encontra abaixo o seu nome de utilizador e senha, que serão necessários para entrar no site da editora. A qualquer momento, pode solicitar que seja removido da lista de utilizadores, entrando em contacto com a editora.<br />
+<br />
+Nome de utilizador: {$recipientUsername}<br />
+Senha: {$password}<br />
+<br />
+Agradecendo antecipadamente o seu interesse,<br />
+{$signature}";s:34:"emails.userValidateContext.subject";s:18:"Valide a sua conta";s:31:"emails.userValidateContext.body";s:269:"{$recipientName}<br />
+<br />
+Criou uma nova conta em {$contextName}, mas antes de poder começar a utilizá-la, é necessário validar a sua conta de e-mail. Para isso, clique no link abaixo:<br />
+<br />
+{$activateUrl}<br />
+<br />
+Obrigado,<br />
+{$contextSignature}";s:31:"emails.userValidateSite.subject";s:18:"Valide a sua Conta";s:28:"emails.userValidateSite.body";s:259:"{$recipientName}<br />
+<br />
+Criou uma conta em {$siteTitle}, mas antes de poder começar a utilizá-la, é necessário validar a sua conta de e-mail. Para isso, clique no link abaixo:<br />
+<br />
+{$activateUrl}<br />
+<br />
+Obrigado,<br />
+{$siteSignature}";s:31:"emails.reviewerRegister.subject";s:38:"Registo como Revisor em {$contextName}";s:28:"emails.reviewerRegister.body";s:923:"Acreditamos que o seu contributo seria muito importante para a nossa editora, pelo que tomámos a liberdade de o registar como Revisor na nossa base de dados de revisores para {$contextName}. Isto não implica nenhum compromisso da sua parte, mas permite-nos abordá-lo para a possibilidade de rever uma submissão nossa. Ao ser convidado para revisão, tem a oportunidade de visualizar o título e resumo do artigo em questão, e pode a qualquer momento rejeitar o convite. Pode também a qualquer momento solicitar-nos que remova o seu nome da nossa lista de revisores.<br />
+<br />
+Enviamos-lhe um nome de utilizador e senha, que são necessários para todas as interações com a editora neste site. Pode desejar, por exemplo, atualizar o seu perfil, incluindo os seus interesses de revisão.<br />
+<br />
+Nome de utilizador: {$recipientUsername}<br />
+Senha: {$password}<br />
+<br />
+Atenciosamente,<br />
+{$signature}";s:37:"emails.submissionAckNotAuthor.subject";s:29:"Agradecimento pela submissão";s:34:"emails.submissionAckNotAuthor.body";s:275:"Olá,<br />
+<br />
+{$submitterName} submeteu o manuscrito, &quot;{$submissionTitle}&quot; a {$contextName}. <br />
+<br />
+Em caso de dúvidas, entre em contacto. Agradecemos por considerar a nossa editora como veículo para os seus trabalhos.<br />
+<br />
+{$contextSignature}";s:27:"emails.editorAssign.subject";s:62:"Foi designado como editor a uma submissão para {$contextName}";s:24:"emails.editorAssign.body";s:597:"Caro {$recipientName},</p><p>Foi-lhe atribuída a submissão como Editor para seguir o processo editorial.</p><p><a href="{$submissionUrl}">{$submissionTitle}</a><br />{$authors}</p><p><b>Abstract</b></p>{$submissionAbstract}<p> Se considerar a submissão relevante para publicação em {$contextName}, envie para a etapa de revisão clicando em "Enviar para Revisão Interna" e depois designe os revisores clicando em "Adicionar Revisor".</p><p>Se a submissão não for apropriada para esta editora, rejeite a submissão.</p><p>
+Antecipadamente grato.</p><p>Atenciosamente,</p>{$contextSignature}";s:28:"emails.reviewRequest.subject";s:18:"Pedido de revisão";s:25:"emails.reviewRequest.body";s:923:"<p>Caro(a) {$recipientName},</p><p> Acreditamos que seria um excelente revisor para uma submissão enviada a {$contextName}. O título e resumo da submissão encontram-se abaixo, e esperamos que considere realizar esta importante tarefa para nós.</p><p> Se estiver disponível para rever esta submissão, o prazo para a revisão será {$reviewDueDate}. Pode visualizar a submissão, carregar ficheiros de revisão, e submeter a sua revisão ao entrar na editora e seguindos os passos através do link abaixo.</p><p><a href="{$reviewAssignmentUrl}">{$submissionTitle}</a></p><p><b>Resumo</b></p>{$submissionAbstract}<p>.<a href="{$reviewAssignmentUrl}">Aceite ou recuse</a> a revisão até <b>{$responseDueDate}</b>.</p><p> Caso tenha alguma questão sobre a submissão ou o processo de revisão, não hesite em contactar-nos.</p><p>Agradecemos por considerar a nossa solicitação. </p><p>
+Atenciosamente,</p>
+{$signature}";s:38:"emails.reviewRequestSubsequent.subject";s:55:"Solicitação de revisão de uma submissão já revista";s:35:"emails.reviewRequestSubsequent.body";s:1001:"<p>Caro(a) {$recipientName},</p><p>Obrigado pela sua revisão de <a href="{$reviewAssignmentUrl}">{$submissionTitle}</a>. Os autores consideraram o feedback dos revisores e agora submeteram uma versão revista do trabalho. Estamos a contactar para saber se estaria disponível para efetuar uma segunda ronda de revisão para esta submissão.</p><p>Se puder rever este trabalho, a sua revisão deverá ser efetuada até {$reviewDueDate}. Pode <a href="{$reviewAssignmentUrl}">seguir as etapas de revisão</a> para visualizar o trabalho, enviar ficheiros de revisão e submeter os seus comentários.<p><p><a href="{$reviewAssignmentUrl}">{$submissionTitle}</a></p><p><b>Resumo</b></p>{$submissionAbstract}<p><a href="{$reviewAssignmentUrl}">Aceite ou recuse</a> a revisão até <b>{$responseDueDate}</b>.</p><p>Caso tenha alguma questão sobre a submissão ou o processo de revisão, não hesite em contactar-nos.</p><p>Agradecemos por considerar este nosso pedido.</p><p>Atenciosamente,</p>{$signature}";s:40:"emails.reviewResponseOverdueAuto.subject";s:39:"Solicitação de Revisão de Manuscrito";s:37:"emails.reviewResponseOverdueAuto.body";s:794:"Caro(a) {$recipientName},<br />
+Este e-mail serve de lembrete do nosso pedido de revisão da submissão &quot;{$submissionTitle},&quot; a {$contextName}. Esperávamos ter a sua resposta até {$responseDueDate}, e este e-mail foi gerado automaticamente e enviado quando o prazo foi ultrapassado.<br />
+{$messageToReviewer}<br />
+<br />
+Entre no site da editora para indicar se está disponível para realizar a revisão ou não, bem como aceder à submissão e gravar a sua revisão e recomendações.<br />
+<br />
+O prazo de envio da revisão é {$reviewDueDate}.<br />
+<br />
+URL da submissão: {$reviewAssignmentUrl}<br />
+<br />
+Nome de utilizador: {$recipientUsername}<br />
+<br />
+Agradecemos considerar esta solicitação.<br />
+<br />
+<br />
+Atentamente,<br />
+{$contextSignature}<br />
+";s:27:"emails.reviewCancel.subject";s:28:"Pedido de Revisão Cancelada";s:24:"emails.reviewCancel.body";s:346:"{$recipientName}:<br />
+<br />
+Neste ponto, chegámos à decisão de cancelar o nosso pedido de revisão da submissão, &quot;{$submissionTitle},&quot; a {$contextName}. Pedimos desculpa por qualquer incómodo causado e esperamos poder solicitar-lhe outras revisões no futuro.<br />
+<br />
+Se tiver alguma questão, não hesite em contactar-nos.";s:27:"emails.reviewReinstate.body";s:566:"<p>Caro(a) {$recipientName}:</p><p>Recentemente cancelámos o pedido de revisão da submissão, {$submissionTitle}, para {$contextName}. Gostaríamos de restabelecer o nosso pedido para que realize a revisão da submissão.</p><p>Esperamos que esteja disponível para nos auxiliar no processo de revisão da revista, para tal pode <a href="{$reviewAssignmentUrl}">entrar na sua conta</a>e visualizar a submissão, enviar ficheiros de revisão, e enviar a sua revisão.</p><p>Caso tenha alguma questão, não hesite em contactar.</p><p>Atenciosamente,</p>{$signature}";s:28:"emails.reviewDecline.subject";s:27:"Indisponível para Revisão";s:25:"emails.reviewDecline.body";s:292:"Editor(es):<br />
+<br />
+Infelizmente neste momento não me encontro disponível para realizar a revisão da submissão &quot;{$submissionTitle},&quot; a {$contextName}. Agradeço por me considerarem, e poderão contactar-me no futuro para outras revisões futuras.<br />
+<br />
+{$senderName}";s:27:"emails.reviewRemind.subject";s:34:"Lembrete de Revisão da Submissão";s:24:"emails.reviewRemind.body";s:647:"<p>Caro(a) {$recipientName}:</p><p>Este e-mail serve como lembrete relativamente ao nosso pedido de revisão da submissão "{$submissionTitle}," a {$contextName}. Esperávamos receber a sua revisão até {$reviewDueDate} e gostaríamos de receber o mais breve possível que o conseguir preparar.</p><p> Pode <a href="{$reviewAssignmentUrl}">entrar na sua conta</a> da editora e seguir os passos de revisão para visualizar a submissão, enviar ficheiros de revisão, e submeter os seus comentários.</p><p>Se necessitar de uma extensão do prazo, não hesite em contactar. Ficamos a aguardar a sua revisão.</p><p> Atenciosamente,</p> {$signature}";s:28:"emails.reviewRemindAuto.body";s:687:"<p>Caro(a) {$recipientName}:</p><p>Este e-mail serve de lembrete da {$contextName} relativo ao nosso pedido de revisão da submissão, "{$submissionTitle}"</p><p>. Esperávamos receber a revisão até {$reviewDueDate}, e gostaríamos de contar com a sua participação e receber a revisão o mais breve que conseguir ter a revisão pronta.</p><p><a href="{$reviewAssignmentUrl}">Entre na sua conta</a>da editora e siga os passos de revisão para visualizar a submissão, enviar ficheiros de revisão, e submeter os seus comentários.</p><p>Se necessitar de uma extensão do prazo, não hesite em contactar. Ficamos a aguardar a sua revisão.</p><p>
+Atenciosamente,</p>{$contextSignature}";s:35:"emails.editorDecisionAccept.subject";s:47:"A sua submissão foi aceite para {$contextName}";s:32:"emails.editorDecisionAccept.body";s:919:"<p>Caro(a) {$recipientName},</p><p>Tenho o prazer de informar que decidimos aceitar sua submissão sem revisão adicional. Após uma análise cuidadosa, descobrimos que sua submissão, {$submissionTitle}, atendeu ou superou as nossas expectativas. Estamos felizes em publicar o seu trabalho em {$contextName} e agradecemos por escolher nossa editora para publicação.</p><p>A sua submissão será publicada em breve no website da editora {$contextName} e está convidado a incluí-la na sua lista de publicações. Reconhecemos o trabalho árduo de cada submissão bem-sucedida e queremos parabenizá-lo por isso.</p><p>A sua submissão passará agora por edição e formatação para prepará-la para a publicação.</p><p>Em breve receberá mais instruções.</p><p>Se tiver alguma dúvida, contacte-nos através do seu <a href="{$authorSubmissionUrl}">painel de submissão</a>.</p><p>Atenciosamente,</p>{$signature}";s:43:"emails.editorDecisionSendToInternal.subject";s:50:"A sua submissão foi enviada para revisão interna";s:40:"emails.editorDecisionSendToInternal.body";s:579:"<p>Caro {$recipientName},</p><p> É com muito gosto que informo que um editor reviu a sua submissão, {$submissionTitle}, e decidiu enviar para revisão interna. Terá notícias nossas em breve junto com feedback dos revisores e informação sobre as etapas seguintes. </p><p> Note que enviar a submissão para revisão interna não garante que será publicado. Teremos em consideração as recomendações dos revisores antes de ser tomada uma decisão final.</p><p>Caso tenha alguma questão, não hesite em contactar-me através do painel de submissão.</p><p>{$signature}</p>";s:39:"emails.editorDecisionSkipReview.subject";s:51:"A sua submissão foi enviada para edição de texto";s:36:"emails.editorDecisionSkipReview.body";s:1064:"<p>Caro{$recipientName},</p>
+<p>É com muito gosto que informo que decidimos aceitar a sua submissão sem passar por revisão por pares. Consideramos que a sua submissão, {$submissionTitle}, cumpre as nossas expectativas, e não exigimos que trabalhos deste tipo passem por revisão por pares. Estamos muito contentes por publicar a sua obra em {$contextName} e agradecemos-lhe por escolher a nossa editora como local de publicação do seu trabalho.</p>
+<p>A sua submissão será publicada em breve no site da {$contextName} e convidamo-lo a incluir na sua lista de publicações. Reconhecemos o trabalho árduo que existe por trás de uma submissão bem sucedida e gostaríamos de lhe dar os parabéns pelo seu esforço.</p>
+<p>A sua submissão serguirá agora para a edição de texto e formatação para a preparar para publicação.</p>
+<p>Receberá mais instruções em breve.</p>
+<p>Caso tenha alguma questão, por favor contacte-me através do seu <a href="{$authorSubmissionUrl}">dashboard de submissão</a>.</p>
+<p>Cumprimentos,</p>
+<p>{$signature}</p>
+";s:28:"emails.layoutRequest.subject";s:78:"A submissão {$submissionId} está pronta para Produção em {$contextAcronym}";s:25:"emails.layoutRequest.body";s:763:"<p>Caro(a){$recipientName},</p><p>Um novo trabalhar está disponível para edição de layout:</p><p><a href="{$submissionUrl}">{$submissionId} {$submissionTitle}</a><br />{$contextName}</p><ol><li>Clique no URL da Submissão abaixo.<li><li>Descarregue os ficheiros e use-os para criar as composições finais de acordo com as instruções e templates da editora.</li><li>Faça o upload dos ficheiros para a secção dos Formatos de Publicação.</li><li>Use as Discussões de Produção para notificar o editor de que as composições estão prontas.</li></ol><p>Se não conseguir efetuar esta tarefa no tempo previsto ou tiver alguma dúvida acerca da submissão, não hesite em contactar-nos. Agradecemos o seu contributo.</p><p>Atenciosamente,</p>{$signature}";s:29:"emails.layoutComplete.subject";s:25:"Composições concluídas";s:26:"emails.layoutComplete.body";s:331:"<p>Caro(a) {$recipientName}:</p><p>As composições finais já se encontram preparadas para a seguinte submissão e estão prontas para revisão final.</p><p><a href="{$submissionUrl}">{$submissionTitle}</a><br />{$contextName}</p><p>Se tiver alguma questão, não hesite em contactar.</p><p>Atenciosamente,</p><p>{$senderName}</p>";s:27:"emails.indexRequest.subject";s:17:"Solicitar índice";s:24:"emails.indexRequest.body";s:737:"{$recipientName}:<br />
+<br />
+A submissão &quot;{$submissionTitle}&quot; a {$contextName} necessita que sejam criados os índices, seguindos as etapas seguintes.<br />
+1. Clique no URL da Submissão.<br />
+2. Entre na sua conta da editora e use os ficheiros de Prova de Página para criar as composições finais de acordo com os padrões da editora.<br />
+3. Envie o e-mail de CONCLUÍDO ao editor.<br />
+<br />
+{$contextName} URL: {$contextUrl}<br />
+URL da Submissão: {$submissionUrl}<br />
+Nome de utilizador: {$recipientUsername}<br />
+<br />
+Se não estiver disponível para realizar esta tarefa ou tiver alguma questão, não hesite em contactar. Agradecemos a sua contribuição para a nossa editora.<br />
+<br />
+{$signature}";s:28:"emails.indexComplete.subject";s:44:"Composições Finais de Inídices concluída";s:25:"emails.indexComplete.body";s:283:"{$recipientName}:<br />
+<br />
+Os índices encontram-se preparados para o manuscrito &quot;{$submissionTitle},&quot; a {$contextName} e estão prontos para seguir para Leitura de Prova<br />
+<br />
+Se tiver alguma questão, não hesite em contactar.<br />
+<br />
+{$signatureFullName}";s:24:"emails.emailLink.subject";s:37:"Manuscrito do seu possível interesse";s:21:"emails.emailLink.body";s:189:"Achámos que poderia ter interesse em ler &quot;{$submissionTitle}&quot; de {$authors} publicados no Vol {$volume}, No {$number} ({$year}) de {$contextName} em &quot;{$submissionUrl}&quot;.";s:28:"emails.emailLink.description";s:319:"Este e-mail padrão fornece aos leitores registados a oportunidade de enviar informação sobre uma monografia a alguém que possa ter interesse em lê-la. Encontra-se disponível através das Ferramentas de Leitura e deve estar ativa pelo Editor-gestor da Editora na página de Configurações, Ferramentas de Leitura.";s:31:"emails.notifySubmission.subject";s:27:"Notificação de Submissão";s:28:"emails.notifySubmission.body";s:149:"Tem uma nova mensagem de {$sender} relativamente a &quot;{$submissionTitle}&quot; ({$monographDetailsUrl}):<br />
+<br />
+		{$message}<br />
+<br />
+		";s:35:"emails.notifySubmission.description";s:92:"Notificação de um utilizador enviado através da uma janela na informação da submissão.";s:25:"emails.notifyFile.subject";s:39:"Notificação de Submissão de Ficheiro";s:22:"emails.notifyFile.body";s:190:"Recebeu uma nova mensagem de {$sender} relativamente ao ficheiro &quot;{$fileName}&quot; em &quot;{$submissionTitle}&quot; ({$monographDetailsUrl}):<br />
+<br />
+		{$message}<br />
+<br />
+		";s:29:"emails.notifyFile.description";s:92:"Notificação enviada por um utilizador através de uma janela na informação da submissão";s:43:"emails.statisticsReportNotification.subject";s:40:"Atividade editorial em {$month}, {$year}";s:40:"emails.statisticsReportNotification.body";s:775:"
+{$recipientName}, <br />
+<br />
+O relatório da sua editora de {$month}, {$year} já se encontra disponível. As estatísticas chave deste mês encontram-se disponíveis abaixo.<br />
+<ul>
+	<li>Novas submissões este mês: {$newSubmissions}</li>
+	<li>Submissões rejeitadas este mês: {$declinedSubmissions}</li>
+	<li>Submissões aceites este mês: {$acceptedSubmissions}</li>
+	<li>Total de submissões ao sistema: {$totalSubmissions}</li>
+</ul>
+Entre com a sua conta na editora para ver informações mais detalhadas <a href="{$editorialStatsLink}">tendências editoriais</a> e <a href="{$publicationStatsLink}">estatísticas de livros publicados</a>. Encontra-se anexada uma cópia das tendências editoriais deste mês.<br />
+<br />
+Atentamente,<br />
+{$contextSignature}";s:27:"emails.announcement.subject";s:20:"{$announcementTitle}";s:24:"emails.announcement.body";s:162:"<b>{$announcementTitle}</b><br />
+<br />
+{$announcementSummary}<br />
+<br />
+Visite o nosso website para ler a <a href="{$announcementUrl}">notícia completa</a>.";s:30:"emails.reviewReinstate.subject";s:66:"Ainda se encontra disponível para rever algo para {$contextName}?";s:32:"emails.revisedVersionNotify.body";s:423:"<p>Caro(a) {$recipientName},</p><p>O autor enviou revisões para a submissão, <b>{$authorsShort} — {$submissionTitle}</b>. <p>Como editor designado, pedimos-lhe que entre na sua conta e <a href="{$submissionUrl}">veja as revisões</a> e emita uma decisão de aceitar, recusar ou enviar a submissão para revisão adicional.</p><br><br>—<br>Esta é uma mensagem automática de<a href="{$contextUrl}">{$contextName}</a>.";s:35:"emails.revisedVersionNotify.subject";s:25:"Versão Revista Carregada";s:34:"emails.editorAssignProduction.body";s:456:"<p>Caro(a) {$recipientName},</p><p>A seguinte submissão foi-lhe designada para gerir a etapa da Produção.</p><p><a href="{$submissionUrl}">{$submissionTitle}</a><br />{$authors}</p><p><b>Resumo</b></p>{$submissionAbstract}<p>. Assim que os ficheiros prontos-para-produção estiverem disponíveis, faça upload na secção <strong>Publicação > Formatos de Publicação</strong>.</p><p>Agradecemos antecipadamente.</p><p>Atenciosamente,</p>{$signature}";s:30:"emails.editorAssignReview.body";s:456:"<p>Caro(a) {$recipientName},</p><p>A seguinte submissão foi-lhe designada para gerir a etapa da revisão.</p><p><a href="{$submissionUrl}">{ $submissionTitle}</a><br />{$authors}</p><p><b>Resumo</b></p>{$submissionAbstract}<p>Faça login em <a href="{ $submissionUrl}">ver a submissão</a> e designe revisores qualificados. Pode designar um revisor ao clicar em "Adicionar Revisor".</p><p>Agradecemos antecipadamente.</p><p>Atenciosamente,</p>{$signature}";}}}

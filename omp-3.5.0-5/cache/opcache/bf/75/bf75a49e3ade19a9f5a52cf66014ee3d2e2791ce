@@ -1,0 +1,164 @@
+1825506996a:3:{s:6:"domain";N;s:12:"plural-forms";s:26:"nplurals=2; plural=n != 1;";s:8:"messages";a:1:{s:0:"";a:43:{s:35:"emails.passwordResetConfirm.subject";s:34:"Bekreft tilbakestilling av passord";s:32:"emails.passwordResetConfirm.body";s:378:"Vi har mottatt en forespørsel om å tilbakestille passordet ditt for nettstedet {$siteTitle}. <br />
+<br />
+Hvis du ikke selv sendte denne forespørselen, kan du ignorere denne e-postadressen, og passordet ditt vil ikke bli endret. Klikk på URL-en nedenfor for å endre passordet. <br />
+<br />
+Tilbakestill passordet mitt: {$passwordResetUrl} <br />
+<br />
+{$siteContactName}";s:27:"emails.userRegister.subject";s:24:"Registrering hos utgiver";s:24:"emails.userRegister.body";s:420:"{$recipientName} <br />
+<br />
+Du er nå registrert som bruker hos {$contextName}. Vi har tatt med brukernavnet og passordet ditt i denne e-posten. Dette må brukes i forbindelse med arbeidet rundt forlagets nettsider. Du kan når som helst be om å bli fjernet fra brukerlisten ved å kontakte meg. <br />
+<br />
+Brukernavn: {$recipientUsername} <br />
+Passord: {$password} <br />
+<br />
+Tusen takk, <br />
+{$signature}";s:31:"emails.reviewerRegister.subject";s:44:"Registrering som fagfelle på {$contextName}";s:28:"emails.reviewerRegister.body";s:868:"Basert på din ekspertise har vi tatt oss friheten til å registrere navnet ditt i {$contextName} rangeringsdatabasen. Dette krever ingen forpliktelse fra din side, men lar oss bare kontakte deg angående en mulig gjennomgang av en innlevering. Hvis du blir invitert til å foreta en fagfellevurdering, vil du ha muligheten til å se tittelen og et sammendrag av innleveringen, og du vil alltid kunne godta eller avvise invitasjonen. Du kan også når som helst be om at navnet ditt blir fjernet fra listen over fagfeller. <br />
+<br />
+Vi gir deg et brukernavn og passord som skal brukes i forbindelse med alle interaksjoner med utgiveren via utgiverens nettside. Du kan f.eks. be om å få oppdatert profilen din, inkludert dine interesser. <br />
+<br />
+Brukernavn: {$recipientUsername} <br />
+Passord: {$password} <br />
+<br />
+Takk skal du ha. <br />
+{$signature}";s:27:"emails.editorAssign.subject";s:20:"Redaksjonelt oppdrag";s:24:"emails.editorAssign.body";s:324:"{$recipientName}:<br />
+<br />
+Som seksjonsredaktør har du fått tildelt innelveringen &quot;{$submissionTitle},&quot; som er sendt til {$contextName} og som du skal følge gjennem den redaksjonelle prosessen..<br />
+<br />
+Innleveringens URL: {$submissionUrl}<br />
+Brukernavn: {$recipientUsername}<br />
+<br />
+Mange takk";s:28:"emails.reviewRequest.subject";s:33:"Forespørsel om fagfellevurdering";s:25:"emails.reviewRequest.body";s:589:"Kjære {$recipientName}, <br />
+<br />
+{$messageToReviewer} <br />
+<br />
+Logg deg på utgiverens nettsted innen {$responseDueDate} for å gi beskjed om du vil gjøre fagfellevurderingen eller ikke, samt få tilgang til innleveringen og registrere din vurdering og anbefaling. <br />
+<br />
+Selve fagfellevurderingen må være sendt inn innen {$reviewDueDate}. <br />
+<br />
+URL for innlevering: {$reviewAssignmentUrl} <br />
+<br />
+Brukernavn: {$recipientUsername} <br />
+<br />
+Takk for at du vurderer denne forespørselen. <br />
+<br />
+<br />
+Mange hilsener <br />
+{$signature} <br />
+";s:40:"emails.reviewResponseOverdueAuto.subject";s:33:"Forespørsel om fagfellevurdering";s:37:"emails.reviewResponseOverdueAuto.body";s:866:"Kjære {$recipientName}:<br />
+Dette er bare for å minne deg om vår forespørsel om din vurdering av manuskriptet &quot;{$submissionTitle},&quot; for {$contextName}. Vi hadde håpet på å motta ditt svar senest den {$responseDueDate}, og denne e-posten er blitt automatisk genereret og sendt til deg, da svarfristen er overskredet.
+<br />
+{$messageToReviewer}<br />
+<br />
+Logg på tidsskriftets nettsted for å gi beskjed, om du vil påta deg fagfellevurderingen eller ikke, samt for å få tilgang til innleveringen og registrere din vurdering og anbefaling. <br />
+<br />
+Selve vurderingen må leveres senest den {$reviewDueDate}.<br />
+<br />
+Innleveringens URL: {$reviewAssignmentUrl}<br />
+<br />
+Brukernavn: {$recipientUsername}<br />
+<br />
+Takk for at du vurderer denne forespørselen.<br />
+<br />
+<br />
+Vennlig hilsen,<br />
+{$contextSignature}<br />
+";s:27:"emails.reviewCancel.subject";s:40:"Avbryt forespørsel om fagfellevurdering";s:24:"emails.reviewCancel.body";s:452:"{$recipientName}:<br />
+<br />
+På nåværende tidspunkt har vi valgt å trekke tilbake får forespørsel til deg om å vurdere innleveringen &quot;{$submissionTitle}&quot; til {$contextName}. Vi beklager den unlempe, dette eventuelt måtte forårsake, og vi håper, at vi kan henvende oss til deg i fremtiden og be om din assistanse i forbindelse med denne utgiverens fagfellevurderingsprosess.<br />
+<br />
+Hvis du har spørgsmål, ta gjerne kontakt.";s:27:"emails.reviewReinstate.body";s:319:"{$recipientName}:<br />
+<br />
+Vi vil gjerne spørre deg på nytt om du vil foreta en fagfellevurdering av innleveringen, &quot;{$submissionTitle},&quot; for {$contextName}. Vi håper at du har mulighet for å hjelpe med denne utgiverens fagfellevurdering.<br />
+<br />
+Du bes ta kontakt med meg hvis du har spørsmål.";s:28:"emails.reviewDecline.subject";s:33:"Kan ikke foreta fagfellevurdering";s:25:"emails.reviewDecline.body";s:275:"Redaktører:<br />
+<br />
+Jeg beklager, at jeg på nåværende tidspunkt ikke kan bedømme innleveringen &quot;{$submissionTitle}&quot; til {$contextName}. Takk, for at du tenkte på meg, og du er alltid velkommen til at kontakte meg en annen gang.<br />
+<br />
+{$senderName}";s:27:"emails.reviewRemind.subject";s:32:"Påminnelse om fagfellevurdering";s:24:"emails.reviewRemind.body";s:805:"{$recipientName}:<br />
+<br />
+Dette er kun for å minne deg om vår forespørsel om fagfellevurdering av innelveringen &quot;{$submissionTitle}&quot; til {$contextName}. Vi hadde håpet på å motta vurderingen senest den {$reviewDueDate} og ser frem til å motta den, så snart du er ferdig med den.<br />
+<br />
+Hvis du ikke har brukernavn og passord til utgiverens nettsted tilgjengelig, kan du bruke denne lenken til å nullstille passordet (som vil bli sendt til deg via e-post sammen med brukernavnet ditt). {$passwordLostUrl}<br />
+<br />
+Innleveringens URL: {$reviewAssignmentUrl}<br />
+<br />
+Brukernavn: {$recipientUsername}<br />
+<br />
+Vi ber deg bekrefte, om du er i stand til å fullføre dette vigtige bidraget til vårt arbeid. Jeg ser frem til å høre fra deg.<br />
+<br />
+{$signature}";s:28:"emails.reviewRemindAuto.body";s:548:"{$recipientName}:<br />
+<br />
+Dette er bare for å minne deg om vår forespørsel om din fagfellevurdering av innleveringen &quot;{$submissionTitle}&quot; til {$contextName}. Vi hadde håpet på å motta ditt svar senest den {$responseDueDate}, og ser fremdeles frem til å motta den så snart du er ferdig med den.<br />
+<br />
+Innleveringens URL: {$reviewAssignmentUrl}<br />
+<br />
+Vi ber deg bekrefte om du er i stand til at fullføre dette vigtige bidraget til vårt arbeid. Jeg ser frem til at høre fra deg.<br />
+<br />
+{$contextSignature}";s:35:"emails.editorDecisionAccept.subject";s:19:"Redaktørbeslutning";s:32:"emails.editorDecisionAccept.body";s:208:"{$authors}:<br />
+<br />
+Vi har foretatt en beslutning angående ditt bidrag til {$contextName}, &quot;{$submissionTitle}&quot;.<br />
+<br />
+Vi har besluttet at:<br />
+<br />
+Manuscript URL: {$submissionUrl}";s:28:"emails.layoutRequest.subject";s:23:"Forespørsel om oppsett";s:25:"emails.layoutRequest.body";s:735:"{$recipientName}:<br />
+<br />
+Innleveringen &quot;{$submissionTitle}&quot; til {$contextName} skal nå gjøres publiseringsklar ved å følge disse stegene.<br />
+1. Klikk på innleveringens URL-adresse nedenfor.<br />
+2. Hent filene plassert under ‘Produksjonsklare filer’ og formater dem til publiseringsklare filer i overensstemmelse med tidsskriftets krav.<br />
+3. Send den FÆRDIGE e-posten til redaktøren.<br />
+<br />
+{$contextName} URL: {$contextUrl}<br />
+Innleveringens URL: {$submissionUrl}<br />
+Brukernavn: {$recipientUsername}<br />
+<br />
+Hvis du ikke er i stand til å påta dig dette arbeidet på nåværende tidspunkt eller har spørgsmål, bes du ta kontakt med meg. Takk for ditt bidrag til denne utgivelsen.";s:29:"emails.layoutComplete.subject";s:23:"Sideoppsett ferdiggjort";s:26:"emails.layoutComplete.body";s:258:"{$recipientName}:<br />
+<br />
+Nå er de publiseringsklare filene for innleveringen &quot;{$submissionTitle},&quot; i {$contextName} lastet opp og klare for korrekturlesning.<br />
+<br />
+Hvis du har spørsmål, ta kontakt med meg.<br />
+<br />
+{$senderName}";s:27:"emails.indexRequest.subject";s:27:"Forespørsel om indeksering";s:24:"emails.indexRequest.body";s:743:"{$recipientName}:<br />
+<br />
+Innleveringen &quot;{$submissionTitle}&quot; til {$contextName} skal nå ndekseres ved å følge disse stegene.<br />
+1. Klikk på innleveringens URL-adresse nedenfor.<br />
+2. Hent filene plassert under ‘Produktionsklare filer’ og formater dem til publikasjonsformater i overensstemmelse med tidsskriftets krav.<br />
+3. Send den FÆRDIGE e-posten til redaktøren<br />
+<br />
+{$contextName} URL: {$contextUrl}<br />
+Innleveringens URL: {$submissionUrl}<br />
+Brukernavn: {$recipientUsername}<br />
+<br />
+Hvis du ikke er i stand til å påta deg dette oppdraget på nåværende tidspunkt, eller har spørgsmål, bes du ta kontakt med meg. Takk for dit bidrag til denne utgivelsen.<br />
+<br />
+{$signature}";s:28:"emails.indexComplete.subject";s:21:"Indeksering fullført";s:25:"emails.indexComplete.body";s:258:"{$recipientName}:<br />
+<br />
+Det er nå utarbeidet en indeks til innleveringen &quot;{$submissionTitle},&quot; i {$contextName} og den er klar til korrekturlesning.<br />
+<br />
+Hvis du har spørsmål, ta kontakt med meg..<br />
+<br />
+{$signatureFullName}";s:24:"emails.emailLink.subject";s:44:"Utgivelse som kan være av interesse for deg";s:21:"emails.emailLink.body";s:217:"Jeg tenkte at du muligens kan være interesseret i å lese &quot;{$submissionTitle}&quot; av {$authors} som er publisert i Årg. {$volume}, Nummer {$number} ({$year}) i {$contextName} på &quot;{$submissionUrl}&quot;.";s:28:"emails.emailLink.description";s:228:"Denne e-postmalen lar en registrert leser sende informasjon om en artikkel til noen som kan være interessert. Den er tilgjengelig gjennom leseverktøyene og må aktiveres av redaktøren på siden Administrasjon av leseverktøy.";s:31:"emails.notifySubmission.subject";s:19:"Innleveringsmelding";s:28:"emails.notifySubmission.body";s:142:"Du har en melding fra {$sender} vedrørende &quot;{$submissionTitle}&quot; ({$monographDetailsUrl}):<br />
+<br />
+		{$message}<br />
+<br />
+		";s:35:"emails.notifySubmission.description";s:83:"En melding fra en bruker sendt fra en modal for informasjonssenter for innlevering.";s:25:"emails.notifyFile.subject";s:26:"Melding om innleveringsfil";s:22:"emails.notifyFile.body";s:180:"Du har fått en melding fra {$sender} vedrørende filen &quot;{$fileName}&quot; i &quot;{$submissionTitle}&quot; ({$monographDetailsUrl}):<br />
+<br />
+		{$message}<br />
+<br />
+		";s:29:"emails.notifyFile.description";s:66:"En melding fra en bruker sendt fra en filinformasjonssentral modal";s:43:"emails.statisticsReportNotification.subject";s:43:"Redaksjonel aktivitet for {$month}, {$year}";s:40:"emails.statisticsReportNotification.body";s:768:"
+{$recipientName}, <br />
+<br />
+Din utgivers tilstandsrapport for {$month}, {$year} er nå tilgjengelig. De statistiske nøkkeltallene ses nedenfor.<br />
+<ul>
+	<li>Nye innleveringer denne måned: {$newSubmissions}</li>
+	<li>Avviste innleveringer denne måned: {$declinedSubmissions}</li>
+	<li>Aksepterte innleveringer denne måned: {$acceptedSubmissions}</li>
+	<li>Systemets samlede antall innleveringer: {$totalSubmissions}</li>
+</ul>
+Logg inn hos utgiveren for å se flere opplysninger om<a href="{$editorialStatsLink}">redaktionelle udviklingstendenser</a> og <a href="{$publicationStatsLink}">offentliggjorte artikelstatistikker</a>. En komplett kopi av denne månedens redaksjonelle udvikling er vedlagt.<br />
+<br />
+Med venlig hilsen<br />
+{$contextSignature}";s:27:"emails.announcement.subject";s:20:"{$announcementTitle}";s:24:"emails.announcement.body";s:160:"<b>{$announcementTitle}</b><br />
+<br />
+{$announcementSummary}<br />
+<br />
+Besøk nettstedet vårt for å lese<a href="{$announcementUrl}">hele oppslaget</a>.";}}}

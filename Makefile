@@ -7,6 +7,7 @@ init:
 	chmod -R 777 omp-3.3.0-23/cache omp-3.3.0-23/public 2>/dev/null || true
 	chmod -R 777 omp-3.4.0-11/cache omp-3.4.0-11/public 2>/dev/null || true
 	chmod -R 777 omp-3.5.0-5/cache omp-3.5.0-5/public 2>/dev/null || true
+	chmod 666 omp-*/config.inc.php 2>/dev/null || true
 
 up-all: init
 	docker compose --profile all up -d

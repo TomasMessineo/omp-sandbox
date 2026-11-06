@@ -1,0 +1,1 @@
+1825506993a:3:{s:6:"domain";N;s:12:"plural-forms";s:55:"nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;";s:8:"messages";a:1:{s:0:"";a:2:{s:39:"plugins.generic.pdfJsViewer.displayName";s:31:"Plugin PDF prohlížeče PDF.js";s:39:"plugins.generic.pdfJsViewer.description";s:101:"Tento plugin poskytuje podporu pro prohlížení obsahu ve formátu PDF s použitím knihovny PDF.js.";}}}

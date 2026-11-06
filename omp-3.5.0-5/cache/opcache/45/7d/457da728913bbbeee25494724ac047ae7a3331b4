@@ -1,0 +1,11 @@
+1825507645a:3:{s:6:"domain";N;s:12:"plural-forms";s:25:"nplurals=2; plural=n > 1;";s:8:"messages";a:1:{s:0:"";a:15:{s:36:"plugins.importexport.csv.displayName";s:63:"Plug-in de importação de conteúdo delimitado por tabulação";s:36:"plugins.importexport.csv.description";s:82:"Importar submissões para editoras a partir de dados delimitados por tabulações.";s:32:"plugins.importexport.csv.cliOnly";s:185:"
+		<p> No momento, este plugin suporta apenas operações de linha de comando. Execute...
+<pre> php tools/importExport.php CSVImportExportPlugi</pre>
+... para mais informações. </p>
+	";s:33:"plugins.importexport.csv.cliUsage";s:280:"Ferramenta de linha de comando para importar dados CSV para o OMP
+
+			Uso:
+			{$scriptName} [--dry-run] fileName.csv username
+			A opção --dry-run pode ser usada para testar sem fazer alterações.
+			Especifique o nome de usuário ao qual você deseja atribuir as submissões.
+";s:41:"plugins.importexport.csv.fileDoesNotExist";s:45:"O arquivo "{$filename}" não existe.		Saindo.";s:36:"plugins.importexport.csv.unknownUser";s:46:"Usuário desconhecido: "{$username}".  Saindo.";s:38:"plugins.importexport.csv.unknownLocale";s:55:"Código de Idioma desconhecido  "{$locale}". Ignorando.";s:37:"plugins.importexport.csv.unknownPress";s:50:"Editora desconhecida "{$contextPath}".  Ignorando.";s:32:"plugins.importexport.csv.noGenre";s:37:"Não há gênero de manuscrito. Sair.";s:38:"plugins.importexport.csv.noAuthorGroup";s:81:"Não há grupo de autores padrão na editora {$press}. Ignorando esta submissão.";s:33:"plugins.importexport.csv.noSeries";s:97:"O caminho da série {$seriesPath} não existe. Não foi possível adicioná-lo a esta submissão.";s:42:"plugins.importexport.csv.import.submission";s:45:"Submissão: '{$title}' importada com sucesso.";s:51:"plugins.importexport.csv.import.success.description";s:88:"A importação foi bem-sucedida. Os itens importados com sucesso estão listados abaixo.";s:38:"plugins.importexport.csv.invalidHeader";s:148:"O arquivo CSV está ausente ou possui um cabeçalho inválido; por favor, consulte o arquivo de exemplo "sample.csv" disponível na pasta do plugin.";s:38:"plugins.importexport.csv.invalidAuthor";s:63:"O autor "{$author}" possui um formato inválido e foi ignorado.";}}}

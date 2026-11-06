@@ -1,0 +1,160 @@
+1825506994a:3:{s:6:"domain";N;s:12:"plural-forms";s:100:"nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;";s:8:"messages";a:1:{s:0:"";a:55:{s:35:"emails.passwordResetConfirm.subject";s:37:"Potvrda ponovnog postavljanja lozinke";s:32:"emails.passwordResetConfirm.body";s:340:"Primili smo zahtjev za ponovno postavljanje Vaše lozinke za web mjesto {$siteTitle}.<br />
+<br />
+Ako niste podnijeli ovaj zahtjev, zanemarite ovu e-poštu i vaša lozinka neće biti promijenjena. Ako želite poništiti lozinku, kliknite na donji URL.<br />
+<br />
+Poništi moju lozinku: {$passwordResetUrl}<br />
+<br />
+{$siteContactName}";s:27:"emails.userRegister.subject";s:12:"Registracija";s:24:"emails.userRegister.body";s:423:"{$recipientName}<br />
+<br />
+Sada ste registrirani kao korisnik s {$contextName}. U ovu e-poruku uključili smo Vaše korisničko ime i lozinku, koji su potrebni za sav rad s ovim medijem putem njegove web stranice. U svakom trenutku možete zatražiti brisanje s popisa korisnika tako da me kontaktirate.<br />
+<br />
+Korisničko ime: {$recipientUsername}<br />
+Lozinka: {$password}<br />
+<br />
+Hvala,<br />
+{$signature}";s:34:"emails.userValidateContext.subject";s:21:"Potvrdite svoj račun";s:31:"emails.userValidateContext.body";s:290:"{$recipientName}<br />
+<br />
+Napravili ste račun s {$contextName}, ali prije nego što ga počnete koristiti, morate potvrditi svoj račun e-pošte. Da biste to učinili, jednostavno slijedite poveznicu u nastavku:<br />
+<br />
+{$activateUrl}<br />
+<br />
+Hvala,<br />
+{$contextSignature}";s:31:"emails.userValidateSite.subject";s:21:"Potvrdite svoj račun";s:28:"emails.userValidateSite.body";s:286:"{$recipientName}<br />
+<br />
+Napravili ste račun na {$siteTitle}, ali prije nego što ga počnete koristiti, morate potvrditi svoj račun e-pošte. Da biste to učinili, jednostavno slijedite poveznicu u nastavku:<br />
+<br />
+{$activateUrl}<br />
+<br />
+Hvala,<br />
+{$siteSignature}";s:31:"emails.reviewerRegister.subject";s:46:"Registriranje kao ocjenjivač s {$contextName}";s:28:"emails.reviewerRegister.body";s:856:"U svjetlu vaše stručnosti, uzeli smo si tu slobodu registrirati Vaše ime u bazi podataka ocjenjivača za {$contextName}. To ne podrazumijeva bilo kakav oblik obveze s Vaše strane, već nam jednostavno omogućuje da Vam pristupimo s podneskom na mogući pregled. Kada budete pozvani na recenziju, imat ćete priliku vidjeti naslov i sažetak dotičnog rada i uvijek ćete biti u poziciji prihvatiti ili odbiti poziv. Također možete zatražiti u bilo kojem trenutku da se Vaše ime ukloni s ovog popisa ocjenjivača.<br />
+<br />
+Dajemo Vam korisničko ime i lozinku, koji se koriste u svim interakcijama s medijima putem web stranice. Možda biste željeli, na primjer, ažurirati svoj profil, uključujući svoje interese za pregled.<br />
+<br />
+Korisničko ime: {$recipientUsername}<br />
+Lozinka: {$password}<br />
+<br />
+Hvala,<br />
+{$signature}";s:27:"emails.editorAssign.subject";s:57:"Dodijeljeni ste kao urednik na podnesku za {$contextName}";s:24:"emails.editorAssign.body";s:572:"<p>Poštovani {$recipientName},</p><p>Sljedeći podnesak dodijeljen Vam je da ga pregledate kroz urednički postupak.</p><p><a href="{$submissionUrl}">{ $submissionTitle}</a><br />{$authors}</p><p><b>Sažetak</b></p>{$submissionAbstract}<p>Ako smatrate da je podnesak relevantan za {$contextName}, proslijedite podnesak u fazu pregleda odabirom "Pošalji na interni pregled", a zatim dodijelite ocjenjivače klikom na "Dodaj ocjenjivača".</p><p>Ako podnesak nije prikladan za ovaj medij, odbijte predaju.</p><p>Unaprijed hvala.</p><p>Lijep pozdrav,</p>{$contextSignature}";s:28:"emails.reviewRequest.subject";s:29:"Zahtjev za recenziju rukopisa";s:25:"emails.reviewRequest.body";s:546:"Poštovani {$recipientName},<br />
+<br />
+{$messageToReviewer}<br />
+<br />
+Prijavite se na web stranicu za medij do {$responseDueDate} kako biste naznačili hoćete li pristupiti recenziji ili ne, kao i kako biste pristupili podnesku i zabilježili svoju recenziju i preporuku.<br />
+<br />
+Rok za sam pregled je {$reviewDueDate}.<br />
+<br />
+URL prijave: {$reviewAssignmentUrl}<br />
+<br />
+Korisničko ime: {$recipientUsername}<br />
+<br />
+Hvala što ste razmotrili ovaj zahtjev.<br />
+<br />
+<br />
+S poštovanjem,<br />
+{$signature}<br />
+";s:38:"emails.reviewRequestSubsequent.subject";s:39:"Zahtjev za pregled revidiranog podneska";s:35:"emails.reviewRequestSubsequent.body";s:936:"<p>Dragi {$recipientName},</p><p>Hvala Vam na recenziji <a href="{$reviewAssignmentUrl}">{$submissionTitle}</a>. Autori su razmotrili povratne informacije ocjenjivača i sada su poslali revidiranu verziju svog rada. Pišem kako bih Vas pitao biste li proveli drugi krug recenzije za ovaj podnesak. {$contextName}.</p><p>Ako ste u mogućnosti pregledati ovaj podnesak, rok za pregled je {$reviewDueDate}. Možete <a href="{$reviewAssignmentUrl}">slijediti korake pregleda</a> da biste pregledali podnesak, prenijeli datoteke pregleda i poslali svoje komentare na pregled.<p><p><a href="{$reviewAssignmentUrl }">{$submissionTitle}</a></p><p>Sažetak</p>{$submissionAbstract}<p>Prihvatite ili odbijte recenziju do {$responseDueDate}.</p><p>Molim slobodno me kontaktirajte sa svim pitanjima o podnošenju ili postupku pregleda.</p><p>Hvala Vam što ćete razmotriti ovaj zahtjev. Cijeni se Vaša pomoć.</p><p>Lijep pozdrav,</p>{$signature}";s:40:"emails.reviewResponseOverdueAuto.subject";s:29:"Zahtjev za recenziju rukopisa";s:37:"emails.reviewResponseOverdueAuto.body";s:791:"Poštovani {$recipientName},<br />
+Samo blagi podsjetnik na naš zahtjev za Vaš pregled podneska, &quot;{$submissionTitle},&quot; za {$contextName}. Nadali smo se da ćemo dobiti Vaš odgovor do {$responseDueDate}, a ova poruka e-pošte automatski je generirana i poslana nakon što je datum prošao.
+<br />
+{$messageToReviewer}<br />
+<br />
+Prijavite se na web stranicu kako biste naznačili hoćete li pristupiti recenziji ili ne, kao i kako biste pristupili podnesku i zabilježili svoju recenziju i preporuku.<br />
+<br />
+Rok za sam pregled je {$reviewDueDate}.<br />
+<br />
+URL prijave: {$reviewAssignmentUrl}<br />
+<br />
+Korisničko ime: {$recipientUsername}<br />
+<br />
+Hvala što ćete razmotriti ovaj zahtjev.<br />
+<br />
+<br />
+S poštovanjem,<br />
+{$contextSignature}<br />
+";s:27:"emails.reviewCancel.subject";s:29:"Zahtjev za pregled je otkazan";s:24:"emails.reviewCancel.body";s:382:"{$recipientName}:<br />
+<br />
+Odlučili smo u ovom trenutku poništiti naš zahtjev da pregledate podnesak, &quot;{$submissionTitle},&quot; za {$contextName}. Ispričavamo se zbog neugodnosti koje bi Vam ovo moglo prouzročiti i nadamo se da ćemo Vas u budućnosti moći pozvati da nam pomognete u ovom postupku pregleda.<br />
+<br />
+Ako imate pitanja, slobodno me kontaktirajte.";s:27:"emails.reviewReinstate.body";s:270:"{$recipientName}:<br />
+<br />
+Željeli bismo ponovno postaviti naš zahtjev da pregledate podnesak, &quot;{$submissionTitle},&quot; za {$contextName}. Nadamo se da ćete moći pomoći u procesu pregleda medija.<br />
+<br />
+Ako imate pitanja, slobodno me kontaktirajte.";s:28:"emails.reviewDecline.subject";s:21:"Nemogućnost pregleda";s:25:"emails.reviewDecline.body";s:230:"Urednik(i):<br />
+<br />
+Bojim se da u ovom trenutku ne mogu pregledati podnesak, &quot;{$submissionTitle},&quot; za {$contextName}. Hvala vam što mislite na mene, a neki drugi put slobodno me nazovite.<br />
+<br />
+{$senderName}";s:27:"emails.reviewRemind.subject";s:30:"Podsjetnik za pregled podneska";s:24:"emails.reviewRemind.body";s:756:"{$recipientName}:<br />
+<br />
+Samo blagi podsjetnik na naš zahtjev za Vaš pregled podneska, &quot;{$submissionTitle},&quot; za {$contextName}. Nadali smo se da ćemo ovu recenziju dobiti do {$reviewDueDate} i bilo bi nam drago primiti je čim je budete mogli pripremiti.<br />
+<br />
+Ako nemate svoje korisničko ime i zaporku za web stranicu, možete koristiti ovu poveznicu za ponovno postavljanje zaporke (koja će Vam biti poslana e-poštom zajedno s vašim korisničkim imenom). {$passwordLostUrl}<br />
+<br />
+URL prijave: {$reviewAssignmentUrl}<br />
+<br />
+Korisničko ime: {$recipientUsername}<br />
+<br />
+Molimo potvrdite svoju mogućnost dovršavanja ovog vitalnog doprinosa radu medija. Veselim se Vašem odgovoru.<br />
+<br />
+{$signature}";s:28:"emails.reviewRemindAuto.body";s:844:"{$recipientName}:<br />
+<br />
+Samo blagi podsjetnik na naš zahtjev za Vaš pregled podneska, &quot;{$submissionTitle},&quot; za {$contextName}. Nadali smo se da ćemo ovu recenziju imati do {$reviewDueDate}, a ova e-poruka automatski je generirana i poslana nakon što je taj datum prošao. Bilo bi nam drago primiti ga čim ga budete mogli pripremiti.<br />
+<br />
+Ako nemate svoje korisničko ime i zaporku za web stranicu, možete koristiti ovu poveznicu za ponovno postavljanje zaporke (koja će Vam biti poslana e-poštom zajedno s Vašim korisničkim imenom). {$passwordLostUrl}<br />
+<br />
+URL prijave: {$reviewAssignmentUrl}<br />
+<br />
+Korisničko ime: {$recipientUsername}<br />
+<br />
+Molimo potvrdite svoju mogućnost dovršavanja ovog vitalnog doprinosa radu medija. Veselim se Vašem odgovoru.<br />
+<br />
+{$contextSignature}";s:35:"emails.editorDecisionAccept.subject";s:45:"Vaš podnesak prihvaćen je za {$contextName}";s:32:"emails.editorDecisionAccept.body";s:963:"<p>Poštovani {$recipientName},</p><p>Zadovoljstvo mi je obavijestiti Vas da smo odlučili prihvatiti Vaš podnesak bez daljnjih izmjena. Nakon pažljivog pregleda, utvrdili smo da Vaš podnesak, {$submissionTitle}, ispunjava ili premašuje naša očekivanja. Uzbuđeni smo što možemo objaviti Vaš članak u {$contextName} i zahvaljujemo Vam što ste odabrali naš medij kao mjesto za svoj rad.</p><p>Vaš će podnesak uskoro biti objavljen na web mjestu za medij za {$contextName} i slobodno ga uključite u svoj popis publikacija. Prepoznajemo naporan rad koji je uložen u svaki uspješni podnesak i želimo Vam čestitati na dostizanju ove faze.</p><p>Vaš će podnesak sada biti podvrgnut uređivanju kopije i oblikovanju kako bi se pripremio za objavljivanje.</p><p >Uskoro ćete dobiti daljnje upute.</p><p>Ako imate pitanja, kontaktirajte me sa svoje <a href="{$authorSubmissionUrl}">nadzorne ploče za slanje</a>.</p><p >Lijep pozdrav,</p>{$signature}";s:43:"emails.editorDecisionSendToInternal.subject";s:42:"Vaš je podnesak poslan na interni pregled";s:40:"emails.editorDecisionSendToInternal.body";s:691:"<p>Poštovani {$recipientName},</p><p>sa zadovoljstvom Vas mogu obavijestiti da je urednik pregledao Vaš podnesak, {$submissionTitle}, i odlučio ga poslati na interni pregled. Javit ćemo Vam se s povratnim informacijama ocjenjivača i informacijama o sljedećim koracima.</p><p>Imajte na umu da slanje podneska na interni pregled ne jamči da će biti objavljen. Razmotrit ćemo preporuke ocjenjivača prije nego što odlučimo prihvatiti podnesak za objavljivanje. Od Vas se može tražiti da izvršite izmjene i odgovorite na komentare ocjenjivača prije donošenja konačne odluke.</p><p>Ako imate bilo kakvih pitanja, kontaktirajte me s nadzorne ploče za slanje.</p><p>{ $potpis}</p>";s:39:"emails.editorDecisionSkipReview.subject";s:38:"Vaš je podnesak poslan na uređivanje";s:36:"emails.editorDecisionSkipReview.body";s:976:"<p>Poštovani {$recipientName},</p>
+<p>zadovoljstvo mi je obavijestiti Vas da smo odlučili prihvatiti Vaš podnesak bez pregleda. Utvrdili smo da Vaš podnesak, {$submissionTitle}, ispunjava naša očekivanja i ne zahtijevamo da se rad ove vrste podvrgne stručnoj recenziji. Uzbuđeni smo što možemo objaviti Vaš članak u {$contextName} i zahvaljujemo Vam što ste odabrali naš medij kao mjesto za svoj rad.</p>
+<p>Vaš će podnesak uskoro biti objavljen na stranici za {$contextName} pa ga slobodno uključite u svoj popis publikacija. Prepoznajemo naporan rad koji je uložen u svaki uspješan podnesak i želimo Vam čestitati na vašem trudu.</p>
+<p>Vaš će podnesak sada biti podvrgnut uređivanju kopije i oblikovanju kako bi se pripremio za objavljivanje. </p>
+<p>Uskoro ćete dobiti daljnje upute.</p>
+<p>Ako imate pitanja, kontaktirajte me sa svoje <a href="{$authorSubmissionUrl}">nadzorne ploče za slanje</a>.</p>
+<p>Lijep pozdrav,</p>
+<p>{$signature}</p>
+";s:28:"emails.layoutRequest.subject";s:71:"Podnesak {$submissionId} spreman je za proizvodnju na {$contextAcronym}";s:25:"emails.layoutRequest.body";s:700:"<p>Poštovani {$recipientName},</p><p>novi podnesak spreman je za uređivanje izgleda:</p><p><a href="{$submissionUrl}">{$submissionId} {$submissionTitle }</a><br />{$contextName}</p><ol><li>1. Kliknite gornji URL za slanje.</li><li>2. Preuzmite datoteke spremne za proizvodnju i upotrijebite ih za izradu galija u skladu sa standardima medija.</li><li>3. Učitajte galije u odjeljak Formati publikacije podneska.</li><li>4. Upotrijebite Rasprave o proizvodnji da biste obavijestili urednika da su kuhinje spremne.</li></ol><p>Ako trenutno niste u mogućnosti obaviti ovaj posao ili imate bilo kakvih pitanja, kontaktirajte me. Hvala Vam na doprinosu ovom mediju.</p><p>Lijep pozdrav,</p>{$signature}";s:29:"emails.layoutComplete.subject";s:16:"Galije dovršene";s:26:"emails.layoutComplete.body";s:285:"<p>Poštovani {$recipientName},<p><p>Galije su sada pripremljene za sljedeću predaju i spremne su za konačni pregled.</p><p><a href="{$submissionUrl}">{ $submissionTitle}</a><br />{$contextName}</p><p>Ako imate pitanja, kontaktirajte me.</p><p>Lijep pozdrav,</p><p>{ $senderName}</p>";s:27:"emails.indexRequest.subject";s:20:"Zahtijevanje indeksa";s:24:"emails.indexRequest.body";s:657:"{$recipientName}:<br />
+<br />
+Podnesak &quot;{$submissionTitle}&quot; za {$contextName} sada treba indekse kreirane slijedeći ove korake.<br />
+1. Kliknite donji URL za podnošenje.<br />
+2. Prijavite se u medij i upotrijebite datoteku s probnim stranicama za izradu galija u skladu s medijskim standardima.<br />
+3. Pošaljite POTPUNI e-mail uredniku.<br />
+<br />
+{$contextName} URL: {$contextUrl}<br />
+URL prijave: {$submissionUrl}<br />
+Korisničko ime: {$recipientUsername}<br />
+<br />
+Ako trenutno niste u mogućnosti obaviti ovaj posao ili imate bilo kakvih pitanja, kontaktirajte me. Hvala Vam na doprinosu ovom mediju.<br />
+<br />
+{$signature}";s:28:"emails.indexComplete.subject";s:15:"Indeks dovršen";s:25:"emails.indexComplete.body";s:239:"{$recipientName}:<br />
+<br />
+Sada su pripremljeni indeksi za rukopis, &quot;{$submissionTitle},&quot; za {$contextName} i spremni su za lekturu.<br />
+<br />
+Ako imate pitanja, slobodno me kontaktirajte.<br />
+<br />
+{$signatureFullName}";s:24:"emails.emailLink.subject";s:28:"Rukopis od mogućeg interesa";s:21:"emails.emailLink.body";s:190:"Mislio sam da bi Vas moglo zanimati &quot;{$submissionTitle}&quot; autora {$authors} objavljeno u svesku {$volume}, br. {$number} ({$year}) od {$contextName} na &quot;{$submissionUrl}&quot;.";s:28:"emails.emailLink.description";s:259:"Ovaj predložak e-pošte daje registriranom čitatelju mogućnost slanja informacija o monografiji nekome tko bi mogao biti zainteresiran. Dostupan je putem alata za čitanje i mora ga omogućiti urednik medija na stranici za administraciju alata za čitanje.";s:31:"emails.notifySubmission.subject";s:20:"Obavijest o podnesku";s:28:"emails.notifySubmission.body";s:132:"Imate poruku od {$sender} u svezi s &quot;{$submissionTitle}&quot; ({$monographDetailsUrl}):<br />
+<br />
+{$message}<br />
+<br />
+		";s:35:"emails.notifySubmission.description";s:77:"Obavijest od korisnika poslana iz modalnog informacijskog centra za podneske.";s:25:"emails.notifyFile.subject";s:32:"Obavijest o podnešenoj datoteci";s:22:"emails.notifyFile.body";s:168:"Imate poruku od {$sender} u svezi s datotekom &quot;{$fileName}&quot; u &quot;{$submissionTitle}&quot; ({$monographDetailsUrl}):<br />
+<br />
+{$message}<br />
+<br />
+		";s:29:"emails.notifyFile.description";s:77:"Obavijest od korisnika poslana iz modalnog centra za informacije o datotekama";s:43:"emails.statisticsReportNotification.subject";s:41:"Urednička aktivnost za {$month}, {$year}";s:40:"emails.statisticsReportNotification.body";s:729:"
+{$recipientName}, <br />
+<br />
+Vaše izvješće o stanju medija za {$month}, {$year} sada je dostupno. Vaša ključna statistika za ovaj mjesec je ispod.<br />
+<ul>
+<li>Novi podnesci ovog mjeseca: {$newSubmissions}</li>
+<li>Odbijeni podnesci ovog mjeseca: {$declinedSubmissions}</li>
+<li>Prihvaćeni podnesci ovog mjeseca: {$acceptedSubmissions}</li>
+<li>Ukupan broj podnesaka u sustavu: {$totalSubmissions}</li>
+</ul>
+Prijavite se u medij kako biste vidjeli detaljnije <a href="{$editorialStatsLink}">uredničke trendove</a> i <a href="{$publicationStatsLink}">statistiku objavljenih knjiga</a>. Potpuni primjerak ovomjesečnih uređivačkih trendova nalazi se u prilogu.<br />
+<br />
+S poštovanjem,<br />
+{$contextSignature}";s:27:"emails.announcement.subject";s:20:"{$announcementTitle}";s:24:"emails.announcement.body";s:178:"<b>{$announcementTitle}</b><br />
+<br />
+{$announcementSummary}<br />
+<br />
+Posjetite našu web stranicu kako biste pročitali <a href="{$announcementUrl}">cjelovitu najavu</a>.";s:30:"emails.editorAssignReview.body";s:474:"<p>Dragi {$recipientName},</p><p>Sljedeći podnesak dodijeljen Vam je kako bi prošao kroz fazu pregleda.</p><p><a href="{$submissionUrl}">{ $submissionTitle}</a><br />{$authors}</p><p><b>Sažetak</b></p>{$submissionAbstract}<p>Molimo prijavite se na <a href="{ $submissionUrl}">pogledajte podnesak</a> i dodijelite kvalificirane ocjenjivače. Možete dodijeliti ocjenjivača klikom na "Dodaj ocjenjivača".</p><p>Unaprijed zahvaljujemo.</p><p>Lijep pozdrav,</p>{$signature}";s:34:"emails.editorAssignProduction.body";s:503:"<p>Dragi {$recipientName},</p><p>Sljedeći podnesak dodijeljen Vam je da ga pregledate kroz fazu proizvodnje.</p><p><a href="{$submissionUrl}">{ $submissionTitle}</a><br />{$authors}</p><p><b>Sažetak</b></p>{$submissionAbstract}<p>Molimo prijavite se na <a href="{ $submissionUrl}">pogledajte podnesak</a>. Kada datoteke spremne za proizvodnju budu dostupne, prenesite ih u odjeljku <strong>Publikacije > Formati publikacija</strong>.</p><p>Unaprijed zahvaljujemo.</p><p>Lijep pozdrav,</p >{$signature}";}}}
