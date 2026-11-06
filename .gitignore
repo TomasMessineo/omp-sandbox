@@ -1,0 +1,7 @@
+.env
+db_data/
+fixtures/files/omp33/
+fixtures/files/omp34/
+fixtures/files/omp35/
+*.log
+.DS_Store

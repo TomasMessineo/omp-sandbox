@@ -1,0 +1,73 @@
+name: omp-sandbox
+
+services:
+  db:
+    image: mysql:8.0
+    command: >
+      --default-authentication-plugin=mysql_native_password
+      --character-set-server=utf8mb4
+      --collation-server=utf8mb4_unicode_ci
+      --sql-mode="STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION"
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD:-root}
+    volumes:
+      - db_data:/var/lib/mysql
+      - ./fixtures/sql:/docker-entrypoint-initdb.d:ro
+    ports:
+      - "${PORT_MYSQL:-3307}:3306"
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-u", "root", "-proot"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    environment:
+      PMA_HOST: db
+      PMA_PORT: 3306
+      UPLOAD_LIMIT: 256M
+    ports:
+      - "${PORT_PHPMYADMIN:-8081}:80"
+    depends_on:
+      db:
+        condition: service_healthy
+
+  omp33:
+    build: ./images/omp33
+    profiles: ["3.3", "all"]
+    depends_on:
+      db:
+        condition: service_healthy
+    ports:
+      - "${PORT_OMP33:-8033}:80"
+    volumes:
+      - ./omp-3.3.0-23:/var/www/html
+      - ./fixtures/files/omp33:/var/www/files
+
+  omp34:
+    build: ./images/omp34
+    profiles: ["3.4", "all"]
+    depends_on:
+      db:
+        condition: service_healthy
+    ports:
+      - "${PORT_OMP34:-8034}:80"
+    volumes:
+      - ./omp-3.4.0-11:/var/www/html
+      - ./fixtures/files/omp34:/var/www/files
+
+  omp35:
+    build: ./images/omp35
+    profiles: ["3.5", "all"]
+    depends_on:
+      db:
+        condition: service_healthy
+    ports:
+      - "${PORT_OMP35:-8035}:80"
+    volumes:
+      - ./omp-3.5.0-5:/var/www/html
+      - ./fixtures/files/omp35:/var/www/files
+
+volumes:
+  db_data:
